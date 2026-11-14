@@ -1,0 +1,41 @@
+schema_version = "1.3"
+
+[task]
+name = "junction2026/chess-full-game"
+description = "Play three full chess games as White against a ladder of deterministic Stockfish opponents."
+authors = []
+keywords = ["chess", "planning", "full-game", "mcp"]
+
+[metadata]
+difficulty = "hard"
+category = "game"
+tags = ["chess", "long-horizon-planning", "mcp"]
+
+[environment]
+# The agent may reach only the model API (Harbor adds the inference host automatically):
+# no pip, no downloaded engines. The game server is a sibling compose service.
+network_mode = "allowlist"
+allowed_hosts = []
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+
+[[environment.mcp_servers]]
+name = "chess"
+transport = "streamable-http"
+url = "http://mcp-server:8000/mcp"
+args = []
+
+[agent]
+timeout_sec = 10800.0
+
+[verifier]
+timeout_sec = 120.0
+
+[verifier.env]
+
+[environment.env]
+
+[solution.env]

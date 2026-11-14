@@ -1,0 +1,29 @@
+[
+ {
+  "id": "g1",
+  "class": "full",
+  "mode": "full",
+  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "opponent": "Level 1 (weak)",
+  "opponent_nodes": 1,
+  "move_limit": 80
+ },
+ {
+  "id": "g2",
+  "class": "full",
+  "mode": "full",
+  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "opponent": "Level 2 (club)",
+  "opponent_nodes": 100,
+  "move_limit": 80
+ },
+ {
+  "id": "g3",
+  "class": "full",
+  "mode": "full",
+  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "opponent": "Level 3 (strong)",
+  "opponent_nodes": 3000,
+  "move_limit": 80
+ }
+]

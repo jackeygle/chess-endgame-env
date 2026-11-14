@@ -1,6 +1,11 @@
-"""One game: the agent (White) must checkmate a deterministic Stockfish defender.
+"""One game: the agent plays White against a deterministic Stockfish opponent.
 
-Determinism: the defender is a fresh Stockfish process per game with Threads=1, a fixed
+Two modes:
+  endgame  the start position is a forced mate; only mating within the move limit scores
+  full     a whole game from any position; win 1, draw 0.5, loss or unfinished 0. A game
+           that reaches the move limit is adjudicated by Stockfish's evaluation.
+
+Determinism: the opponent is a fresh Stockfish process per game with Threads=1, a fixed
 hash size and a fixed node budget per move, so the same moves always get the same replies.
 """
 from __future__ import annotations
@@ -10,6 +15,10 @@ import chess.engine
 
 STOCKFISH = "/usr/games/stockfish"
 DEFENDER_NODES = 1_000_000
+ADJUDICATE_NODES = 2_000_000
+ADJUDICATE_CP = 300          # a lead of three pawns or more at the move limit counts as decided
+FULL_REWARD = {"mate": 1.0, "adjudicated_win": 1.0, "draw": 0.5, "stalemate": 0.5,
+               "adjudicated_draw": 0.5}
 
 
 class IllegalMove(ValueError):
@@ -33,13 +42,18 @@ def game_reward(won: bool, moves_used: int, mate_len: int, move_limit: int) -> f
 
 
 class Game:
-    def __init__(self, fen: str, mate_len: int, move_limit: int, engine=None):
+    def __init__(self, fen: str, mate_len: int | None, move_limit: int, engine=None,
+                 opponent_nodes: int = DEFENDER_NODES, mode: str = "endgame"):
+        if mode not in ("endgame", "full"):
+            raise ValueError(f"mode must be 'endgame' or 'full', got {mode!r}")
         self.board = chess.Board(fen)
         if self.board.turn != chess.WHITE:
             raise ValueError("the agent always plays White")
         self.start_fen = fen
         self.mate_len = mate_len
         self.move_limit = move_limit
+        self.opponent_nodes = opponent_nodes
+        self.mode = mode
         self._own_engine = engine is None
         self.engine = engine or new_engine()
         self.engine.protocol.send_line("ucinewgame")
@@ -57,7 +71,18 @@ class Game:
         return self.result == "mate"
 
     def reward(self) -> float:
+        if self.mode == "full":
+            return FULL_REWARD.get(self.result, 0.0)
         return game_reward(self.won, self.moves_used, self.mate_len, self.move_limit)
+
+    def _adjudicate(self) -> str:
+        info = self.engine.analyse(self.board, chess.engine.Limit(nodes=ADJUDICATE_NODES))
+        cp = info["score"].white().score(mate_score=100_000)
+        if cp >= ADJUDICATE_CP:
+            return "adjudicated_win"
+        if cp <= -ADJUDICATE_CP:
+            return "adjudicated_loss"
+        return "adjudicated_draw"
 
     def close(self):
         if self._own_engine:
@@ -101,7 +126,7 @@ class Game:
         elif (reason := self._draw_reason()):
             self.result = reason
         else:
-            res = self.engine.play(self.board, chess.engine.Limit(nodes=DEFENDER_NODES))
+            res = self.engine.play(self.board, chess.engine.Limit(nodes=self.opponent_nodes))
             reply_san = self.board.san(res.move)
             self.board.push(res.move)
             if self.board.is_checkmate():
@@ -109,7 +134,7 @@ class Game:
             elif (reason := self._draw_reason()):
                 self.result = reason
             elif self.moves_used >= self.move_limit:
-                self.result = "move_limit"
+                self.result = self._adjudicate() if self.mode == "full" else "move_limit"
         self.history.append({"move": san, "reply": reply_san, "fen": self.board.fen()})
         return {"your_move": san, "opponent_reply": reply_san, "result": self.result,
                 "moves_used": self.moves_used, "moves_left": self.move_limit - self.moves_used}

@@ -1,4 +1,7 @@
-"""MCP game server: the agent plays White in six won endgames against a Stockfish defender.
+"""MCP game server: the agent plays White against Stockfish, in the games of positions.json.
+
+positions.json decides the task: won endgames (mode "endgame") or whole games against a
+ladder of opponents (mode "full"). The same server runs both tasks.
 
 Everything that decides the score lives in this container: the positions, the defender
 and the game records. The agent's container only reaches it over HTTP.
@@ -41,7 +44,10 @@ def _game(game_id: str) -> Game:
         raise ValueError(f"unknown game_id '{game_id}'. Valid ids: "
                          + ", ".join(p["id"] for p in POSITIONS))
     if game_id not in _games:
-        _games[game_id] = Game(pos["fen"], pos["mate_len"], pos["move_limit"])
+        kw = {"mode": pos.get("mode", "endgame")}
+        if "opponent_nodes" in pos:
+            kw["opponent_nodes"] = pos["opponent_nodes"]
+        _games[game_id] = Game(pos["fen"], pos.get("mate_len"), pos["move_limit"], **kw)
     return _games[game_id]
 
 
@@ -69,15 +75,19 @@ def _view(game_id: str, g: Game) -> dict:
 
 def _summary(p: dict) -> dict:
     g = _games.get(p["id"])
-    return {"game_id": p["id"], "material": p["class"], "shortest_mate_in": p["mate_len"],
-            "move_limit": p["move_limit"],
-            "status": "not_started" if g is None else (g.result or "in_progress"),
-            "moves_used": 0 if g is None else g.moves_used}
+    out = {"game_id": p["id"], "material": p["class"], "move_limit": p["move_limit"],
+           "status": "not_started" if g is None else (g.result or "in_progress"),
+           "moves_used": 0 if g is None else g.moves_used}
+    if p.get("mode", "endgame") == "endgame":
+        out["shortest_mate_in"] = p["mate_len"]
+    else:
+        out["opponent"] = p["opponent"]
+    return out
 
 
 @mcp.tool()
 def list_games() -> list[dict]:
-    """List the six games: material, shortest forced mate, your move limit and status."""
+    """List the games with your move limit and status (and the opponent or shortest mate)."""
     with _lock:
         return [_summary(p) for p in POSITIONS]
 

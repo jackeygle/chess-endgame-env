@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Modal builds the task's images inside the sandbox, where the allowlist would also block
-# the image pulls. This makes a copy for Modal runs that differs only in the network mode.
-# The shipped task (task/chess-endgame) keeps the allowlist for local Docker.
+# the image pulls. This makes copies for Modal runs that differ only in the network mode.
+# The shipped tasks (task/*) keep the allowlist for local Docker.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-rm -rf build/chess-endgame-modal && mkdir -p build
-cp -r task/chess-endgame build/chess-endgame-modal
-sed -i 's/^network_mode = "allowlist"/network_mode = "public"/; /^allowed_hosts = \[\]/d' \
-  build/chess-endgame-modal/task.toml
-grep -n "network_mode" build/chess-endgame-modal/task.toml
+mkdir -p build
+for t in chess-full chess-endgame; do
+  rm -rf "build/$t-modal" && cp -r "task/$t" "build/$t-modal"
+  sed -i 's/^network_mode = "allowlist"/network_mode = "public"/; /^allowed_hosts = \[\]/d' \
+    "build/$t-modal/task.toml"
+  echo "build/$t-modal: $(grep network_mode "build/$t-modal/task.toml")"
+done

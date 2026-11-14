@@ -73,3 +73,49 @@ def test_move_limit_ends_game_with_zero():
         assert g.result == "move_limit" and g.reward() == 0.0
     finally:
         g.close()
+
+
+# ---- full-game mode ------------------------------------------------------------------ #
+START = chess.STARTING_FEN
+
+
+def test_full_mode_rewards():
+    from chessenv.game import FULL_REWARD
+    assert FULL_REWARD["mate"] == 1.0 and FULL_REWARD["adjudicated_win"] == 1.0
+    assert FULL_REWARD["draw"] == 0.5 and FULL_REWARD["adjudicated_draw"] == 0.5
+    assert FULL_REWARD.get("lost", 0.0) == 0.0 and FULL_REWARD.get("adjudicated_loss", 0.0) == 0.0
+
+
+def test_full_mode_unfinished_scores_zero():
+    g = Game(START, None, 80, mode="full", opponent_nodes=1)
+    try:
+        g.play("e2e4")
+        assert g.result is None and g.reward() == 0.0
+    finally:
+        g.close()
+
+
+def test_full_mode_win_by_mate():
+    g = Game("7k/8/6K1/8/8/8/8/Q7 w - - 0 1", None, 80, mode="full", opponent_nodes=1)
+    try:
+        g.play("a1a8")
+        assert g.result == "mate" and g.reward() == 1.0
+    finally:
+        g.close()
+
+
+def test_full_mode_adjudication_at_move_limit():
+    # White is a queen up when the single allowed move is used: adjudicated win.
+    g = Game("4k3/8/8/8/8/8/8/3QK3 w - - 0 1", None, 1, mode="full", opponent_nodes=1)
+    try:
+        g.play("d1d2")
+        assert g.result == "adjudicated_win" and g.reward() == 1.0
+    finally:
+        g.close()
+    # Kings only would be insufficient material; a bare rook down is an adjudicated loss.
+    g = Game("3rk3/8/8/8/8/8/8/4K3 w - - 0 1", None, 1, mode="full", opponent_nodes=1)
+    try:
+        g.play("e1f2")
+        assert g.result in ("adjudicated_loss", "lost") and g.reward() == 0.0
+    finally:
+        g.close()
