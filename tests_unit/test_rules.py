@@ -3,6 +3,7 @@
     python3 -m pytest tests_unit -q
 """
 import chess
+from pathlib import Path
 
 from chessenv.game import Game, IllegalMove, game_reward
 
@@ -175,3 +176,26 @@ def test_openings_are_seeded_distinct_and_balanced():
         for san in p["opening_moves"].split():
             replay.push_san(san)
         assert replay.fen() == p["fen"]
+
+
+# ---- one-move lookahead (analysis and the hint ablation) -------------------------------- #
+def test_hanging_after_finds_pieces_left_en_prise():
+    from chessenv.tactics import hanging_after
+    b = chess.Board("r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3")
+    out = hanging_after(b, chess.Move.from_uci("f3g5"))            # Ng5?? Qxg5
+    assert [x["square"] for x in out] == ["g5"] and not out[0]["defended"]
+    assert hanging_after(b, chess.Move.from_uci("f1c4")) == []      # Bc4 is safe
+    # Defended, but attacked by a cheaper piece: a queen on d5 attacked by the pawn on e6.
+    b = chess.Board("rnbqkbnr/pppp1ppp/4p3/8/8/2N5/PPPPPPPP/R1BQKBNR w KQkq - 0 2")
+    out = hanging_after(b, chess.Move.from_uci("c3d5"))
+    assert out and out[0]["piece"] == "N" and out[0]["defended"] is False
+
+
+def test_hint_tool_is_off_unless_enabled():
+    src = (Path(__file__).resolve().parent.parent
+           / "task/chess-full/environment/mcp-server/server.py").read_text()
+    assert 'if os.environ.get("CHESS_HINTS") == "1":' in src
+    for t in ("chess-full", "chess-endgame"):
+        compose = (Path(__file__).resolve().parent.parent
+                   / f"task/{t}/environment/docker-compose.yaml").read_text()
+        assert "CHESS_HINTS" not in compose

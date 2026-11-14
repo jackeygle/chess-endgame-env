@@ -34,6 +34,7 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse
 
 from chessenv.game import Game, IllegalMove, new_engine
+from chessenv.tactics import hanging_after
 
 HERE = Path(__file__).parent
 SEED = int(os.environ.get("CHESS_SEED") or secrets.randbits(32))
@@ -142,6 +143,30 @@ def make_move(game_id: str, move: str) -> dict:
             if game_id in _oracle_engines:
                 _oracle_engines.pop(game_id).quit()
         return {**out, "position": _view(game_id, g)}
+
+
+def check_move(game_id: str, move: str) -> dict:
+    """Without playing it: which of your pieces could Black capture right after this move?
+
+    Lists every White piece that would be attacked and undefended, or attacked by a cheaper
+    black piece. Looks one reply ahead only (no pins, no longer sequences).
+    """
+    with _lock:
+        g = _game(game_id)
+        if g.done:
+            return {"error": "the game is over"}
+        try:
+            m = g.parse(move)
+        except IllegalMove as e:
+            return {"error": str(e)}
+        hanging = hanging_after(g.board, m)
+        return {"move": g.board.san(m), "black_could_capture": hanging,
+                "safe": not hanging}
+
+
+# Ablation only (experiments/hint_ablation): never enabled in the shipped tasks.
+if os.environ.get("CHESS_HINTS") == "1":
+    mcp.tool()(check_move)
 
 
 def score() -> dict:

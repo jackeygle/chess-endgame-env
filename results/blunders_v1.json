@@ -1,0 +1,6357 @@
+{
+ "summary": {
+  "games": 12,
+  "agent_moves": 423,
+  "blunders": 27,
+  "one_move_oversights": 16,
+  "deeper_mistakes": 11,
+  "share_one_move": 0.5925925925925926,
+  "games_with_blunder": 9,
+  "median_first_blunder_move": 14
+ },
+ "games": [
+  {
+   "run": "v1 GPT-5.5 run 1",
+   "game": "g1",
+   "opponent": "Level 1 (weak)",
+   "opening": null,
+   "result": "draw",
+   "reward": 0.5,
+   "moves": 25,
+   "blunders": 4,
+   "one_move_oversights": 3,
+   "first_blunder_move": 12,
+   "lost_cp_in_blunders": 2812,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 24,
+     "eval_after": 27,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Qh5",
+     "eval_before": 34,
+     "eval_after": -30,
+     "drop": 64,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bc4",
+     "eval_before": -29,
+     "eval_after": -26,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Qf3",
+     "eval_before": -20,
+     "eval_after": -18,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "Nc3",
+     "eval_before": 4,
+     "eval_after": -116,
+     "drop": 120,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Qd3",
+     "eval_before": -123,
+     "eval_after": -157,
+     "drop": 34,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Nge2",
+     "eval_before": -44,
+     "eval_after": -36,
+     "drop": -8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "Bxb5",
+     "eval_before": 14,
+     "eval_after": 16,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "Nxd4",
+     "eval_before": 9,
+     "eval_after": -160,
+     "drop": 169,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pc6"
+       ]
+      },
+      {
+       "square": "d4",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pe5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "Ba4",
+     "eval_before": -164,
+     "eval_after": -300,
+     "drop": 136,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c3",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "move": "dxc3",
+     "eval_before": -313,
+     "eval_after": -335,
+     "drop": 22,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Qxe4+",
+     "eval_before": -345,
+     "eval_after": -834,
+     "drop": 489,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "Q",
+       "value": 9,
+       "defended": false,
+       "attacked_by": [
+        "nf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "move": "f3",
+     "eval_before": -834,
+     "eval_after": -1212,
+     "drop": 378,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 14,
+     "move": "g3",
+     "eval_before": -1285,
+     "eval_after": -1340,
+     "drop": 55,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "fxe4",
+     "eval_before": -838,
+     "eval_after": -2000,
+     "drop": 1162,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "Be3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h1",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "qe4"
+       ]
+      },
+      {
+       "square": "a4",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qe4"
+       ]
+      },
+      {
+       "square": "e3",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qe4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "move": "Bg1",
+     "eval_before": -1217,
+     "eval_after": -2000,
+     "drop": 783,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "g1",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qh1"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "Kd2",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a1",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "qg1"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qg1"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "Kd3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a1",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "qg1"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qg1"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Bb5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "ba6",
+        "pc6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "move": "Kd4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ba6",
+        "pc6",
+        "qe2"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "ba6",
+        "pc6"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf2"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Kd4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ba6",
+        "pc6",
+        "qe2"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": 0,
+     "drop": -2000,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "ba6",
+        "pc6"
+       ]
+      },
+      {
+       "square": "h2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf2"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf2"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 1",
+   "game": "g2",
+   "opponent": "Level 2 (club)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 24,
+   "blunders": 2,
+   "one_move_oversights": 0,
+   "first_blunder_move": 14,
+   "lost_cp_in_blunders": 1536,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 31,
+     "eval_after": 28,
+     "drop": 3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Qh5",
+     "eval_before": 28,
+     "eval_after": -28,
+     "drop": 56,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bc4",
+     "eval_before": -27,
+     "eval_after": -25,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Qf3",
+     "eval_before": -22,
+     "eval_after": -23,
+     "drop": 1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "Nc3",
+     "eval_before": -22,
+     "eval_after": -80,
+     "drop": 58,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "d3",
+     "eval_before": -27,
+     "eval_after": -90,
+     "drop": 63,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Qd1",
+     "eval_before": -82,
+     "eval_after": -84,
+     "drop": 2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "Nge2",
+     "eval_before": -82,
+     "eval_after": -105,
+     "drop": 23,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "O-O",
+     "eval_before": -39,
+     "eval_after": -96,
+     "drop": 57,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Bb3",
+     "eval_before": -97,
+     "eval_after": -119,
+     "drop": 22,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "f3",
+     "eval_before": -52,
+     "eval_after": -49,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Nxd4",
+     "eval_before": 5,
+     "eval_after": 6,
+     "drop": -1,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d4",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pe5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "move": "Ne2",
+     "eval_before": 0,
+     "eval_after": 11,
+     "drop": -11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 14,
+     "move": "Nxd4",
+     "eval_before": 25,
+     "eval_after": -328,
+     "drop": 353,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "Bxa4",
+     "eval_before": -332,
+     "eval_after": -337,
+     "drop": 5,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a4",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "Nxc6",
+     "eval_before": -335,
+     "eval_after": -597,
+     "drop": 262,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "bd7",
+        "pb7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "move": "b3",
+     "eval_before": -578,
+     "eval_after": -622,
+     "drop": 44,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "Bb2",
+     "eval_before": -580,
+     "eval_after": -622,
+     "drop": 42,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "fxe4",
+     "eval_before": -656,
+     "eval_after": -653,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "Bxg7",
+     "eval_before": -588,
+     "eval_after": -586,
+     "drop": -2,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g7",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "kg8",
+        "nh5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "move": "Rxf7",
+     "eval_before": -598,
+     "eval_after": -802,
+     "drop": 204,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "kg8",
+        "rf8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "move": "Qg4",
+     "eval_before": -817,
+     "eval_after": -2000,
+     "drop": 1183,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "Kh1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a1",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "qd4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Qd1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d1",
+       "piece": "Q",
+       "value": 9,
+       "defended": false,
+       "attacked_by": [
+        "qa1"
+       ]
+      },
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qa1",
+        "ra6"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 1",
+   "game": "g3",
+   "opponent": "Level 3 (strong)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 38,
+   "blunders": 3,
+   "one_move_oversights": 1,
+   "first_blunder_move": 26,
+   "lost_cp_in_blunders": 1497,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 39,
+     "eval_after": 39,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "d4",
+     "eval_before": 42,
+     "eval_after": 28,
+     "drop": 14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Nc3",
+     "eval_before": 73,
+     "eval_after": 72,
+     "drop": 1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "exd5",
+     "eval_before": 74,
+     "eval_after": 38,
+     "drop": 36,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "Nf3",
+     "eval_before": 34,
+     "eval_after": 32,
+     "drop": 2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Bf4",
+     "eval_before": 39,
+     "eval_after": 34,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Be2",
+     "eval_before": 35,
+     "eval_after": -2,
+     "drop": 37,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "O-O",
+     "eval_before": 8,
+     "eval_after": 0,
+     "drop": 8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "h3",
+     "eval_before": 14,
+     "eval_after": 16,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Bxf3",
+     "eval_before": 13,
+     "eval_after": 20,
+     "drop": -7,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Re1",
+     "eval_before": 20,
+     "eval_after": 22,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Na4",
+     "eval_before": 14,
+     "eval_after": -100,
+     "drop": 114,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "Qxd4",
+     "eval_before": -104,
+     "eval_after": -112,
+     "drop": 8,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d4",
+       "piece": "Q",
+       "value": 9,
+       "defended": false,
+       "attacked_by": [
+        "nc6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "c3",
+     "eval_before": -107,
+     "eval_after": -376,
+     "drop": 269,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "Rac1",
+     "eval_before": -363,
+     "eval_after": -412,
+     "drop": 49,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e1",
+       "piece": "R",
+       "value": 5,
+       "defended": true,
+       "attacked_by": [
+        "nc2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "Rxe1",
+     "eval_before": -415,
+     "eval_after": -422,
+     "drop": 7,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "Nc5",
+     "eval_before": -380,
+     "eval_after": -366,
+     "drop": -14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "Nb3",
+     "eval_before": -375,
+     "eval_after": -399,
+     "drop": 24,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "c4",
+     "eval_before": -382,
+     "eval_after": -470,
+     "drop": 88,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pd5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "cxd5",
+     "eval_before": -442,
+     "eval_after": -447,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Be5",
+     "eval_before": -452,
+     "eval_after": -531,
+     "drop": 79,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "Rxe5",
+     "eval_before": -529,
+     "eval_after": -522,
+     "drop": -7,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "Bxd5",
+     "eval_before": -503,
+     "eval_after": -498,
+     "drop": -5,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pe6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Rxd5",
+     "eval_before": -497,
+     "eval_after": -530,
+     "drop": 33,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 25,
+     "move": "Rd7",
+     "eval_before": -481,
+     "eval_after": -482,
+     "drop": 1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 26,
+     "move": "Ra7",
+     "eval_before": -490,
+     "eval_after": -797,
+     "drop": 307,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "a7",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "move": "f3",
+     "eval_before": -816,
+     "eval_after": -916,
+     "drop": 100,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 28,
+     "move": "Kf2",
+     "eval_before": -829,
+     "eval_after": -889,
+     "drop": 60,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 29,
+     "move": "Nc1",
+     "eval_before": -861,
+     "eval_after": -989,
+     "drop": 128,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 30,
+     "move": "Ne2",
+     "eval_before": -1020,
+     "eval_after": -1133,
+     "drop": 113,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rd2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "g3",
+     "eval_before": -1170,
+     "eval_after": -1294,
+     "drop": 124,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rb2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "h4",
+     "eval_before": -1399,
+     "eval_after": -1737,
+     "drop": 338,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 33,
+     "move": "Kxe2",
+     "eval_before": -948,
+     "eval_after": -1015,
+     "drop": 67,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 34,
+     "move": "Ke3",
+     "eval_before": -1075,
+     "eval_after": -1079,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 35,
+     "move": "Kf4",
+     "eval_before": -1082,
+     "eval_after": -1130,
+     "drop": 48,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 36,
+     "move": "Kg5",
+     "eval_before": -1148,
+     "eval_after": -2000,
+     "drop": 852,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 37,
+     "move": "h5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 38,
+     "move": "Kh6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 2",
+   "game": "g1",
+   "opponent": "Level 1 (weak)",
+   "opening": null,
+   "result": "adjudicated_loss",
+   "reward": 0.0,
+   "moves": 80,
+   "blunders": 5,
+   "one_move_oversights": 5,
+   "first_blunder_move": 22,
+   "lost_cp_in_blunders": 4246,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 28,
+     "eval_after": 20,
+     "drop": 8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Qh5",
+     "eval_before": 39,
+     "eval_after": -26,
+     "drop": 65,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bc4",
+     "eval_before": -22,
+     "eval_after": -24,
+     "drop": 2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Qf3",
+     "eval_before": -18,
+     "eval_after": -22,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "exf5",
+     "eval_before": 0,
+     "eval_after": -105,
+     "drop": 105,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Qd5",
+     "eval_before": -103,
+     "eval_after": -267,
+     "drop": 164,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4",
+        "pg6"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "move": "Qf7+",
+     "eval_before": -273,
+     "eval_after": -539,
+     "drop": 266,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "Bxf7+",
+     "eval_before": -544,
+     "eval_after": -530,
+     "drop": -14,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "move": "c3",
+     "eval_before": -543,
+     "eval_after": -611,
+     "drop": 68,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4",
+        "pg6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "Nf3",
+     "eval_before": -543,
+     "eval_after": -552,
+     "drop": 9,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Nxe5",
+     "eval_before": -483,
+     "eval_after": -518,
+     "drop": 35,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "O-O",
+     "eval_before": -493,
+     "eval_after": -489,
+     "drop": -4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "d4",
+     "eval_before": -484,
+     "eval_after": -606,
+     "drop": 122,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Bf4",
+     "eval_before": -482,
+     "eval_after": -581,
+     "drop": 99,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "move": "Nd2",
+     "eval_before": -503,
+     "eval_after": -564,
+     "drop": 61,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "Bh6",
+     "eval_before": -483,
+     "eval_after": -715,
+     "drop": 232,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h6",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "bg7",
+        "nf5"
+       ]
+      },
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "move": "Ndc4",
+     "eval_before": -724,
+     "eval_after": -699,
+     "drop": -25,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "dxe5",
+     "eval_before": -721,
+     "eval_after": -729,
+     "drop": 8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "e6",
+     "eval_before": -721,
+     "eval_after": -783,
+     "drop": 62,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bc8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "Rfe1",
+     "eval_before": -725,
+     "eval_after": -751,
+     "drop": 26,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "e7",
+     "eval_before": -709,
+     "eval_after": -761,
+     "drop": 52,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "Nd6+",
+     "eval_before": -698,
+     "eval_after": -1071,
+     "drop": 373,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "d6",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "nf5",
+        "pc7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "move": "f3",
+     "eval_before": -1015,
+     "eval_after": -1171,
+     "drop": 156,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 24,
+     "move": "g4",
+     "eval_before": -1066,
+     "eval_after": -1158,
+     "drop": 92,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "nf5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Rxe5",
+     "eval_before": -1066,
+     "eval_after": -1230,
+     "drop": 164,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "gxf5",
+     "eval_before": -1262,
+     "eval_after": -1285,
+     "drop": 23,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd7",
+        "pg6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "move": "Re1",
+     "eval_before": -1114,
+     "eval_after": -1164,
+     "drop": 50,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "move": "Rxe5",
+     "eval_before": -1043,
+     "eval_after": -1082,
+     "drop": 39,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 29,
+     "move": "Rxe6",
+     "eval_before": -939,
+     "eval_after": -1162,
+     "drop": 223,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e6",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "nf4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "move": "h3",
+     "eval_before": -1183,
+     "eval_after": -1253,
+     "drop": 70,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "h4",
+     "eval_before": -1198,
+     "eval_after": -1289,
+     "drop": 91,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "f4",
+     "eval_before": -1221,
+     "eval_after": -1358,
+     "drop": 137,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "move": "cxb4",
+     "eval_before": -1097,
+     "eval_after": -1198,
+     "drop": 101,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "move": "b5",
+     "eval_before": -1278,
+     "eval_after": -2000,
+     "drop": 722,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "b5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rb8"
+       ]
+      },
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "move": "b6",
+     "eval_before": -1026,
+     "eval_after": -1265,
+     "drop": 239,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "move": "b7",
+     "eval_before": -1034,
+     "eval_after": -2000,
+     "drop": 966,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "b7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nc5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "move": "f5",
+     "eval_before": -1106,
+     "eval_after": -2000,
+     "drop": 894,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pg6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "move": "fxg6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "g6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rg8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "move": "Kf1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "move": "Kf2",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 41,
+     "move": "Ke3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rc2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 42,
+     "move": "Kf4",
+     "eval_before": -709,
+     "eval_after": -2000,
+     "drop": 1291,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re2"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "re2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 43,
+     "move": "a3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 44,
+     "move": "Ke5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 45,
+     "move": "Kd4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 46,
+     "move": "b4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 47,
+     "move": "b5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re6"
+       ]
+      },
+      {
+       "square": "b5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 48,
+     "move": "b6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ke8",
+        "re6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 49,
+     "move": "b7",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 50,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 51,
+     "move": "Kb4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 52,
+     "move": "Kb5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rf4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 53,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 54,
+     "move": "Kc3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 55,
+     "move": "Kc2",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 56,
+     "move": "Kc3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 57,
+     "move": "Kc4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 58,
+     "move": "Kc5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 59,
+     "move": "Kxd5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 60,
+     "move": "Ke4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 61,
+     "move": "Kf5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 62,
+     "move": "Kg5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 63,
+     "move": "Kxh5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 64,
+     "move": "Kg5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 65,
+     "move": "h5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 66,
+     "move": "h6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 67,
+     "move": "h7",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 68,
+     "move": "Kg6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 69,
+     "move": "Kg7",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 70,
+     "move": "Kxh8",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 71,
+     "move": "Kg8",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 72,
+     "move": "h8=Q+",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h8",
+       "piece": "Q",
+       "value": 9,
+       "defended": true,
+       "attacked_by": [
+        "rh1"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 73,
+     "move": "Kxh8",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 74,
+     "move": "Kg7",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 75,
+     "move": "Kf6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 76,
+     "move": "Ke5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "kb3"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 77,
+     "move": "Kd4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 78,
+     "move": "Kd3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 79,
+     "move": "Kd2",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 80,
+     "move": "Kc1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 2",
+   "game": "g2",
+   "opponent": "Level 2 (club)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 21,
+   "blunders": 2,
+   "one_move_oversights": 1,
+   "first_blunder_move": 10,
+   "lost_cp_in_blunders": 1657,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 33,
+     "eval_after": 20,
+     "drop": 13,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Nf3",
+     "eval_before": 27,
+     "eval_after": 19,
+     "drop": 8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bb5",
+     "eval_before": 26,
+     "eval_after": 34,
+     "drop": -8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "O-O",
+     "eval_before": 33,
+     "eval_after": 27,
+     "drop": 6,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "move": "Re1",
+     "eval_before": 30,
+     "eval_after": 19,
+     "drop": 11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Nxe5",
+     "eval_before": 252,
+     "eval_after": 8,
+     "drop": 244,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "d3",
+     "eval_before": 35,
+     "eval_after": 40,
+     "drop": -5,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "move": "dxe4",
+     "eval_before": 94,
+     "eval_after": -35,
+     "drop": 129,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "move": "Kh1",
+     "eval_before": -21,
+     "eval_after": -27,
+     "drop": 6,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e1",
+       "piece": "R",
+       "value": 5,
+       "defended": true,
+       "attacked_by": [
+        "bf2"
+       ]
+      },
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "exd5",
+     "eval_before": 192,
+     "eval_after": -335,
+     "drop": 527,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e1",
+       "piece": "R",
+       "value": 5,
+       "defended": true,
+       "attacked_by": [
+        "bf2",
+        "qe5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "move": "Qxe1+",
+     "eval_before": -330,
+     "eval_after": -339,
+     "drop": 9,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e1",
+       "piece": "Q",
+       "value": 9,
+       "defended": false,
+       "attacked_by": [
+        "bf2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "move": "dxc6",
+     "eval_before": -330,
+     "eval_after": -312,
+     "drop": -18,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "cxb7",
+     "eval_before": -320,
+     "eval_after": -351,
+     "drop": 31,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b7",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bc8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Nc3",
+     "eval_before": -339,
+     "eval_after": -356,
+     "drop": 17,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "bxc3",
+     "eval_before": -355,
+     "eval_after": -367,
+     "drop": 12,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 16,
+     "move": "Bc4",
+     "eval_before": -350,
+     "eval_after": -364,
+     "drop": 14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "Bxf7+",
+     "eval_before": -358,
+     "eval_after": -633,
+     "drop": 275,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "kg8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "Bh6",
+     "eval_before": -638,
+     "eval_after": -764,
+     "drop": 126,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h6",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pg7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "Bxg7",
+     "eval_before": -639,
+     "eval_after": -701,
+     "drop": 62,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g7",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "kg6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "a4",
+     "eval_before": -797,
+     "eval_after": -916,
+     "drop": 119,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Ra2",
+     "eval_before": -870,
+     "eval_after": -2000,
+     "drop": 1130,
+     "kind": "deeper mistake",
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 2",
+   "game": "g3",
+   "opponent": "Level 3 (strong)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 30,
+   "blunders": 4,
+   "one_move_oversights": 2,
+   "first_blunder_move": 10,
+   "lost_cp_in_blunders": 1718,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 28,
+     "eval_after": 10,
+     "drop": 18,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "d4",
+     "eval_before": 28,
+     "eval_after": 23,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "c4",
+     "eval_before": 65,
+     "eval_after": 71,
+     "drop": -6,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Nc3",
+     "eval_before": 69,
+     "eval_after": 71,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "f4",
+     "eval_before": 83,
+     "eval_after": 45,
+     "drop": 38,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Nf3",
+     "eval_before": 57,
+     "eval_after": 53,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "fxe5",
+     "eval_before": 46,
+     "eval_after": 37,
+     "drop": 9,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "d5",
+     "eval_before": 50,
+     "eval_after": 47,
+     "drop": 3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "Be2",
+     "eval_before": 33,
+     "eval_after": 22,
+     "drop": 11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Be3",
+     "eval_before": 11,
+     "eval_after": -539,
+     "drop": 550,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e3",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qb6"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qb6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "move": "Qd3",
+     "eval_before": -515,
+     "eval_after": -537,
+     "drop": 22,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Bxd3",
+     "eval_before": -534,
+     "eval_after": -517,
+     "drop": -17,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "O-O",
+     "eval_before": -519,
+     "eval_after": -677,
+     "drop": 158,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d3",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "nc5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "dxc6",
+     "eval_before": -662,
+     "eval_after": -687,
+     "drop": 25,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pb7"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd3"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "move": "Ne1",
+     "eval_before": -676,
+     "eval_after": -724,
+     "drop": 48,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd3"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "b3",
+     "eval_before": -710,
+     "eval_after": -738,
+     "drop": 28,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "b4",
+     "eval_before": -697,
+     "eval_after": -765,
+     "drop": 68,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "be6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "Nxe4",
+     "eval_before": -761,
+     "eval_after": -775,
+     "drop": 14,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "nf6"
+       ]
+      },
+      {
+       "square": "c4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "be6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "Rxf7",
+     "eval_before": -770,
+     "eval_after": -1064,
+     "drop": 294,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "be6",
+        "ke8"
+       ]
+      },
+      {
+       "square": "c4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "be6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "g4",
+     "eval_before": -1084,
+     "eval_after": -1188,
+     "drop": 104,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bf7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 21,
+     "move": "Rc1",
+     "eval_before": -1195,
+     "eval_after": -1267,
+     "drop": 72,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bc4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "move": "Rxc4",
+     "eval_before": -1281,
+     "eval_after": -1403,
+     "drop": 122,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c4",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "nd2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "move": "Nd3",
+     "eval_before": -1476,
+     "eval_after": -1577,
+     "drop": 101,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 24,
+     "move": "b5",
+     "eval_before": -1642,
+     "eval_after": -2000,
+     "drop": 358,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "d3",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "rd8"
+       ]
+      },
+      {
+       "square": "b5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pc6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Nc5",
+     "eval_before": -1691,
+     "eval_after": -2000,
+     "drop": 309,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 26,
+     "move": "Nb7",
+     "eval_before": -1499,
+     "eval_after": -2000,
+     "drop": 501,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 27,
+     "move": "Nd8",
+     "eval_before": -1732,
+     "eval_after": -2000,
+     "drop": 268,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d8",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "bf6",
+        "ke8",
+        "rd2"
+       ]
+      },
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rd2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "move": "h4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd8"
+       ]
+      },
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rd2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "move": "a3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd8"
+       ]
+      },
+      {
+       "square": "g4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne3"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "move": "h5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ne3"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 3",
+   "game": "g1",
+   "opponent": "Level 1 (weak)",
+   "opening": null,
+   "result": "in_progress",
+   "reward": 0.0,
+   "moves": 38,
+   "blunders": 2,
+   "one_move_oversights": 2,
+   "first_blunder_move": 30,
+   "lost_cp_in_blunders": 1386,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 19,
+     "eval_after": 30,
+     "drop": -11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Qh5",
+     "eval_before": 35,
+     "eval_after": -28,
+     "drop": 63,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bc4",
+     "eval_before": -22,
+     "eval_after": -21,
+     "drop": -1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Qf3",
+     "eval_before": -18,
+     "eval_after": -14,
+     "drop": -4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "exf5",
+     "eval_before": 3,
+     "eval_after": -92,
+     "drop": 95,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Qd5",
+     "eval_before": -96,
+     "eval_after": -253,
+     "drop": 157,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4",
+        "pg6"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "move": "Qf7+",
+     "eval_before": -278,
+     "eval_after": -544,
+     "drop": 266,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "Bxf7+",
+     "eval_before": -547,
+     "eval_after": -540,
+     "drop": -7,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ke8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "move": "c3",
+     "eval_before": -531,
+     "eval_after": -605,
+     "drop": 74,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd4",
+        "pg6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "Nf3",
+     "eval_before": -543,
+     "eval_after": -547,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "O-O",
+     "eval_before": -498,
+     "eval_after": -478,
+     "drop": -20,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "d4",
+     "eval_before": -472,
+     "eval_after": -484,
+     "drop": 12,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "Ne5",
+     "eval_before": -451,
+     "eval_after": -631,
+     "drop": 180,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Bg5",
+     "eval_before": -529,
+     "eval_after": -550,
+     "drop": 21,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "move": "Re1",
+     "eval_before": -537,
+     "eval_after": -601,
+     "drop": 64,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "f3",
+     "eval_before": -412,
+     "eval_after": -404,
+     "drop": -8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "fxe4",
+     "eval_before": -360,
+     "eval_after": -484,
+     "drop": 124,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "Bf6",
+     "eval_before": -502,
+     "eval_after": -683,
+     "drop": 181,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f6",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "bg7",
+        "ne4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "c4",
+     "eval_before": -686,
+     "eval_after": -700,
+     "drop": 14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "cxd5",
+     "eval_before": -651,
+     "eval_after": -638,
+     "drop": -13,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Nc3",
+     "eval_before": -636,
+     "eval_after": -639,
+     "drop": 3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "g4",
+     "eval_before": -637,
+     "eval_after": -651,
+     "drop": 14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "gxf5",
+     "eval_before": -391,
+     "eval_after": -436,
+     "drop": 45,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "bxc3",
+     "eval_before": -380,
+     "eval_after": -387,
+     "drop": 7,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Rab1",
+     "eval_before": -343,
+     "eval_after": -376,
+     "drop": 33,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "Nc6+",
+     "eval_before": -371,
+     "eval_after": -599,
+     "drop": 228,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pb7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "move": "dxc6",
+     "eval_before": -594,
+     "eval_after": -598,
+     "drop": 4,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "move": "Rxe1",
+     "eval_before": -552,
+     "eval_after": -571,
+     "drop": 19,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "move": "Re6",
+     "eval_before": -568,
+     "eval_after": -582,
+     "drop": 14,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "move": "Re1",
+     "eval_before": -574,
+     "eval_after": -1173,
+     "drop": 599,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "e1",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "rb1"
+       ]
+      },
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "Kf2",
+     "eval_before": -1227,
+     "eval_after": -1278,
+     "drop": 51,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "d5",
+     "eval_before": -1188,
+     "eval_after": -1363,
+     "drop": 175,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      },
+      {
+       "square": "c3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "move": "Ke3",
+     "eval_before": -1198,
+     "eval_after": -1278,
+     "drop": 80,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bf6",
+        "ne4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "move": "Kd3",
+     "eval_before": -1140,
+     "eval_after": -1271,
+     "drop": 131,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "move": "c4",
+     "eval_before": -1144,
+     "eval_after": -1242,
+     "drop": 98,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "move": "c5",
+     "eval_before": -1213,
+     "eval_after": -2000,
+     "drop": 787,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6",
+        "re5"
+       ]
+      },
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "re5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "move": "Ke3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6",
+        "rd5"
+       ]
+      },
+      {
+       "square": "c5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rd5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "move": "h3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rc5"
+       ]
+      },
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nd6",
+        "rc5"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 3",
+   "game": "g2",
+   "opponent": "Level 2 (club)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 32,
+   "blunders": 3,
+   "one_move_oversights": 1,
+   "first_blunder_move": 11,
+   "lost_cp_in_blunders": 2088,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 40,
+     "eval_after": 27,
+     "drop": 13,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Nf3",
+     "eval_before": 20,
+     "eval_after": 36,
+     "drop": -16,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bc4",
+     "eval_before": 27,
+     "eval_after": 16,
+     "drop": 11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "d3",
+     "eval_before": 19,
+     "eval_after": 24,
+     "drop": -5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "exd5",
+     "eval_before": 64,
+     "eval_after": 45,
+     "drop": 19,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "O-O",
+     "eval_before": 47,
+     "eval_after": 42,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Bb3",
+     "eval_before": 61,
+     "eval_after": 57,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "h3",
+     "eval_before": 3,
+     "eval_after": 0,
+     "drop": 3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "Nc3",
+     "eval_before": 17,
+     "eval_after": 13,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Re1",
+     "eval_before": 176,
+     "eval_after": 96,
+     "drop": 80,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Be3",
+     "eval_before": 404,
+     "eval_after": 58,
+     "drop": 346,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "d4",
+     "eval_before": 128,
+     "eval_after": -466,
+     "drop": 594,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "Bxd4",
+     "eval_before": -471,
+     "eval_after": -449,
+     "drop": -22,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 14,
+     "move": "Qxf3",
+     "eval_before": -432,
+     "eval_after": -440,
+     "drop": 8,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d4",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "nc6",
+        "qd7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "move": "Rad1",
+     "eval_before": -465,
+     "eval_after": -733,
+     "drop": 268,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f3",
+       "piece": "Q",
+       "value": 9,
+       "defended": true,
+       "attacked_by": [
+        "nd4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "move": "gxf3",
+     "eval_before": -742,
+     "eval_after": -747,
+     "drop": 5,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qd7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "move": "Rxd8+",
+     "eval_before": -608,
+     "eval_after": -688,
+     "drop": 80,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d8",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "kc8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "Re6",
+     "eval_before": -697,
+     "eval_after": -788,
+     "drop": 91,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qc6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "Re4",
+     "eval_before": -734,
+     "eval_after": -786,
+     "drop": 52,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qd7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "move": "Rg4",
+     "eval_before": -711,
+     "eval_after": -807,
+     "drop": 96,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Kg2",
+     "eval_before": -734,
+     "eval_after": -739,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "Ne4",
+     "eval_before": -683,
+     "eval_after": -797,
+     "drop": 114,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "Rg5",
+     "eval_before": -662,
+     "eval_after": -948,
+     "drop": 286,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "R",
+       "value": 5,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Nxg5",
+     "eval_before": -998,
+     "eval_after": -1056,
+     "drop": 58,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 25,
+     "move": "Bxd5",
+     "eval_before": -866,
+     "eval_after": -875,
+     "drop": 9,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pc6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "f4",
+     "eval_before": -897,
+     "eval_after": -970,
+     "drop": 73,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd6",
+        "rf8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "move": "Nf7+",
+     "eval_before": -852,
+     "eval_after": -2000,
+     "drop": 1148,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "f7",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qd7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "move": "f5",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "move": "h4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      },
+      {
+       "square": "h4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "move": "f6",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pg7",
+        "qh4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "f3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pg7"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "Kh3",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f6",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pg7"
+       ]
+      },
+      {
+       "square": "f3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      },
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qe2"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "v1 GPT-5.5 run 3",
+   "game": "g3",
+   "opponent": "Level 3 (strong)",
+   "opening": null,
+   "result": "lost",
+   "reward": 0.0,
+   "moves": 40,
+   "blunders": 2,
+   "one_move_oversights": 1,
+   "first_blunder_move": 33,
+   "lost_cp_in_blunders": 1132,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 35,
+     "eval_after": 22,
+     "drop": 13,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "e5",
+     "eval_before": 47,
+     "eval_after": 2,
+     "drop": 45,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "d4",
+     "eval_before": -8,
+     "eval_after": -72,
+     "drop": 64,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "dxe5",
+     "eval_before": -71,
+     "eval_after": -57,
+     "drop": -14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "Nc3",
+     "eval_before": -60,
+     "eval_after": -63,
+     "drop": 3,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qa5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "move": "Qe2",
+     "eval_before": -61,
+     "eval_after": -122,
+     "drop": 61,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Bxe2",
+     "eval_before": -121,
+     "eval_after": -186,
+     "drop": 65,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "Nf3",
+     "eval_before": -182,
+     "eval_after": -215,
+     "drop": 33,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bf5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "move": "O-O",
+     "eval_before": -204,
+     "eval_after": -219,
+     "drop": 15,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Bf4",
+     "eval_before": -225,
+     "eval_after": -198,
+     "drop": -27,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Rac1",
+     "eval_before": -211,
+     "eval_after": -236,
+     "drop": 25,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Ne5",
+     "eval_before": -242,
+     "eval_after": -190,
+     "drop": -52,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "Nxg6",
+     "eval_before": -226,
+     "eval_after": -279,
+     "drop": 53,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g6",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pf7",
+        "ph7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Rfd1",
+     "eval_before": -278,
+     "eval_after": -264,
+     "drop": -14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "Bf3",
+     "eval_before": -267,
+     "eval_after": -304,
+     "drop": 37,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 16,
+     "move": "b3",
+     "eval_before": -302,
+     "eval_after": -327,
+     "drop": 25,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "Bxd5",
+     "eval_before": -320,
+     "eval_after": -394,
+     "drop": 74,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "nb6",
+        "pc6",
+        "pe6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "move": "Nxd5",
+     "eval_before": -404,
+     "eval_after": -412,
+     "drop": 8,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pc6",
+        "pe6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "move": "h3",
+     "eval_before": -414,
+     "eval_after": -442,
+     "drop": 28,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "Kf1",
+     "eval_before": -433,
+     "eval_after": -442,
+     "drop": 9,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Be3",
+     "eval_before": -440,
+     "eval_after": -449,
+     "drop": 9,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "b4",
+     "eval_before": -423,
+     "eval_after": -424,
+     "drop": 1,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "be7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "move": "g3",
+     "eval_before": -432,
+     "eval_after": -558,
+     "drop": 126,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "be7",
+        "rh4"
+       ]
+      },
+      {
+       "square": "h3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rh4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Rb1",
+     "eval_before": -560,
+     "eval_after": -556,
+     "drop": -4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 25,
+     "move": "Rxb4",
+     "eval_before": -547,
+     "eval_after": -569,
+     "drop": 22,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b4",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "be7",
+        "pa5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "Rb1",
+     "eval_before": -562,
+     "eval_after": -594,
+     "drop": 32,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "move": "f3",
+     "eval_before": -606,
+     "eval_after": -607,
+     "drop": 1,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "move": "Rb3",
+     "eval_before": -616,
+     "eval_after": -653,
+     "drop": 37,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 29,
+     "move": "Rb1",
+     "eval_before": -652,
+     "eval_after": -664,
+     "drop": 12,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 30,
+     "move": "Rb3",
+     "eval_before": -643,
+     "eval_after": -706,
+     "drop": 63,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "Bd2",
+     "eval_before": -732,
+     "eval_after": -1011,
+     "drop": 279,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d2",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "ra2"
+       ]
+      },
+      {
+       "square": "g3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "Rb1",
+     "eval_before": -1153,
+     "eval_after": -1331,
+     "drop": 178,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "move": "h4",
+     "eval_before": -1244,
+     "eval_after": -1832,
+     "drop": 588,
+     "kind": "one-move oversight",
+     "hanging": [
+      {
+       "square": "h4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bg3",
+        "pg5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "move": "f4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "bg3"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "move": "f5",
+     "eval_before": -1456,
+     "eval_after": -2000,
+     "drop": 544,
+     "kind": "deeper mistake",
+     "hanging": []
+    },
+    {
+     "n": 36,
+     "move": "Kg1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "f5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "rf2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "move": "Kf1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 38,
+     "move": "Rxb4",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b4",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "pc5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "move": "Kg1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 40,
+     "move": "Kh1",
+     "eval_before": -2000,
+     "eval_after": -2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 Reference",
+   "game": "g1",
+   "opponent": "Level 1 (weak)",
+   "opening": null,
+   "result": "mate",
+   "reward": 1.0,
+   "moves": 26,
+   "blunders": 0,
+   "one_move_oversights": 0,
+   "first_blunder_move": null,
+   "lost_cp_in_blunders": 0,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 20,
+     "eval_after": 24,
+     "drop": -4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Nf3",
+     "eval_before": 34,
+     "eval_after": 24,
+     "drop": 10,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bb5",
+     "eval_before": 29,
+     "eval_after": 31,
+     "drop": -2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "O-O",
+     "eval_before": 33,
+     "eval_after": 28,
+     "drop": 5,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "move": "Re1",
+     "eval_before": 35,
+     "eval_after": 36,
+     "drop": -1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "d3",
+     "eval_before": 243,
+     "eval_after": 261,
+     "drop": -18,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Bxc6+",
+     "eval_before": 414,
+     "eval_after": 410,
+     "drop": 4,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pb7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "move": "Bg5",
+     "eval_before": 425,
+     "eval_after": 415,
+     "drop": 10,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "Nxe5",
+     "eval_before": 492,
+     "eval_after": 498,
+     "drop": -6,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pf6"
+       ]
+      },
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "Nxc6",
+     "eval_before": 472,
+     "eval_after": 451,
+     "drop": 21,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 11,
+     "move": "Nd4",
+     "eval_before": 460,
+     "eval_after": 454,
+     "drop": 6,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "move": "Nxe6",
+     "eval_before": 468,
+     "eval_after": 458,
+     "drop": 10,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "move": "Nxd8",
+     "eval_before": 466,
+     "eval_after": 474,
+     "drop": -8,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d8",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "kc8",
+        "qd7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Ne6",
+     "eval_before": 619,
+     "eval_after": 622,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "Nd2",
+     "eval_before": 643,
+     "eval_after": 654,
+     "drop": -11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 16,
+     "move": "c3",
+     "eval_before": 678,
+     "eval_after": 658,
+     "drop": 20,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "Kxg2",
+     "eval_before": 794,
+     "eval_after": 815,
+     "drop": -21,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "cxb4",
+     "eval_before": 1089,
+     "eval_after": 1121,
+     "drop": -32,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "Qf3",
+     "eval_before": 1286,
+     "eval_after": 1243,
+     "drop": 43,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "Nxf3",
+     "eval_before": 1317,
+     "eval_after": 1371,
+     "drop": -54,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Nfxd4",
+     "eval_before": 1399,
+     "eval_after": 1435,
+     "drop": -36,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "Rac1",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "Rxc5",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 24,
+     "move": "Rc7+",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 25,
+     "move": "Rec1",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 26,
+     "move": "R1c6#",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 Reference",
+   "game": "g2",
+   "opponent": "Level 2 (club)",
+   "opening": null,
+   "result": "mate",
+   "reward": 1.0,
+   "moves": 28,
+   "blunders": 0,
+   "one_move_oversights": 0,
+   "first_blunder_move": null,
+   "lost_cp_in_blunders": 0,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 29,
+     "eval_after": 32,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "Nf3",
+     "eval_before": 31,
+     "eval_after": 37,
+     "drop": -6,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "Bb5",
+     "eval_before": 39,
+     "eval_after": 39,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "O-O",
+     "eval_before": 20,
+     "eval_after": 21,
+     "drop": -1,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "nf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "move": "Re1",
+     "eval_before": 23,
+     "eval_after": 23,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "d3",
+     "eval_before": 254,
+     "eval_after": 267,
+     "drop": -13,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "Bg5",
+     "eval_before": 357,
+     "eval_after": 423,
+     "drop": -66,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "b5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "nd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "move": "Bxc6+",
+     "eval_before": 417,
+     "eval_after": 482,
+     "drop": -65,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "c6",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pb7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "move": "Nxe5",
+     "eval_before": 485,
+     "eval_after": 459,
+     "drop": 26,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "pf6"
+       ]
+      },
+      {
+       "square": "e5",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "move": "Qh5+",
+     "eval_before": 459,
+     "eval_after": 479,
+     "drop": -20,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Nxg6",
+     "eval_before": 496,
+     "eval_after": 489,
+     "drop": 7,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g6",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "ph7"
+       ]
+      },
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "move": "Nxh8",
+     "eval_before": 496,
+     "eval_after": 512,
+     "drop": -16,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "move": "Rxe6",
+     "eval_before": 548,
+     "eval_after": 569,
+     "drop": -21,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e6",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "kd7"
+       ]
+      },
+      {
+       "square": "h8",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qd8"
+       ]
+      },
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "move": "Nd2",
+     "eval_before": 579,
+     "eval_after": 572,
+     "drop": 7,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h8",
+       "piece": "N",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "qd8"
+       ]
+      },
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "move": "Re1+",
+     "eval_before": 701,
+     "eval_after": 706,
+     "drop": -5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 16,
+     "move": "Qg4+",
+     "eval_before": 731,
+     "eval_after": 764,
+     "drop": -33,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "Qh5+",
+     "eval_before": 733,
+     "eval_after": 771,
+     "drop": -38,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "Qh3+",
+     "eval_before": 780,
+     "eval_after": 792,
+     "drop": -12,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "Qxg4+",
+     "eval_before": 809,
+     "eval_after": 821,
+     "drop": -12,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "Qh5+",
+     "eval_before": 847,
+     "eval_after": 861,
+     "drop": -14,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Qh3+",
+     "eval_before": 870,
+     "eval_after": 839,
+     "drop": 31,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 22,
+     "move": "Qxh7",
+     "eval_before": 829,
+     "eval_after": 892,
+     "drop": -63,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "dxe4",
+     "eval_before": 978,
+     "eval_after": 1046,
+     "drop": -68,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 24,
+     "move": "exd5",
+     "eval_before": 1103,
+     "eval_after": 1075,
+     "drop": 28,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pc6",
+        "qd6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Ng6",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "pc6"
+       ]
+      },
+      {
+       "square": "b2",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qf6"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "Rxe7+",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 27,
+     "move": "Qg8+",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 28,
+     "move": "Qxf8#",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  },
+  {
+   "run": "v1 Reference",
+   "game": "g3",
+   "opponent": "Level 3 (strong)",
+   "opening": null,
+   "result": "mate",
+   "reward": 1.0,
+   "moves": 41,
+   "blunders": 0,
+   "one_move_oversights": 0,
+   "first_blunder_move": null,
+   "lost_cp_in_blunders": 0,
+   "rows": [
+    {
+     "n": 1,
+     "move": "e4",
+     "eval_before": 32,
+     "eval_after": 23,
+     "drop": 9,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 2,
+     "move": "d4",
+     "eval_before": 44,
+     "eval_after": 18,
+     "drop": 26,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 3,
+     "move": "c4",
+     "eval_before": 73,
+     "eval_after": 84,
+     "drop": -11,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 4,
+     "move": "Nc3",
+     "eval_before": 81,
+     "eval_after": 81,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 5,
+     "move": "Be2",
+     "eval_before": 88,
+     "eval_after": 92,
+     "drop": -4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 6,
+     "move": "Nf3",
+     "eval_before": 93,
+     "eval_after": 89,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 7,
+     "move": "O-O",
+     "eval_before": 78,
+     "eval_after": 81,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 8,
+     "move": "d5",
+     "eval_before": 82,
+     "eval_after": 82,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 9,
+     "move": "Bg5",
+     "eval_before": 94,
+     "eval_after": 88,
+     "drop": 6,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 10,
+     "move": "Be3",
+     "eval_before": 96,
+     "eval_after": 94,
+     "drop": 2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 11,
+     "move": "Bd2",
+     "eval_before": 95,
+     "eval_after": 91,
+     "drop": 4,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 12,
+     "move": "Be3",
+     "eval_before": 90,
+     "eval_after": 90,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 13,
+     "move": "Bd2",
+     "eval_before": 94,
+     "eval_after": 100,
+     "drop": -6,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 14,
+     "move": "h3",
+     "eval_before": 96,
+     "eval_after": 96,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 15,
+     "move": "Be3",
+     "eval_before": 102,
+     "eval_after": 94,
+     "drop": 8,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 16,
+     "move": "a3",
+     "eval_before": 109,
+     "eval_after": 119,
+     "drop": -10,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 17,
+     "move": "cxd5",
+     "eval_before": 125,
+     "eval_after": 125,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 18,
+     "move": "Qd2",
+     "eval_before": 148,
+     "eval_after": 118,
+     "drop": 30,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 19,
+     "move": "Qc2",
+     "eval_before": 132,
+     "eval_after": 135,
+     "drop": -3,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 20,
+     "move": "Nd2",
+     "eval_before": 128,
+     "eval_after": 126,
+     "drop": 2,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 21,
+     "move": "Ndxe4",
+     "eval_before": 115,
+     "eval_after": 114,
+     "drop": 1,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e4",
+       "piece": "N",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "pf5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "move": "b4",
+     "eval_before": 115,
+     "eval_after": 114,
+     "drop": 1,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 23,
+     "move": "bxa5",
+     "eval_before": 164,
+     "eval_after": 151,
+     "drop": 13,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "move": "Rfb1",
+     "eval_before": 182,
+     "eval_after": 179,
+     "drop": 3,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "move": "Rb4",
+     "eval_before": 180,
+     "eval_after": 168,
+     "drop": 12,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra8"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "move": "Qb3",
+     "eval_before": 154,
+     "eval_after": 164,
+     "drop": -10,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 27,
+     "move": "g4",
+     "eval_before": 169,
+     "eval_after": 203,
+     "drop": -34,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 28,
+     "move": "Rxb7",
+     "eval_before": 194,
+     "eval_after": 172,
+     "drop": 22,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 29,
+     "move": "Nxe4",
+     "eval_before": 186,
+     "eval_after": 222,
+     "drop": -36,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "h3",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "qh4"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "move": "Rxd7",
+     "eval_before": 235,
+     "eval_after": 275,
+     "drop": -40,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d7",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "rf7"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "move": "Qb8",
+     "eval_before": 262,
+     "eval_after": 296,
+     "drop": -34,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "move": "Qc8",
+     "eval_before": 309,
+     "eval_after": 309,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "move": "a4",
+     "eval_before": 389,
+     "eval_after": 405,
+     "drop": -16,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "move": "Ra3",
+     "eval_before": 359,
+     "eval_after": 428,
+     "drop": -69,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "d5",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "move": "Qe6",
+     "eval_before": 500,
+     "eval_after": 495,
+     "drop": 5,
+     "kind": null,
+     "hanging": []
+    },
+    {
+     "n": 36,
+     "move": "Bg5",
+     "eval_before": 975,
+     "eval_after": 1250,
+     "drop": -275,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a3",
+       "piece": "R",
+       "value": 5,
+       "defended": false,
+       "attacked_by": [
+        "qh3"
+       ]
+      },
+      {
+       "square": "g5",
+       "piece": "B",
+       "value": 3,
+       "defended": true,
+       "attacked_by": [
+        "ph6"
+       ]
+      },
+      {
+       "square": "e2",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "rc2"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "move": "Rxh3",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "e2",
+       "piece": "B",
+       "value": 3,
+       "defended": false,
+       "attacked_by": [
+        "rc2"
+       ]
+      },
+      {
+       "square": "a4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "move": "Nxg5",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "move": "Kg2",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "move": "Kxg1",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": [
+      {
+       "square": "a4",
+       "piece": "P",
+       "value": 1,
+       "defended": false,
+       "attacked_by": [
+        "ra5"
+       ]
+      }
+     ]
+    },
+    {
+     "n": 41,
+     "move": "Nh7#",
+     "eval_before": 2000,
+     "eval_after": 2000,
+     "drop": 0,
+     "kind": null,
+     "hanging": []
+    }
+   ]
+  }
+ ]
+}
