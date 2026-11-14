@@ -1,0 +1,165 @@
+{
+ "reward": 0.0,
+ "seed": 3090828640,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 22,
+   "opponent": "Level 0 (random moves)",
+   "opening": "King's Gambit Accepted: e4 e5 f4 exf4 Nf3 g5",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "d4",
+     "reply": "Nh6",
+     "fen": "rnbqkb1r/pppp1p1p/7n/6p1/3PPp2/5N2/PPP3PP/RNBQKB1R w KQkq - 1 5"
+    },
+    {
+     "move": "Bc4",
+     "reply": "Nf5",
+     "fen": "rnbqkb1r/pppp1p1p/8/5np1/2BPPp2/5N2/PPP3PP/RNBQK2R w KQkq - 3 6"
+    },
+    {
+     "move": "exf5",
+     "reply": "Bg7",
+     "fen": "rnbqk2r/pppp1pbp/8/5Pp1/2BP1p2/5N2/PPP3PP/RNBQK2R w KQkq - 1 7"
+    },
+    {
+     "move": "O-O",
+     "reply": "h6",
+     "fen": "rnbqk2r/pppp1pb1/7p/5Pp1/2BP1p2/5N2/PPP3PP/RNBQ1RK1 w kq - 0 8"
+    },
+    {
+     "move": "Nc3",
+     "reply": "Bf8",
+     "fen": "rnbqkb1r/pppp1p2/7p/5Pp1/2BP1p2/2N2N2/PPP3PP/R1BQ1RK1 w kq - 2 9"
+    },
+    {
+     "move": "Nxg5",
+     "reply": "Bc5",
+     "fen": "rnbqk2r/pppp1p2/7p/2b2PN1/2BP1p2/2N5/PPP3PP/R1BQ1RK1 w kq - 1 10"
+    },
+    {
+     "move": "Nxf7",
+     "reply": "a5",
+     "fen": "rnbqk2r/1ppp1N2/7p/p1b2P2/2BP1p2/2N5/PPP3PP/R1BQ1RK1 w kq - 0 11"
+    },
+    {
+     "move": "Nxd8",
+     "reply": "Ra7",
+     "fen": "1nbNk2r/rppp4/7p/p1b2P2/2BP1p2/2N5/PPP3PP/R1BQ1RK1 w k - 1 12"
+    },
+    {
+     "move": "Nxb7",
+     "reply": "a4",
+     "fen": "1nb1k2r/rNpp4/7p/2b2P2/p1BP1p2/2N5/PPP3PP/R1BQ1RK1 w k - 0 13"
+    },
+    {
+     "move": "Nd6+",
+     "reply": "Ke7",
+     "fen": "1nb4r/r1ppk3/3N3p/2b2P2/p1BP1p2/2N5/PPP3PP/R1BQ1RK1 w - - 2 14"
+    },
+    {
+     "move": "Qh5",
+     "reply": "Kd8",
+     "fen": "1nbk3r/r1pp4/3N3p/2b2P1Q/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 4 15"
+    },
+    {
+     "move": "Nf7+",
+     "reply": "Ke7",
+     "fen": "1nb4r/r1ppkN2/7p/2b2P1Q/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 6 16"
+    },
+    {
+     "move": "Nxh8",
+     "reply": "Ra8",
+     "fen": "rnb4N/2ppk3/7p/2b2P1Q/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 1 17"
+    },
+    {
+     "move": "Qxh6",
+     "reply": "d6",
+     "fen": "rnb4N/2p1k3/3p3Q/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 0 18"
+    },
+    {
+     "move": "Qf6+",
+     "reply": "Ke8",
+     "fen": "rnb1k2N/2p5/3p1Q2/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 2 19"
+    },
+    {
+     "move": "Qf7+",
+     "reply": "Kd8",
+     "fen": "rnbk3N/2p2Q2/3p4/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 4 20"
+    },
+    {
+     "move": "Qf8+",
+     "reply": "Kd7",
+     "fen": "rnb2Q1N/2pk4/3p4/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 6 21"
+    },
+    {
+     "move": "Ng6",
+     "reply": "Ra6",
+     "fen": "1nb2Q2/2pk4/r2p2N1/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 8 22"
+    },
+    {
+     "move": "Qe7+",
+     "reply": "Kc6",
+     "fen": "1nb5/2p1Q3/r1kp2N1/2b2P2/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 10 23"
+    },
+    {
+     "move": "Qg5",
+     "reply": "Ra5",
+     "fen": "1nb5/2p5/2kp2N1/r1b2PQ1/p1BP1p2/2N5/PPP3PP/R1B2RK1 w - - 12 24"
+    },
+    {
+     "move": "Be3",
+     "reply": "Ba3",
+     "fen": "1nb5/2p5/2kp2N1/r4PQ1/p1BP1p2/b1N1B3/PPP3PP/R4RK1 w - - 14 25"
+    },
+    {
+     "move": "bxa3",
+     "reply": "Rc5",
+     "fen": "1nb5/2p5/2kp2N1/2r2PQ1/p1BP1p2/P1N1B3/P1P3PP/R4RK1 w - - 1 26"
+    }
+   ],
+   "start_fen": "rnbqkbnr/pppp1p1p/8/6p1/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq - 0 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Caro-Kann, Classical: e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "London System: d4 d5 Bf4 Nf6 e3 c5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Sicilian, Najdorf: e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  }
+ ]
+}

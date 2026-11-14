@@ -1,0 +1,165 @@
+{
+ "reward": 0.0,
+ "seed": 793675630,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 22,
+   "opponent": "Level 0 (random moves)",
+   "opening": "King's Indian Defence: d4 Nf6 c4 g6 Nc3 Bg7 e4 d6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Nf3",
+     "reply": "Rg8",
+     "fen": "rnbqk1r1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQq - 2 6"
+    },
+    {
+     "move": "Be2",
+     "reply": "Nd5",
+     "fen": "rnbqk1r1/ppp1ppbp/3p2p1/3n4/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQq - 4 7"
+    },
+    {
+     "move": "Nxd5",
+     "reply": "Bf5",
+     "fen": "rn1qk1r1/ppp1ppbp/3p2p1/3N1b2/2PPP3/5N2/PP2BPPP/R1BQK2R w KQq - 1 8"
+    },
+    {
+     "move": "O-O",
+     "reply": "Bf8",
+     "fen": "rn1qkbr1/ppp1pp1p/3p2p1/3N1b2/2PPP3/5N2/PP2BPPP/R1BQ1RK1 w q - 3 9"
+    },
+    {
+     "move": "Bg5",
+     "reply": "Qd7",
+     "fen": "rn2kbr1/pppqpp1p/3p2p1/3N1bB1/2PPP3/5N2/PP2BPPP/R2Q1RK1 w q - 5 10"
+    },
+    {
+     "move": "Bxe7",
+     "reply": "Qa4",
+     "fen": "rn2kbr1/ppp1Bp1p/3p2p1/3N1b2/q1PPP3/5N2/PP2BPPP/R2Q1RK1 w q - 1 11"
+    },
+    {
+     "move": "b3",
+     "reply": "a5",
+     "fen": "rn2kbr1/1pp1Bp1p/3p2p1/p2N1b2/q1PPP3/1P3N2/P3BPPP/R2Q1RK1 w q - 0 12"
+    },
+    {
+     "move": "exf5",
+     "reply": "Qb4",
+     "fen": "rn2kbr1/1pp1Bp1p/3p2p1/p2N1P2/1qPP4/1P3N2/P3BPPP/R2Q1RK1 w q - 1 13"
+    },
+    {
+     "move": "Qd2",
+     "reply": "h5",
+     "fen": "rn2kbr1/1pp1Bp2/3p2p1/p2N1P1p/1qPP4/1P3N2/P2QBPPP/R4RK1 w q - 0 14"
+    },
+    {
+     "move": "Qxb4",
+     "reply": "Ra7",
+     "fen": "1n2kbr1/rpp1Bp2/3p2p1/p2N1P1p/1QPP4/1P3N2/P3BPPP/R4RK1 w - - 1 15"
+    },
+    {
+     "move": "Qb5+",
+     "reply": "Nc6",
+     "fen": "4kbr1/rpp1Bp2/2np2p1/pQ1N1P1p/2PP4/1P3N2/P3BPPP/R4RK1 w - - 3 16"
+    },
+    {
+     "move": "Qxc6+",
+     "reply": "bxc6",
+     "fen": "4kbr1/r1p1Bp2/2pp2p1/p2N1P1p/2PP4/1P3N2/P3BPPP/R4RK1 w - - 0 17"
+    },
+    {
+     "move": "Bxf8",
+     "reply": "a4",
+     "fen": "4kBr1/r1p2p2/2pp2p1/3N1P1p/p1PP4/1P3N2/P3BPPP/R4RK1 w - - 0 18"
+    },
+    {
+     "move": "Bg7",
+     "reply": "Ra5",
+     "fen": "4k1r1/2p2pB1/2pp2p1/r2N1P1p/p1PP4/1P3N2/P3BPPP/R4RK1 w - - 2 19"
+    },
+    {
+     "move": "Rfe1",
+     "reply": "Rb5",
+     "fen": "4k1r1/2p2pB1/2pp2p1/1r1N1P1p/p1PP4/1P3N2/P3BPPP/R3R1K1 w - - 4 20"
+    },
+    {
+     "move": "cxb5",
+     "reply": "c5",
+     "fen": "4k1r1/2p2pB1/3p2p1/1PpN1P1p/p2P4/1P3N2/P3BPPP/R3R1K1 w - - 0 21"
+    },
+    {
+     "move": "dxc5",
+     "reply": "a3",
+     "fen": "4k1r1/2p2pB1/3p2p1/1PPN1P1p/8/pP3N2/P3BPPP/R3R1K1 w - - 0 22"
+    },
+    {
+     "move": "Bf6",
+     "reply": "Kf8",
+     "fen": "5kr1/2p2p2/3p1Bp1/1PPN1P1p/8/pP3N2/P3BPPP/R3R1K1 w - - 2 23"
+    },
+    {
+     "move": "Bc4",
+     "reply": "gxf5",
+     "fen": "5kr1/2p2p2/3p1B2/1PPN1p1p/2B5/pP3N2/P4PPP/R3R1K1 w - - 0 24"
+    },
+    {
+     "move": "Ne7",
+     "reply": "c6",
+     "fen": "5kr1/4Np2/2pp1B2/1PP2p1p/2B5/pP3N2/P4PPP/R3R1K1 w - - 0 25"
+    },
+    {
+     "move": "Nxg8",
+     "reply": "Kxg8",
+     "fen": "6k1/5p2/2pp1B2/1PP2p1p/2B5/pP3N2/P4PPP/R3R1K1 w - - 0 26"
+    },
+    {
+     "move": "Re8+",
+     "reply": "Kh7",
+     "fen": "4R3/5p1k/2pp1B2/1PP2p1p/2B5/pP3N2/P4PPP/R5K1 w - - 2 27"
+    }
+   ],
+   "start_fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Caro-Kann, Classical: e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "Four Knights Game: e4 e5 Nf3 Nc6 Nc3 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Queen's Gambit Declined: d4 d5 c4 e6 Nc3 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  }
+ ]
+}

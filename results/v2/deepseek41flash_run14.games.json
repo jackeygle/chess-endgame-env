@@ -1,0 +1,271 @@
+{
+ "reward": 0.25,
+ "seed": 2907608686,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "mate",
+   "moves_used": 32,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Four Knights Game: e4 e5 Nf3 Nc6 Nc3 Nf6",
+   "reward": 1.0,
+   "moves": [
+    {
+     "move": "Bc4",
+     "reply": "Nd4",
+     "fen": "r1bqkb1r/pppp1ppp/5n2/4p3/2BnP3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 5"
+    },
+    {
+     "move": "Nxd4",
+     "reply": "c6",
+     "fen": "r1bqkb1r/pp1p1ppp/2p2n2/4p3/2BNP3/2N5/PPPP1PPP/R1BQK2R w KQkq - 0 6"
+    },
+    {
+     "move": "O-O",
+     "reply": "d6",
+     "fen": "r1bqkb1r/pp3ppp/2pp1n2/4p3/2BNP3/2N5/PPPP1PPP/R1BQ1RK1 w kq - 0 7"
+    },
+    {
+     "move": "Re1",
+     "reply": "Bh3",
+     "fen": "r2qkb1r/pp3ppp/2pp1n2/4p3/2BNP3/2N4b/PPPP1PPP/R1BQR1K1 w kq - 2 8"
+    },
+    {
+     "move": "gxh3",
+     "reply": "Rb8",
+     "fen": "1r1qkb1r/pp3ppp/2pp1n2/4p3/2BNP3/2N4P/PPPP1P1P/R1BQR1K1 w k - 1 9"
+    },
+    {
+     "move": "Nd5",
+     "reply": "Rg8",
+     "fen": "1r1qkbr1/pp3ppp/2pp1n2/3Np3/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 3 10"
+    },
+    {
+     "move": "Nc7+",
+     "reply": "Kd7",
+     "fen": "1r1q1br1/ppNk1ppp/2pp1n2/4p3/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 5 11"
+    },
+    {
+     "move": "Na8",
+     "reply": "Nh5",
+     "fen": "Nr1q1br1/pp1k1ppp/2pp4/4p2n/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 7 12"
+    },
+    {
+     "move": "Nb6+",
+     "reply": "Ke7",
+     "fen": "1r1q1br1/pp2kppp/1Npp4/4p2n/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 9 13"
+    },
+    {
+     "move": "Nd5+",
+     "reply": "Kd7",
+     "fen": "1r1q1br1/pp1k1ppp/2pp4/3Np2n/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 11 14"
+    },
+    {
+     "move": "Nf6+",
+     "reply": "Qxf6",
+     "fen": "1r3br1/pp1k1ppp/2pp1q2/4p2n/2BNP3/7P/PPPP1P1P/R1BQR1K1 w - - 0 15"
+    },
+    {
+     "move": "Qxh5",
+     "reply": "exd4",
+     "fen": "1r3br1/pp1k1ppp/2pp1q2/7Q/2BpP3/7P/PPPP1P1P/R1B1R1K1 w - - 0 16"
+    },
+    {
+     "move": "Bxf7",
+     "reply": "Qg6+",
+     "fen": "1r3br1/pp1k1Bpp/2pp2q1/7Q/3pP3/7P/PPPP1P1P/R1B1R1K1 w - - 1 17"
+    },
+    {
+     "move": "Qxg6",
+     "reply": "a5",
+     "fen": "1r3br1/1p1k1Bpp/2pp2Q1/p7/3pP3/7P/PPPP1P1P/R1B1R1K1 w - - 0 18"
+    },
+    {
+     "move": "Bxg8",
+     "reply": "b5",
+     "fen": "1r3bB1/3k2pp/2pp2Q1/pp6/3pP3/7P/PPPP1P1P/R1B1R1K1 w - - 0 19"
+    },
+    {
+     "move": "Qf7+",
+     "reply": "Kc8",
+     "fen": "1rk2bB1/5Qpp/2pp4/pp6/3pP3/7P/PPPP1P1P/R1B1R1K1 w - - 2 20"
+    },
+    {
+     "move": "Qe8+",
+     "reply": "Kc7",
+     "fen": "1r2QbB1/2k3pp/2pp4/pp6/3pP3/7P/PPPP1P1P/R1B1R1K1 w - - 4 21"
+    },
+    {
+     "move": "Qxf8",
+     "reply": "d3",
+     "fen": "1r3QB1/2k3pp/2pp4/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 0 22"
+    },
+    {
+     "move": "Qe7+",
+     "reply": "Kb6",
+     "fen": "1r4B1/4Q1pp/1kpp4/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 2 23"
+    },
+    {
+     "move": "Qxd6",
+     "reply": "Rc8",
+     "fen": "2r3B1/6pp/1kpQ4/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 1 24"
+    },
+    {
+     "move": "Qc5+",
+     "reply": "Kb7",
+     "fen": "2r3B1/1k4pp/2p5/ppQ5/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 3 25"
+    },
+    {
+     "move": "Qd5",
+     "reply": "Re8",
+     "fen": "4r1B1/1k4pp/2p5/pp1Q4/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 5 26"
+    },
+    {
+     "move": "Qd7+",
+     "reply": "Ka8",
+     "fen": "k3r1B1/3Q2pp/2p5/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 7 27"
+    },
+    {
+     "move": "Qxe8+",
+     "reply": "Ka7",
+     "fen": "4Q1B1/k5pp/2p5/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 1 28"
+    },
+    {
+     "move": "Qe7+",
+     "reply": "Ka6",
+     "fen": "6B1/4Q1pp/k1p5/pp6/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 3 29"
+    },
+    {
+     "move": "Qc7",
+     "reply": "h5",
+     "fen": "6B1/2Q3p1/k1p5/pp5p/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 0 30"
+    },
+    {
+     "move": "Qxc6+",
+     "reply": "Ka7",
+     "fen": "6B1/k5p1/2Q5/pp5p/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 1 31"
+    },
+    {
+     "move": "Qc7+",
+     "reply": "Ka6",
+     "fen": "6B1/2Q3p1/k7/pp5p/4P3/3p3P/PPPP1P1P/R1B1R1K1 w - - 3 32"
+    },
+    {
+     "move": "Bd5",
+     "reply": "dxc2",
+     "fen": "8/2Q3p1/k7/pp1B3p/4P3/7P/PPpP1P1P/R1B1R1K1 w - - 0 33"
+    },
+    {
+     "move": "Qxc2",
+     "reply": "b4",
+     "fen": "8/6p1/k7/p2B3p/1p2P3/7P/PPQP1P1P/R1B1R1K1 w - - 0 34"
+    },
+    {
+     "move": "Qc6+",
+     "reply": "Ka7",
+     "fen": "8/k5p1/2Q5/p2B3p/1p2P3/7P/PP1P1P1P/R1B1R1K1 w - - 2 35"
+    },
+    {
+     "move": "Qb7#",
+     "reply": null,
+     "fen": "8/kQ4p1/8/p2B3p/1p2P3/7P/PP1P1P1P/R1B1R1K1 b - - 3 35"
+    }
+   ],
+   "start_fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 11,
+   "opponent": "Level 1 (weak)",
+   "opening": "London System: d4 d5 Bf4 Nf6 e3 c5",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "c3",
+     "reply": "e6",
+     "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P1B2/2P1P3/PP3PPP/RN1QKBNR w KQkq - 0 5"
+    },
+    {
+     "move": "Nf3",
+     "reply": "a6",
+     "fen": "rnbqkb1r/1p3ppp/p3pn2/2pp4/3P1B2/2P1PN2/PP3PPP/RN1QKB1R w KQkq - 0 6"
+    },
+    {
+     "move": "Nbd2",
+     "reply": "Nc6",
+     "fen": "r1bqkb1r/1p3ppp/p1n1pn2/2pp4/3P1B2/2P1PN2/PP1N1PPP/R2QKB1R w KQkq - 2 7"
+    },
+    {
+     "move": "c4",
+     "reply": "cxd4",
+     "fen": "r1bqkb1r/1p3ppp/p1n1pn2/3p4/2Pp1B2/4PN2/PP1N1PPP/R2QKB1R w KQkq - 0 8"
+    },
+    {
+     "move": "Nxd4",
+     "reply": "Nxd4",
+     "fen": "r1bqkb1r/1p3ppp/p3pn2/3p4/2Pn1B2/4P3/PP1N1PPP/R2QKB1R w KQkq - 0 9"
+    },
+    {
+     "move": "exd4",
+     "reply": "dxc4",
+     "fen": "r1bqkb1r/1p3ppp/p3pn2/8/2pP1B2/8/PP1N1PPP/R2QKB1R w KQkq - 0 10"
+    },
+    {
+     "move": "Bxc4",
+     "reply": "Qxd4",
+     "fen": "r1b1kb1r/1p3ppp/p3pn2/8/2Bq1B2/8/PP1N1PPP/R2QK2R w KQkq - 0 11"
+    },
+    {
+     "move": "Be3",
+     "reply": "Qxb2",
+     "fen": "r1b1kb1r/1p3ppp/p3pn2/8/2B5/4B3/Pq1N1PPP/R2QK2R w KQkq - 0 12"
+    },
+    {
+     "move": "Qb3",
+     "reply": "Qxa1+",
+     "fen": "r1b1kb1r/1p3ppp/p3pn2/8/2B5/1Q2B3/P2N1PPP/q3K2R w Kkq - 0 13"
+    },
+    {
+     "move": "Qb1",
+     "reply": "Qxb1+",
+     "fen": "r1b1kb1r/1p3ppp/p3pn2/8/2B5/4B3/P2N1PPP/1q2K2R w Kkq - 0 14"
+    },
+    {
+     "move": "Nxb1",
+     "reply": "Bb4+",
+     "fen": "r1b1k2r/1p3ppp/p3pn2/8/1bB5/4B3/P4PPP/1N2K2R w Kkq - 1 15"
+    }
+   ],
+   "start_fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "Sicilian, Najdorf: e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Philidor Defence: e4 e5 Nf3 d6 d4 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4"
+  }
+ ]
+}

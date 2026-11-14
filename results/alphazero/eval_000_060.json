@@ -1,0 +1,140 @@
+[
+ {
+  "model": "model_000.pkl",
+  "sims": 128,
+  "defender_nodes": 1000000,
+  "held_out": {
+   "mate1": {
+    "n": 10,
+    "mates": 10
+   },
+   "mate2": {
+    "n": 10,
+    "mates": 3
+   },
+   "KQK": {
+    "n": 10,
+    "mates": 0
+   },
+   "KRK": {
+    "n": 10,
+    "mates": 0
+   }
+  },
+  "held_out_mate_rate": 0.325,
+  "task_reward": 0.0,
+  "task_games": [
+   {
+    "id": "g1",
+    "class": "KQK",
+    "result": "draw",
+    "moves": 2,
+    "reward": 0.0
+   },
+   {
+    "id": "g2",
+    "class": "KQK",
+    "result": "draw",
+    "moves": 5,
+    "reward": 0.0
+   },
+   {
+    "id": "g3",
+    "class": "KRK",
+    "result": "draw",
+    "moves": 2,
+    "reward": 0.0
+   },
+   {
+    "id": "g4",
+    "class": "KBBK",
+    "result": "draw",
+    "moves": 1,
+    "reward": 0.0
+   },
+   {
+    "id": "g5",
+    "class": "KQKR",
+    "result": "lost",
+    "moves": 8,
+    "reward": 0.0
+   },
+   {
+    "id": "g6",
+    "class": "KBNK",
+    "result": "draw",
+    "moves": 5,
+    "reward": 0.0
+   }
+  ]
+ },
+ {
+  "model": "model_060.pkl",
+  "sims": 128,
+  "defender_nodes": 1000000,
+  "held_out": {
+   "mate1": {
+    "n": 10,
+    "mates": 3
+   },
+   "mate2": {
+    "n": 10,
+    "mates": 3
+   },
+   "KQK": {
+    "n": 10,
+    "mates": 9
+   },
+   "KRK": {
+    "n": 10,
+    "mates": 8
+   }
+  },
+  "held_out_mate_rate": 0.575,
+  "task_reward": 0.24652777777777776,
+  "task_games": [
+   {
+    "id": "g1",
+    "class": "KQK",
+    "result": "mate",
+    "moves": 14,
+    "reward": 0.8333333333333333
+   },
+   {
+    "id": "g2",
+    "class": "KQK",
+    "result": "move_limit",
+    "moves": 30,
+    "reward": 0.0
+   },
+   {
+    "id": "g3",
+    "class": "KRK",
+    "result": "mate",
+    "moves": 31,
+    "reward": 0.6458333333333334
+   },
+   {
+    "id": "g4",
+    "class": "KBBK",
+    "result": "move_limit",
+    "moves": 42,
+    "reward": 0.0
+   },
+   {
+    "id": "g5",
+    "class": "KQKR",
+    "result": "lost",
+    "moves": 13,
+    "reward": 0.0
+   },
+   {
+    "id": "g6",
+    "class": "KBNK",
+    "result": "draw",
+    "moves": 50,
+    "reward": 0.0
+   }
+  ]
+ }
+]

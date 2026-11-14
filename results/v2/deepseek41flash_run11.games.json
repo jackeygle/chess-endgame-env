@@ -1,0 +1,583 @@
+{
+ "reward": 0.25,
+ "seed": 3123516977,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "mate",
+   "moves_used": 28,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Catalan Opening: d4 Nf6 c4 e6 g3 d5",
+   "reward": 1.0,
+   "moves": [
+    {
+     "move": "Bg2",
+     "reply": "Qd6",
+     "fen": "rnb1kb1r/ppp2ppp/3qpn2/3p4/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq - 2 5"
+    },
+    {
+     "move": "Nf3",
+     "reply": "Qe5",
+     "fen": "rnb1kb1r/ppp2ppp/4pn2/3pq3/2PP4/5NP1/PP2PPBP/RNBQK2R w KQkq - 4 6"
+    },
+    {
+     "move": "dxe5",
+     "reply": "Kd8",
+     "fen": "rnbk1b1r/ppp2ppp/4pn2/3pP3/2P5/5NP1/PP2PPBP/RNBQK2R w KQ - 1 7"
+    },
+    {
+     "move": "exf6",
+     "reply": "d4",
+     "fen": "rnbk1b1r/ppp2ppp/4pP2/8/2Pp4/5NP1/PP2PPBP/RNBQK2R w KQ - 0 8"
+    },
+    {
+     "move": "fxg7",
+     "reply": "f5",
+     "fen": "rnbk1b1r/ppp3Pp/4p3/5p2/2Pp4/5NP1/PP2PPBP/RNBQK2R w KQ - 0 9"
+    },
+    {
+     "move": "gxh8=Q",
+     "reply": "Nc6",
+     "fen": "r1bk1b1Q/ppp4p/2n1p3/5p2/2Pp4/5NP1/PP2PPBP/RNBQK2R w KQ - 1 10"
+    },
+    {
+     "move": "Qhxd4+",
+     "reply": "Ke7",
+     "fen": "r1b2b2/ppp1k2p/2n1p3/5p2/2PQ4/5NP1/PP2PPBP/RNBQK2R w KQ - 1 11"
+    },
+    {
+     "move": "Qd6+",
+     "reply": "Kf6",
+     "fen": "r1b2b2/ppp4p/2nQpk2/5p2/2P5/5NP1/PP2PPBP/RNBQK2R w KQ - 3 12"
+    },
+    {
+     "move": "Bf4",
+     "reply": "Nd8",
+     "fen": "r1bn1b2/ppp4p/3Qpk2/5p2/2P2B2/5NP1/PP2PPBP/RN1QK2R w KQ - 5 13"
+    },
+    {
+     "move": "Qe5+",
+     "reply": "Kf7",
+     "fen": "r1bn1b2/ppp2k1p/4p3/4Qp2/2P2B2/5NP1/PP2PPBP/RN1QK2R w KQ - 7 14"
+    },
+    {
+     "move": "Qg7+",
+     "reply": "Bxg7",
+     "fen": "r1bn4/ppp2kbp/4p3/5p2/2P2B2/5NP1/PP2PPBP/RN1QK2R w KQ - 0 15"
+    },
+    {
+     "move": "Bxc7",
+     "reply": "Kf6",
+     "fen": "r1bn4/ppB3bp/4pk2/5p2/2P5/5NP1/PP2PPBP/RN1QK2R w KQ - 1 16"
+    },
+    {
+     "move": "Bxd8+",
+     "reply": "Kf7",
+     "fen": "r1bB4/pp3kbp/4p3/5p2/2P5/5NP1/PP2PPBP/RN1QK2R w KQ - 1 17"
+    },
+    {
+     "move": "Bf6",
+     "reply": "Bf8",
+     "fen": "r1b2b2/pp3k1p/4pB2/5p2/2P5/5NP1/PP2PPBP/RN1QK2R w KQ - 3 18"
+    },
+    {
+     "move": "Qd7+",
+     "reply": "Kg8",
+     "fen": "r1b2bk1/pp1Q3p/4pB2/5p2/2P5/5NP1/PP2PPBP/RN2K2R w KQ - 5 19"
+    },
+    {
+     "move": "Qe7",
+     "reply": "Bh6",
+     "fen": "r1b3k1/pp2Q2p/4pB1b/5p2/2P5/5NP1/PP2PPBP/RN2K2R w KQ - 7 20"
+    },
+    {
+     "move": "Qf7+",
+     "reply": "Kxf7",
+     "fen": "r1b5/pp3k1p/4pB1b/5p2/2P5/5NP1/PP2PPBP/RN2K2R w KQ - 0 21"
+    },
+    {
+     "move": "Bc3",
+     "reply": "Bd7",
+     "fen": "r7/pp1b1k1p/4p2b/5p2/2P5/2B2NP1/PP2PPBP/RN2K2R w KQ - 2 22"
+    },
+    {
+     "move": "O-O",
+     "reply": "a6",
+     "fen": "r7/1p1b1k1p/p3p2b/5p2/2P5/2B2NP1/PP2PPBP/RN3RK1 w - - 0 23"
+    },
+    {
+     "move": "Bf6",
+     "reply": "Kg8",
+     "fen": "r5k1/1p1b3p/p3pB1b/5p2/2P5/5NP1/PP2PPBP/RN3RK1 w - - 2 24"
+    },
+    {
+     "move": "c5",
+     "reply": "Bf8",
+     "fen": "r4bk1/1p1b3p/p3pB2/2P2p2/8/5NP1/PP2PPBP/RN3RK1 w - - 1 25"
+    },
+    {
+     "move": "c6",
+     "reply": "Bh6",
+     "fen": "r5k1/1p1b3p/p1P1pB1b/5p2/8/5NP1/PP2PPBP/RN3RK1 w - - 1 26"
+    },
+    {
+     "move": "c7",
+     "reply": "Rf8",
+     "fen": "5rk1/1pPb3p/p3pB1b/5p2/8/5NP1/PP2PPBP/RN3RK1 w - - 1 27"
+    },
+    {
+     "move": "c8=Q",
+     "reply": "Ba4",
+     "fen": "2Q2rk1/1p5p/p3pB1b/5p2/b7/5NP1/PP2PPBP/RN3RK1 w - - 1 28"
+    },
+    {
+     "move": "Qa8",
+     "reply": "a5",
+     "fen": "Q4rk1/1p5p/4pB1b/p4p2/b7/5NP1/PP2PPBP/RN3RK1 w - - 0 29"
+    },
+    {
+     "move": "Qxa5",
+     "reply": "Rd8",
+     "fen": "3r2k1/1p5p/4pB1b/Q4p2/b7/5NP1/PP2PPBP/RN3RK1 w - - 1 30"
+    },
+    {
+     "move": "Qe5",
+     "reply": "Bf8",
+     "fen": "3r1bk1/1p5p/4pB2/4Qp2/b7/5NP1/PP2PPBP/RN3RK1 w - - 3 31"
+    },
+    {
+     "move": "Qxe6#",
+     "reply": null,
+     "fen": "3r1bk1/1p5p/4QB2/5p2/b7/5NP1/PP2PPBP/RN3RK1 b - - 0 31"
+    }
+   ],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "lost",
+   "moves_used": 31,
+   "opponent": "Level 1 (weak)",
+   "opening": "Dutch Defence: d4 f5 c4 Nf6 g3 e6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Bg2",
+     "reply": "d5",
+     "fen": "rnbqkb1r/ppp3pp/4pn2/3p1p2/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq - 0 5"
+    },
+    {
+     "move": "Nf3",
+     "reply": "Bb4+",
+     "fen": "rnbqk2r/ppp3pp/4pn2/3p1p2/1bPP4/5NP1/PP2PPBP/RNBQK2R w KQkq - 2 6"
+    },
+    {
+     "move": "Bd2",
+     "reply": "Be7",
+     "fen": "rnbqk2r/ppp1b1pp/4pn2/3p1p2/2PP4/5NP1/PP1BPPBP/RN1QK2R w KQkq - 4 7"
+    },
+    {
+     "move": "O-O",
+     "reply": "O-O",
+     "fen": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/5NP1/PP1BPPBP/RN1Q1RK1 w - - 6 8"
+    },
+    {
+     "move": "Nc3",
+     "reply": "dxc4",
+     "fen": "rnbq1rk1/ppp1b1pp/4pn2/5p2/2pP4/2N2NP1/PP1BPPBP/R2Q1RK1 w - - 0 9"
+    },
+    {
+     "move": "Qa4",
+     "reply": "Ne4",
+     "fen": "rnbq1rk1/ppp1b1pp/4p3/5p2/Q1pPn3/2N2NP1/PP1BPPBP/R4RK1 w - - 2 10"
+    },
+    {
+     "move": "Nxe4",
+     "reply": "fxe4",
+     "fen": "rnbq1rk1/ppp1b1pp/4p3/8/Q1pPp3/5NP1/PP1BPPBP/R4RK1 w - - 0 11"
+    },
+    {
+     "move": "Bf4",
+     "reply": "exf3",
+     "fen": "rnbq1rk1/ppp1b1pp/4p3/8/Q1pP1B2/5pP1/PP2PPBP/R4RK1 w - - 0 12"
+    },
+    {
+     "move": "Qxa7",
+     "reply": "Rxa7",
+     "fen": "1nbq1rk1/rpp1b1pp/4p3/8/2pP1B2/5pP1/PP2PPBP/R4RK1 w - - 0 13"
+    },
+    {
+     "move": "Bd6",
+     "reply": "fxg2",
+     "fen": "1nbq1rk1/rpp1b1pp/3Bp3/8/2pP4/6P1/PP2PPpP/R4RK1 w - - 0 14"
+    },
+    {
+     "move": "Kxg2",
+     "reply": "cxd6",
+     "fen": "1nbq1rk1/rp2b1pp/3pp3/8/2pP4/6P1/PP2PPKP/R4R2 w - - 0 15"
+    },
+    {
+     "move": "d5",
+     "reply": "Bf6",
+     "fen": "1nbq1rk1/rp4pp/3ppb2/3P4/2p5/6P1/PP2PPKP/R4R2 w - - 1 16"
+    },
+    {
+     "move": "dxe6",
+     "reply": "Bxe6",
+     "fen": "1n1q1rk1/rp4pp/3pbb2/8/2p5/6P1/PP2PPKP/R4R2 w - - 0 17"
+    },
+    {
+     "move": "e4",
+     "reply": "Bh3+",
+     "fen": "1n1q1rk1/rp4pp/3p1b2/8/2p1P3/6Pb/PP3PKP/R4R2 w - - 1 18"
+    },
+    {
+     "move": "Kxh3",
+     "reply": "Qc8+",
+     "fen": "1nq2rk1/rp4pp/3p1b2/8/2p1P3/6PK/PP3P1P/R4R2 w - - 1 19"
+    },
+    {
+     "move": "Kg2",
+     "reply": "d5",
+     "fen": "1nq2rk1/rp4pp/5b2/3p4/2p1P3/6P1/PP3PKP/R4R2 w - - 0 20"
+    },
+    {
+     "move": "exd5",
+     "reply": "c3",
+     "fen": "1nq2rk1/rp4pp/5b2/3P4/8/2p3P1/PP3PKP/R4R2 w - - 0 21"
+    },
+    {
+     "move": "bxc3",
+     "reply": "g5",
+     "fen": "1nq2rk1/rp5p/5b2/3P2p1/8/2P3P1/P4PKP/R4R2 w - - 0 22"
+    },
+    {
+     "move": "d6",
+     "reply": "Qc6+",
+     "fen": "1n3rk1/rp5p/2qP1b2/6p1/8/2P3P1/P4PKP/R4R2 w - - 1 23"
+    },
+    {
+     "move": "Kh3",
+     "reply": "g4+",
+     "fen": "1n3rk1/rp5p/2qP1b2/8/6p1/2P3PK/P4P1P/R4R2 w - - 0 24"
+    },
+    {
+     "move": "Kxg4",
+     "reply": "Qd7+",
+     "fen": "1n3rk1/rp1q3p/3P1b2/8/6K1/2P3P1/P4P1P/R4R2 w - - 1 25"
+    },
+    {
+     "move": "Kf3",
+     "reply": "Be5+",
+     "fen": "1n3rk1/rp1q3p/3P4/4b3/8/2P2KP1/P4P1P/R4R2 w - - 3 26"
+    },
+    {
+     "move": "Kg2",
+     "reply": "Qc6+",
+     "fen": "1n3rk1/rp5p/2qP4/4b3/8/2P3P1/P4PKP/R4R2 w - - 5 27"
+    },
+    {
+     "move": "f3",
+     "reply": "Rxa2+",
+     "fen": "1n3rk1/1p5p/2qP4/4b3/8/2P2PP1/r5KP/R4R2 w - - 0 28"
+    },
+    {
+     "move": "Rxa2",
+     "reply": "Bxd6",
+     "fen": "1n3rk1/1p5p/2qb4/8/8/2P2PP1/R5KP/5R2 w - - 0 29"
+    },
+    {
+     "move": "Rfa1",
+     "reply": "Qxf3+",
+     "fen": "1n3rk1/1p5p/3b4/8/8/2P2qP1/R5KP/R7 w - - 0 30"
+    },
+    {
+     "move": "Kg1",
+     "reply": "Bc5+",
+     "fen": "1n3rk1/1p5p/8/2b5/8/2P2qP1/R6P/R5K1 w - - 2 31"
+    },
+    {
+     "move": "Rf2",
+     "reply": "Be3",
+     "fen": "1n3rk1/1p5p/8/8/8/2P1bqP1/5R1P/R5K1 w - - 4 32"
+    },
+    {
+     "move": "Ra8",
+     "reply": "b5",
+     "fen": "Rn3rk1/7p/8/1p6/8/2P1bqP1/5R1P/6K1 w - - 0 33"
+    },
+    {
+     "move": "Ra3",
+     "reply": "Qxf2+",
+     "fen": "1n3rk1/7p/8/1p6/8/R1P1b1P1/5q1P/6K1 w - - 0 34"
+    },
+    {
+     "move": "Kh1",
+     "reply": "Qf1#",
+     "fen": "1n3rk1/7p/8/1p6/8/R1P1b1P1/7P/5q1K w - - 2 35"
+    }
+   ],
+   "start_fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "lost",
+   "moves_used": 21,
+   "opponent": "Level 2 (club)",
+   "opening": "Scandinavian Defence: e4 d5 exd5 Qxd5 Nc3 Qa5",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "d4",
+     "reply": "e5",
+     "fen": "rnb1kbnr/ppp2ppp/8/q3p3/3P4/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 5"
+    },
+    {
+     "move": "dxe5",
+     "reply": "Nc6",
+     "fen": "r1b1kbnr/ppp2ppp/2n5/q3P3/8/2N5/PPP2PPP/R1BQKBNR w KQkq - 1 6"
+    },
+    {
+     "move": "Nf3",
+     "reply": "Bb4",
+     "fen": "r1b1k1nr/ppp2ppp/2n5/q3P3/1b6/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 3 7"
+    },
+    {
+     "move": "Bd2",
+     "reply": "Bg4",
+     "fen": "r3k1nr/ppp2ppp/2n5/q3P3/1b4b1/2N2N2/PPPB1PPP/R2QKB1R w KQkq - 5 8"
+    },
+    {
+     "move": "e6",
+     "reply": "O-O-O",
+     "fen": "2kr2nr/ppp2ppp/2n1P3/q7/1b4b1/2N2N2/PPPB1PPP/R2QKB1R w KQ - 1 9"
+    },
+    {
+     "move": "e7",
+     "reply": "Ngxe7",
+     "fen": "2kr3r/ppp1nppp/2n5/q7/1b4b1/2N2N2/PPPB1PPP/R2QKB1R w KQ - 0 10"
+    },
+    {
+     "move": "Be2",
+     "reply": "Rhe8",
+     "fen": "2krr3/ppp1nppp/2n5/q7/1b4b1/2N2N2/PPPBBPPP/R2QK2R w KQ - 2 11"
+    },
+    {
+     "move": "O-O",
+     "reply": "Nf5",
+     "fen": "2krr3/ppp2ppp/2n5/q4n2/1b4b1/2N2N2/PPPBBPPP/R2Q1RK1 w - - 4 12"
+    },
+    {
+     "move": "Re1",
+     "reply": "h5",
+     "fen": "2krr3/ppp2pp1/2n5/q4n1p/1b4b1/2N2N2/PPPBBPPP/R2QR1K1 w - - 0 13"
+    },
+    {
+     "move": "Nd4",
+     "reply": "Ncxd4",
+     "fen": "2krr3/ppp2pp1/8/q4n1p/1b1n2b1/2N5/PPPBBPPP/R2QR1K1 w - - 0 14"
+    },
+    {
+     "move": "Nd5",
+     "reply": "Nxe2+",
+     "fen": "2krr3/ppp2pp1/8/q2N1n1p/1b4b1/8/PPPBnPPP/R2QR1K1 w - - 0 15"
+    },
+    {
+     "move": "Qxe2",
+     "reply": "Bxe2",
+     "fen": "2krr3/ppp2pp1/8/q2N1n1p/1b6/8/PPPBbPPP/R3R1K1 w - - 0 16"
+    },
+    {
+     "move": "Rxe2",
+     "reply": "Bxd2",
+     "fen": "2krr3/ppp2pp1/8/q2N1n1p/8/8/PPPbRPPP/R5K1 w - - 0 17"
+    },
+    {
+     "move": "Rxd2",
+     "reply": "Nd6",
+     "fen": "2krr3/ppp2pp1/3n4/q2N3p/8/8/PPPR1PPP/R5K1 w - - 1 18"
+    },
+    {
+     "move": "Nf4",
+     "reply": "a6",
+     "fen": "2krr3/1pp2pp1/p2n4/q6p/5N2/8/PPPR1PPP/R5K1 w - - 0 19"
+    },
+    {
+     "move": "Ne6",
+     "reply": "fxe6",
+     "fen": "2krr3/1pp3p1/p2np3/q6p/8/8/PPPR1PPP/R5K1 w - - 0 20"
+    },
+    {
+     "move": "Rxd6",
+     "reply": "cxd6",
+     "fen": "2krr3/1p4p1/p2pp3/q6p/8/8/PPP2PPP/R5K1 w - - 0 21"
+    },
+    {
+     "move": "f3",
+     "reply": "g5",
+     "fen": "2krr3/1p6/p2pp3/q5pp/8/5P2/PPP3PP/R5K1 w - - 0 22"
+    },
+    {
+     "move": "a4",
+     "reply": "d5",
+     "fen": "2krr3/1p6/p3p3/q2p2pp/P7/5P2/1PP3PP/R5K1 w - - 0 23"
+    },
+    {
+     "move": "b4",
+     "reply": "Qxb4",
+     "fen": "2krr3/1p6/p3p3/3p2pp/Pq6/5P2/2P3PP/R5K1 w - - 0 24"
+    },
+    {
+     "move": "Ra3",
+     "reply": "Qe1#",
+     "fen": "2krr3/1p6/p3p3/3p2pp/P7/R4P2/2P3PP/4q1K1 w - - 2 25"
+    }
+   ],
+   "start_fen": "rnb1kbnr/ppp1pppp/8/q7/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "lost",
+   "moves_used": 25,
+   "opponent": "Level 3 (strong)",
+   "opening": "Sicilian, Taimanov: e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Nc3",
+     "reply": "a6",
+     "fen": "r1bqkbnr/1p1p1ppp/p1n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+    },
+    {
+     "move": "Be3",
+     "reply": "Nf6",
+     "fen": "r1bqkb1r/1p1p1ppp/p1n1pn2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 2 7"
+    },
+    {
+     "move": "Nxc6",
+     "reply": "bxc6",
+     "fen": "r1bqkb1r/3p1ppp/p1p1pn2/8/4P3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 8"
+    },
+    {
+     "move": "e5",
+     "reply": "Nd5",
+     "fen": "r1bqkb1r/3p1ppp/p1p1p3/3nP3/8/2N1B3/PPP2PPP/R2QKB1R w KQkq - 1 9"
+    },
+    {
+     "move": "Nxd5",
+     "reply": "cxd5",
+     "fen": "r1bqkb1r/3p1ppp/p3p3/3pP3/8/4B3/PPP2PPP/R2QKB1R w KQkq - 0 10"
+    },
+    {
+     "move": "Qxd5",
+     "reply": "exd5",
+     "fen": "r1bqkb1r/3p1ppp/p7/3pP3/8/4B3/PPP2PPP/R3KB1R w KQkq - 0 11"
+    },
+    {
+     "move": "O-O-O",
+     "reply": "Bb7",
+     "fen": "r2qkb1r/1b1p1ppp/p7/3pP3/8/4B3/PPP2PPP/2KR1B1R w kq - 2 12"
+    },
+    {
+     "move": "f4",
+     "reply": "Qc8",
+     "fen": "r1q1kb1r/1b1p1ppp/p7/3pP3/5P2/4B3/PPP3PP/2KR1B1R w kq - 1 13"
+    },
+    {
+     "move": "Bd4",
+     "reply": "h5",
+     "fen": "r1q1kb1r/1b1p1pp1/p7/3pP2p/3B1P2/8/PPP3PP/2KR1B1R w kq - 0 14"
+    },
+    {
+     "move": "e6",
+     "reply": "dxe6",
+     "fen": "r1q1kb1r/1b3pp1/p3p3/3p3p/3B1P2/8/PPP3PP/2KR1B1R w kq - 0 15"
+    },
+    {
+     "move": "Bf6",
+     "reply": "gxf6",
+     "fen": "r1q1kb1r/1b3p2/p3pp2/3p3p/5P2/8/PPP3PP/2KR1B1R w kq - 0 16"
+    },
+    {
+     "move": "Bc4",
+     "reply": "Qxc4",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/2q2P2/8/PPP3PP/2KR3R w kq - 0 17"
+    },
+    {
+     "move": "Rd2",
+     "reply": "Qxa2",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/5P2/8/qPPR2PP/2K4R w kq - 0 18"
+    },
+    {
+     "move": "c3",
+     "reply": "Qa5",
+     "fen": "r3kb1r/1b3p2/p3pp2/q2p3p/5P2/2P5/1P1R2PP/2K4R w kq - 1 19"
+    },
+    {
+     "move": "Rd4",
+     "reply": "Qa1+",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/3R1P2/2P5/1P4PP/q1K4R w kq - 3 20"
+    },
+    {
+     "move": "Kc2",
+     "reply": "Qxh1",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/3R1P2/2P5/1PK3PP/7q w kq - 0 21"
+    },
+    {
+     "move": "Rd3",
+     "reply": "Qxg2+",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/5P2/2PR4/1PK3qP/8 w kq - 0 22"
+    },
+    {
+     "move": "Kb3",
+     "reply": "Qxh2",
+     "fen": "r3kb1r/1b3p2/p3pp2/3p3p/5P2/1KPR4/1P5q/8 w kq - 0 23"
+    },
+    {
+     "move": "Rd4",
+     "reply": "Be7",
+     "fen": "r3k2r/1b2bp2/p3pp2/3p3p/3R1P2/1KP5/1P5q/8 w kq - 2 24"
+    },
+    {
+     "move": "Rd2",
+     "reply": "Qh1",
+     "fen": "r3k2r/1b2bp2/p3pp2/3p3p/5P2/1KP5/1P1R4/7q w kq - 4 25"
+    },
+    {
+     "move": "Rd1",
+     "reply": "Qxd1+",
+     "fen": "r3k2r/1b2bp2/p3pp2/3p3p/5P2/1KP5/1P6/3q4 w kq - 0 26"
+    },
+    {
+     "move": "Ka2",
+     "reply": "Qa4+",
+     "fen": "r3k2r/1b2bp2/p3pp2/3p3p/q4P2/2P5/KP6/8 w kq - 2 27"
+    },
+    {
+     "move": "Kb1",
+     "reply": "d4",
+     "fen": "r3k2r/1b2bp2/p3pp2/7p/q2p1P2/2P5/1P6/1K6 w kq - 0 28"
+    },
+    {
+     "move": "cxd4",
+     "reply": "Be4+",
+     "fen": "r3k2r/4bp2/p3pp2/7p/q2PbP2/8/1P6/1K6 w kq - 1 29"
+    },
+    {
+     "move": "Kc1",
+     "reply": "Qc2#",
+     "fen": "r3k2r/4bp2/p3pp2/7p/3PbP2/8/1Pq5/2K5 w kq - 3 30"
+    }
+   ],
+   "start_fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5"
+  }
+ ]
+}
