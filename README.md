@@ -67,10 +67,7 @@ logs, verifier output) in `results/harbor_runs/`.
 | GPT-5.5, run 2 | 0.375 | mate, move 25 | mated | draw | mated |
 | GPT-5.5, run 3 | 0.250 | mate, move 32 | mated | mated | mated |
 | **GPT-5.5, mean of 3** | **0.333** | 3 wins | 0 of 3 | 2 draws | 0 of 3 |
-| DeepSeek 4.1 Flash, run 1 | 0.000 | unfinished at move 77 | mated | mated | mated |
-| DeepSeek 4.1 Flash, run 2 | 0.250 | mate, move 19 | mated | mated | mated |
-| DeepSeek 4.1 Flash, run 3 | 0.250 | won on adjudication | mated | abandoned | abandoned |
-| **DeepSeek 4.1 Flash, mean of 3** | **0.167** | 2 wins | 0 of 3 | 0 of 3 | 0 of 3 |
+| **DeepSeek 4.1 Flash, mean of 20** | **0.163** (95% CI 0.106–0.219) | 12 wins, 1 draw, 7 unfinished | 1 draw, 6 lost, 13 unfinished | 5 lost, 15 unfinished | 5 lost, 15 unfinished |
 | Do nothing (nop) | 0.000 | not started | not started | not started | not started |
 | Stop early (2 moves) | 0.000 | unfinished | not started | not started | not started |
 
@@ -80,6 +77,11 @@ logs, verifier output) in `results/harbor_runs/`.
 - **The score has a gradient.** The agent beats the random mover every time and loses to
   every Stockfish level except two draws at Level 2. Three runs are a small sample: they
   show a large, consistent gap (0.250–0.375 against 1.000), not a precise rating.
+- **DeepSeek 4.1 Flash, 20 runs** (`results/v2/deepseek41flash_run*`): per-run rewards
+  between 0.000 and 0.375, mean 0.163 (standard deviation 0.129). It won 12 of 20 games
+  against the random mover and none against Stockfish. It also left many games
+  unfinished: 50 of its 80 games, against every level including the random mover. In
+  those runs it ended the session before finishing the games.
 - **Level 1 beat the agent more often than Level 2.** In all three runs it lost to
   Level 1 but drew twice with Level 2. One node per move is enough for Stockfish to take
   a piece left hanging, and that is how the agent lost those games (below).
@@ -217,6 +219,71 @@ repetition, the fifty-move rule and timeouts score 0. The reference mates in all
 and lost it, gave away its rook and a bishop, then ended the session with two games
 unfinished.
 
+## Training a small model on the environment
+
+`alphazero/` trains a small AlphaZero-style player from scratch, using only the
+environment's rules and its end-of-game reward. It is the tiebreaker experiment:
+training a smaller model on experience from this environment.
+
+**Model.**
+- 481 219 parameters: 6 residual blocks of 64 channels.
+- Input: 21 planes, side-to-move orientation.
+- Policy head over 20 480 move indices; illegal moves are masked to zero probability.
+- Value head with tanh output.
+
+**Search and training.**
+- Batched PUCT tree search (64 simulations per move in self-play, Dirichlet noise at the
+  root only).
+- Self-play labels each position with the game's final result for the side to move
+  (+1, 0, −1). There is no per-move reward and no engine in training. Games cut off by
+  the ply limit are discarded rather than counted as draws.
+- Loss: cross-entropy to the search's visit distribution + squared value error + L2.
+- Curriculum: mate-in-1, mate-in-2, K+Q v K and K+R v K positions, generated and checked
+  by the rules.
+
+**Run.** 60 iterations × 64 self-play games on one Modal T4 GPU, about 3 h 40 min
+(`modal run alphazero/modal_train.py --config alphazero/configs/endgame.json`).
+
+**Evaluation** (`alphazero/modal_eval.py`). Search without noise, 128 simulations, most
+visited move. White plays against the environment's resisting Stockfish defender at the
+endgame task's budget of 1 000 000 nodes per move, on two sets:
+- 40 held-out positions, 10 per kind, never used in training;
+- the six positions of `task/chess-endgame`, scored by that task's reward.
+
+| Model | mate in 1 | mate in 2 | K+Q v K | K+R v K | Held-out mate rate | Endgame-task reward |
+|---|---|---|---|---|---|---|
+| Iteration 0 (untrained) | 10/10 | 3/10 | 0/10 | 0/10 | 0.325 | 0.000 |
+| Iteration 60 | 3/10 | 3/10 | 9/10 | 8/10 | **0.575** | **0.247** |
+
+On the endgame task, the trained model:
+- mates in g1 (K+Q, in 14 moves, reward 0.833) and g3 (K+R, in 31 moves, reward 0.646);
+- runs out of moves in g2 (K+Q) and g4 (two bishops);
+- loses g5 (queen against rook) and draws g6 (bishop and knight).
+
+Two bishops and bishop-and-knight never appeared in training. For comparison:
+- GPT-5.5 scored 0.333 on the same task (one run);
+- Kimi K3.1 Pro scored 0.000 (one run);
+- the untrained network scored 0.000.
+
+What this shows, and what it does not:
+- **Experience in this environment teaches the skills it rewards.** The learning signal
+  is only the end-of-game reward, yet a sub-million-parameter network goes from never
+  mating with K+Q or K+R against a resisting defender to mating in 17 of 20 held-out
+  positions. In self-play, White's win rate rose from 28% (iterations 0–9) to 90%
+  (iterations 50–59) (`metrics.jsonl` on the volume).
+- **It is not yet better than the frontier model on the task.** 0.247 against GPT-5.5's
+  0.333 from a single run; neither number has an error bar.
+- **Forgetting.** Mate-in-1 fell from 10/10 to 3/10. Those positions were 15% of the
+  curriculum and became rare in the buffer. Mixing them back in is the obvious next step.
+- With a 100 000-node defender, the same checkpoints scored 0.000 and 0.396
+  (`results/alphazero/eval_000_037_060.json`). The stronger defender is the task's
+  setting, so the table uses it.
+
+Results: `results/alphazero/`. Tests for the pieces that silently break AlphaZero
+training are in `tests_unit/test_alphazero.py`: move encoding round trips incl. castling,
+en passant and promotions; illegal-move masking; value signs; noise not cached;
+truncated games not used as draws; checkpoint resume.
+
 ## Repository
 
 | Path | What |
@@ -228,4 +295,5 @@ unfinished.
 | `results/` | `v2/` current runs, blunder analyses, ablation, replays; `harbor_runs/` full Harbor run directories; `v1/` first version |
 | `tests_unit/` | rule and reward unit tests |
 | `baselines/stop_early.py` | the stop-early Harbor agent |
+| `alphazero/` | the small AlphaZero-style player: encoding, network, batched MCTS, self-play, training and evaluation on Modal |
 | `scripts/` | one-command evaluation, Modal copies, opening book, blunder analysis, ablation copy, replays, pre-submission checks |
