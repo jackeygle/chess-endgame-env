@@ -5,6 +5,7 @@
 from typing import override
 
 from harbor.agents.base import BaseAgent
+from harbor.agents.capabilities import AgentCapabilities
 from harbor.environments.base import BaseEnvironment
 from harbor.models.agent.context import AgentContext
 
@@ -33,6 +34,8 @@ asyncio.run(main())
 
 
 class StopEarlyAgent(BaseAgent):
+    capabilities = AgentCapabilities(mcp_servers=True)
+
     @staticmethod
     @override
     def name() -> str:
