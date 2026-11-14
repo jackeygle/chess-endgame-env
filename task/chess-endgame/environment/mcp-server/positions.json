@@ -1,0 +1,50 @@
+[
+ {
+  "id": "g1",
+  "class": "KQK",
+  "fen": "8/8/k7/8/8/8/5Q1K/8 w - - 0 1",
+  "mate_len": 8,
+  "source_id": "KQK-1",
+  "move_limit": 26
+ },
+ {
+  "id": "g2",
+  "class": "KQK",
+  "fen": "K7/8/8/8/6k1/8/8/Q7 w - - 0 1",
+  "mate_len": 10,
+  "source_id": "KQK-2",
+  "move_limit": 30
+ },
+ {
+  "id": "g3",
+  "class": "KRK",
+  "fen": "6K1/8/k7/8/2R5/8/8/8 w - - 0 1",
+  "mate_len": 14,
+  "source_id": "KRK-1",
+  "move_limit": 38
+ },
+ {
+  "id": "g4",
+  "class": "KBBK",
+  "fen": "3B4/8/6Bk/8/8/8/8/3K4 w - - 0 1",
+  "mate_len": 16,
+  "source_id": "KBBK-1",
+  "move_limit": 42
+ },
+ {
+  "id": "g5",
+  "class": "KQKR",
+  "fen": "5r2/2k5/6K1/8/8/8/8/1Q6 w - - 0 1",
+  "mate_len": 19,
+  "source_id": "KQKR-2",
+  "move_limit": 48
+ },
+ {
+  "id": "g6",
+  "class": "KBNK",
+  "fen": "8/7k/2N5/2B5/8/K7/8/8 w - - 0 1",
+  "mate_len": 24,
+  "source_id": "KBNK-2",
+  "move_limit": 50
+ }
+]

@@ -1,0 +1,18 @@
+# Merged on top of Harbor's base compose file; Harbor configures the `main` service.
+services:
+  main:
+    depends_on:
+      mcp-server:
+        condition: service_healthy
+
+  mcp-server:
+    build:
+      context: ./mcp-server
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('localhost', 8000), timeout=2).close()"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+      start_period: 5s
