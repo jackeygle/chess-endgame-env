@@ -1,105 +1,126 @@
-# Winning Won Endgames: a chess conversion environment
+# Chess against a ladder: an RL environment for planning under a real opponent
 
-**The agent is handed six chess positions that are already won, and has to actually
-deliver checkmate.** Every start position is a verified forced mate for White. The
-defender is Stockfish, deterministic, resisting as long as it can. Frontier agents know
-the rules and usually know the theory ("drive the king to the edge"), yet they turn sure
-wins into stalemates, repetitions, fifty-move draws and timeouts. Converting a won
-position is pure *planning several steps ahead*: no single move wins, and greedy moves
-(checks, squeezing the king's squares) go in circles.
+**The agent plays three full games of chess as White, from the normal starting position,
+against Stockfish at three fixed strengths.** It gets the board, the FEN and every legal
+move at every turn, and plays through three MCP tools. Frontier agents know the rules,
+the openings and the principles, yet they hang their queen, walk into forks and get
+mated by opponents a reference player beats every time. Every move is a decision whose
+consequences arrive several moves later: that is the skill this environment trains.
 
-| Game | Material | Shortest forced mate | Move limit |
+| Game | Opponent | Stockfish node budget per move | Your move limit |
 |---|---|---|---|
-| g1 | K+Q vs K | 8 | 26 |
-| g2 | K+Q vs K | 10 | 30 |
-| g3 | K+R vs K | 14 | 38 |
-| g4 | K+B+B vs K | 16 | 42 |
-| g5 | K+Q vs K+R | 19 | 48 |
-| g6 | K+B+N vs K | 24 | 50 |
+| g1 | Level 1 (weak) | 1 | 80 |
+| g2 | Level 2 (club) | 100 | 80 |
+| g3 | Level 3 (strong) | 3 000 | 80 |
+
+Each opponent is a fresh Stockfish process with one thread, a fixed hash and a fixed node
+budget, so the same moves always get the same replies: the environment is deterministic
+and every difference between runs comes from the agent.
+
+A second task, `task/chess-endgame`, uses the same server on six won endgames (mate with
+queen, rook, two bishops, bishop and knight, queen against rook) and is described at the
+end.
 
 ## What the agent can do
 
 An MCP server (`chess`) with three tools:
 
-- `list_games()` — material, shortest forced mate, move limit and status of each game
-- `get_position(game_id)` — board, FEN, **every legal move**, moves used
+- `list_games()` — opponent, move limit and status of each game
+- `get_position(game_id)` — board, FEN, **every legal move**, moves played so far
 - `make_move(game_id, move)` — one White move (UCI or SAN); Black replies at once
 
-Illegal moves are rejected and cost nothing; moves cannot be taken back. All rules, the
-move limits and the scoring are in `instruction.md`. Nothing is hidden except the future.
+Illegal moves are rejected and cost nothing; moves cannot be taken back. The rules, the
+move limit and the scoring are all in `instruction.md`.
 
 ## Scoring
 
-Each game scores 0–1; the reward is the mean over the six games.
+Each game scores 1 for a win, 0.5 for a draw, 0 for a loss; the reward is the mean of the
+three games.
 
-- Checkmate within the limit: `0.5 + 0.5 * (limit - moves_used) / (limit - shortest_mate)`,
-  so 1.0 for an optimal mate and 0.5 for mating on the last allowed move.
-- Everything else is 0: stalemate, threefold repetition, fifty-move rule, move limit,
-  being mated, or an unfinished game.
+- **Win:** checkmate, or a lead of at least three pawns (Stockfish evaluation) when the
+  80-move limit is reached.
+- **Draw:** stalemate, threefold repetition, fifty-move rule, insufficient material, or an
+  evaluation within three pawns at the limit.
+- **Loss:** checkmated, three pawns or more behind at the limit, or the game left unfinished.
 
-The score is computed by the game server, in its own container. The verifier only reads
-it (`tests/score.py`), so nothing the agent writes in its container can change it.
-
-## Why this is hard, and what the mistakes look like
-
-<!-- RESULTS:FAILURES -->
+The score is computed by the game server in its own container. The verifier only reads it
+(`tests/score.py`), so nothing the agent writes in its own container can change it.
 
 ## Results
 
 <!-- RESULTS:TABLE -->
 
+## What the agent gets wrong
+
+<!-- RESULTS:FAILURES -->
+
 ## Reward integrity
 
-What we tried, and what happens (`experiments/exploit_tests.py`, 11/11 pass, plus
-`tests_unit/`, 6/6):
+What we tried, and what happens (`experiments/exploit_tests.py`: 11/11 pass;
+`tests_unit/`: 10/10 pass):
 
 | Attempt | Result |
 |---|---|
-| Do nothing | 0.000 |
-| Stop early (two moves, then quit) | 0.000 |
+| Do nothing | 0.000 (Harbor `nop` agent) |
+| Stop early (two moves, then quit) | 0.000 (`baselines/stop_early.py`) |
 | Illegal, malformed or 5 000-character moves | rejected, no move used |
 | Unknown or path-like game ids | rejected |
 | Moving after a game ended | rejected |
-| Shuffling pieces to stall | threefold repetition or fifty-move rule → 0 |
+| Stalling until the move limit | adjudicated on the position: stalling does not win |
 | Calling the reference-engine route without the token | HTTP 403 |
 | Using an engine or chess library | none in the agent's container; `network_mode = "allowlist"` lets it reach only the model API, so nothing can be installed or downloaded |
 | Editing reward files in its container | the verifier rewrites them from the server's record |
 
 The reference run asks the server's Stockfish for moves through an authenticated route.
-Its token exists only in `environment/mcp-server/` (the server image) and `solution/`,
-which Harbor copies into the container only for oracle runs; the agent's container never
-holds it and cannot reach the internet to find it.
+Its token is in `environment/mcp-server/` (the server image) and `solution/`, which
+Harbor copies into the agent's container only for oracle runs. An agent in the sandbox
+can neither read it nor reach the internet to find it.
 
 ## Reproduce
 
-Requirements: Docker (Linux, or macOS with OrbStack — Harbor's allowlist uses nftables,
-which Docker Desktop for macOS may lack), Python 3.12+, `pip install harbor`.
+Requirements: Docker (Linux, or macOS with OrbStack: Harbor's allowlist uses nftables,
+which Docker Desktop for macOS may lack), Python 3.12+, `pip install harbor`, and the
+model provider's API key in the environment (e.g. `OPENAI_API_KEY`).
 
 ```bash
-MODEL=anthropic/claude-sonnet-5-5 ./scripts/run_eval.sh
+MODEL=openai/gpt-5.5 ./scripts/run_eval.sh
 ```
 
-This runs the reference (oracle), do-nothing (nop), stop-early and three agent runs, then
-prints a table. Single runs:
+This runs the reference (oracle), do-nothing (nop), stop-early and three agent runs on the
+full-game task, then prints a table. Single runs:
 
 ```bash
-harbor run --path task/chess-endgame --agent oracle
-harbor run --path task/chess-endgame --agent opencode --model anthropic/claude-sonnet-5-5
+harbor run --path task/chess-full --agent oracle
+harbor run --path task/chess-full --agent opencode --model openai/gpt-5.5
 ```
 
-Without local Docker, `ENV=modal` runs the same evaluation on Modal; build the Modal copy
-first with `scripts/make_modal_variant.sh` (Modal builds images inside the sandbox, so the
-copy uses public networking) and point `--path` at `build/chess-endgame-modal`.
+Without local Docker, run on Modal: `scripts/make_modal_variant.sh` makes copies under
+`build/` that differ only in using public networking (Modal builds the images inside the
+sandbox, where the allowlist would block the image pulls), then
+`ENV=modal TASK=build/chess-full-modal MODEL=openai/gpt-5.5 ./scripts/run_eval.sh`.
+The results above were produced this way.
+
+Replays: `python3 scripts/replay.py out.html "Label=jobs/<job>/<trial>/verifier/games.json" ...`
+writes a step-through HTML replay of any runs.
+
+## The endgame task
+
+`task/chess-endgame` gives six positions that are already forced mates for White (shortest
+mates of 8 to 24 moves) against a resisting Stockfish. Only mating within the move limit
+scores (1.0 for an optimal mate, 0.5 for mating on the last allowed move); stalemate,
+repetition, the fifty-move rule and timeouts score 0. The reference mates in all six
+(1.000). Kimi K3.1 Pro scored 0.000: it put its queen next to the black king in two games
+and lost it, gave away its rook and a bishop, then ended the session with two games
+unfinished.
 
 ## Repository
 
 | Path | What |
 |---|---|
-| `task/chess-endgame/` | the Harbor task (instruction, task.toml, server, verifier, reference) |
-| `chessenv/` | game rules, defender, reward; position generator; baseline players |
-| `positions.json` | the six positions and their verified mate lengths |
-| `experiments/pilot.py` | offline comparison of baseline players and the reference |
-| `experiments/exploit_tests.py` | reward-integrity checks against a live server |
+| `task/chess-full/` | the full-game Harbor task (instruction, task.toml, server, verifier, reference) |
+| `task/chess-endgame/` | the endgame Harbor task |
+| `chessenv/` | game rules, opponent, reward; position generator; baseline players |
+| `experiments/` | offline comparison of baseline players; reward-integrity checks |
 | `tests_unit/` | rule and reward unit tests |
 | `baselines/stop_early.py` | the stop-early Harbor agent |
-| `scripts/` | one-command evaluation, Modal copy, results summary |
+| `scripts/` | one-command evaluation, Modal copies, results summary, replays |

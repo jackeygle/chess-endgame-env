@@ -41,7 +41,8 @@ def main():
         runs.append({"label": label, "reward": data["reward"],
                      "games": [{"id": g["game_id"], "material": g["material"],
                                 "status": g["status"], "reward": g["reward"],
-                                "moves_used": g["moves_used"], "mate": g["shortest_mate_in"],
+                                "moves_used": g["moves_used"], "mate": g.get("shortest_mate_in"),
+                                "opponent": g.get("opponent"),
                                 "limit": g["move_limit"], "frames": frames_for(g)}
                                for g in data["games"]]})
     html = TEMPLATE.read_text().replace("/*DATA*/null", json.dumps(runs))

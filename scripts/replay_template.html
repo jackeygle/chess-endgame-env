@@ -1,4 +1,4 @@
-<title>Endgame Replays</title>
+<title>Chess Replays</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
@@ -55,8 +55,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 <main>
   <header>
-    <h1>Endgame Replays</h1>
-    <p class="sub">Six won chess endgames, White to mate a Stockfish defender. Pick a player, a game, then step through the moves. Red marks a White piece being captured.</p>
+    <h1>Chess Replays</h1>
+    <p class="sub">Full chess games as White against three fixed-strength Stockfish opponents. Pick a player, a game, then step through the moves. Red marks a White piece being captured.</p>
   </header>
   <div class="tabs" id="tabs" role="group" aria-label="Player"></div>
   <div class="chips" id="chips" role="group" aria-label="Game"></div>
@@ -84,21 +84,21 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <script>
 const RUNS = /*DATA*/null;
 const G = {"K":"♔","Q":"♕","R":"♖","B":"♗","N":"♘","P":"♙","k":"♚","q":"♛","r":"♜","b":"♝","n":"♞","p":"♟"};
-const NAMES = {KQK:"King and queen vs king",KRK:"King and rook vs king",KBBK:"Two bishops vs king",KQKR:"Queen vs rook",KBNK:"Bishop and knight vs king"};
+const NAMES = {full:"Full game",KQK:"King and queen vs king",KRK:"King and rook vs king",KBBK:"Two bishops vs king",KQKR:"Queen vs rook",KBNK:"Bishop and knight vs king"};
 let run=0, game=0, step=0, timer=null;
 const $=id=>document.getElementById(id);
-const statusClass=s=>s==="mate"?"mate":(s==="in_progress"||s==="not_started")?"open":"bad";
-const statusText=s=>({mate:"Mate",draw:"Draw",stalemate:"Stalemate",move_limit:"Out of moves",lost:"Lost",in_progress:"Unfinished",not_started:"Not started"}[s]||s);
+const statusClass=s=>(s==="mate"||s==="adjudicated_win")?"mate":(s==="in_progress"||s==="not_started")?"open":(s.includes("draw")||s==="stalemate")?"open":"bad";
+const statusText=s=>({mate:"Mate",adjudicated_win:"Won on eval",adjudicated_draw:"Drawn on eval",adjudicated_loss:"Lost on eval",draw:"Draw",stalemate:"Stalemate",move_limit:"Out of moves",lost:"Lost",in_progress:"Unfinished",not_started:"Not started"}[s]||s);
 function parse(fen){const rows=fen.split("/");const sq={};rows.forEach((r,i)=>{let f=0;for(const c of r){if(/\d/.test(c))f+=+c;else{sq["abcdefgh"[f]+(8-i)]=c;f++}}});return sq}
 function tabs(){$("tabs").innerHTML="";RUNS.forEach((r,i)=>{const b=document.createElement("button");b.className="tab";b.setAttribute("aria-pressed",i===run);b.innerHTML=r.label+"<b>"+r.reward.toFixed(2)+"</b>";b.onclick=()=>{run=i;game=0;step=0;stop();render()};$("tabs").appendChild(b)})}
-function chips(){$("chips").innerHTML="";RUNS[run].games.forEach((g,i)=>{const b=document.createElement("button");b.className="chip";b.setAttribute("aria-pressed",i===game);b.innerHTML=`<span>${g.id} · ${g.material}</span><span class="pill ${statusClass(g.status)}">${statusText(g.status)}</span><span class="m">reward ${g.reward.toFixed(2)}</span>`;b.onclick=()=>{game=i;step=0;stop();render()};$("chips").appendChild(b)})}
+function chips(){$("chips").innerHTML="";RUNS[run].games.forEach((g,i)=>{const b=document.createElement("button");b.className="chip";b.setAttribute("aria-pressed",i===game);b.innerHTML=`<span>${g.id} · ${g.opponent||g.material}</span><span class="pill ${statusClass(g.status)}">${statusText(g.status)}</span><span class="m">reward ${g.reward.toFixed(2)}</span>`;b.onclick=()=>{game=i;step=0;stop();render()};$("chips").appendChild(b)})}
 function board(){const g=RUNS[run].games[game],fr=g.frames[step],sq=parse(fr.fen);const el=$("board");el.innerHTML="";
  for(let r=8;r>=1;r--)for(let f=0;f<8;f++){const n="abcdefgh"[f]+r;const d=document.createElement("div");d.className="sq "+((f+r)%2?"l":"d");
   if(fr.from===n)d.classList.add("from");if(fr.to===n){d.classList.add("to");if(fr.lost)d.classList.add("lost")}
   const p=sq[n];if(p){const s=document.createElement("span");s.textContent=G[p];s.className=p===p.toUpperCase()?"pw":"pb";d.appendChild(s)}el.appendChild(d)}
  $("pos").textContent=`${step} / ${g.frames.length-1}`}
 function side(){const g=RUNS[run].games[game];$("gtitle").textContent=`${g.id} · ${NAMES[g.material]||g.material}`;
- $("facts").innerHTML=`<dt>Result</dt><dd>${statusText(g.status)}</dd><dt>Moves used</dt><dd>${g.moves_used} of ${g.limit}</dd><dt>Shortest mate</dt><dd>${g.mate}</dd><dt>Reward</dt><dd>${g.reward.toFixed(3)}</dd>`;
+ $("facts").innerHTML=`<dt>Result</dt><dd>${statusText(g.status)}</dd><dt>Moves used</dt><dd>${g.moves_used} of ${g.limit}</dd>${g.opponent?`<dt>Opponent</dt><dd>${g.opponent}</dd>`:`<dt>Shortest mate</dt><dd>${g.mate}</dd>`}<dt>Reward</dt><dd>${g.reward.toFixed(3)}</dd>`;
  const m=$("moves");m.innerHTML="";g.frames.forEach((f,i)=>{if(!i)return;const b=document.createElement("button");b.className="mv"+(f.lost?" lost":"");b.textContent=f.label;b.setAttribute("aria-current",i===step);b.onclick=()=>{step=i;stop();render()};m.appendChild(b)});
  const lost=g.frames.findIndex(f=>f.lost);$("note").textContent=lost>0?`White loses material at ${g.frames[lost].label}.`:(g.frames.length===1?"No moves were played in this game.":"")}
 function render(){tabs();chips();board();side()}
