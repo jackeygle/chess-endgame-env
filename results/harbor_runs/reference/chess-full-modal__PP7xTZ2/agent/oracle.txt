@@ -1,0 +1,4 @@
+g1 mate 13
+g2 mate 25
+g3 mate 38
+g4 mate 24

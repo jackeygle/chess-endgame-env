@@ -113,7 +113,7 @@ def integrity(tmp):
     pattern = re.compile(r"sk-proj-|sk-[A-Za-z0-9]{32,}|dc_[0-9a-f]{40,}|\bak-[A-Za-z0-9]{20,}|"
                          r"\bas-[A-Za-z0-9]{20,}")
     files = run(["git", "ls-files"]).stdout.split()
-    hits = [f for f in files if (ROOT / f).is_file() and (ROOT / f).stat().st_size < 5_000_000
+    hits = [f for f in files if f != "scripts/check_submission.py" and (ROOT / f).is_file() and (ROOT / f).stat().st_size < 5_000_000
             and pattern.search((ROOT / f).read_text(errors="ignore"))]
     check("Reward integrity", "no API keys committed", not hits, ", ".join(hits))
 
@@ -140,10 +140,12 @@ def gap(tmp, quick):
     check("Gap", "chess-full: a new seed gives new openings (no memorisable line)",
           [g["start_fen"] for g in a["games"]] != [g["start_fen"] for g in b["games"]])
     res = ROOT / "results"
-    agent = [float(p.read_text()) for p in sorted(res.glob("full_*.reward.txt"))]
-    check("Gap", "recorded agent runs are below the reference",
-          bool(agent) and min(agent) == 0.0 and sorted(agent)[-1] == 1.0,
-          f"recorded rewards {sorted(agent)}")
+    agent = [float(p.read_text()) for p in sorted(res.glob("v2/gpt55_run*.reward.txt"))]
+    ref = float((res / "v2/reference.reward.txt").read_text())
+    check("Gap", "recorded agent runs are far below the recorded reference",
+          len(agent) == 3 and ref == 1.0 and max(agent) <= 0.5, f"agent {agent}, reference {ref}")
+    check("Craft", "a full Harbor run directory is included",
+          any((res / "harbor_runs").glob("*/*/agent/trajectory.json")))
 
 
 def difficulty(tmp):
@@ -160,7 +162,7 @@ def difficulty(tmp):
     check("Meaningful difficulty", "every position view lists all legal moves",
           '"legal_moves"' in src and '"board"' in src and '"fen"' in src)
     check("Meaningful difficulty", "README explains the agent's mistakes",
-          "What the agent gets wrong" in (ROOT / "README.md").read_text()
+          "Why the agent loses" in (ROOT / "README.md").read_text()
           and "RESULTS:FAILURES" not in (ROOT / "README.md").read_text())
 
 

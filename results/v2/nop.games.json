@@ -1,0 +1,54 @@
+{
+ "reward": 0.0,
+ "seed": 2519973407,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Italian Game, Giuoco Piano: e4 e5 Nf3 Nc6 Bc4 Bc5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "King's Indian Defence: d4 Nf6 c4 g6 Nc3 Bg7 e4 d6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "Pirc Defence: e4 d6 d4 Nf6 Nc3 g6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Colle System: d4 d5 Nf3 Nf6 e3 e6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4"
+  }
+ ]
+}

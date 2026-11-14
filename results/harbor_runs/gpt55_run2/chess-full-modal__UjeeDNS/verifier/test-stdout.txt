@@ -1,0 +1,5 @@
+g1 full  mate         moves= 25 reward=1.000
+g2 full  lost         moves= 26 reward=0.000
+g3 full  draw         moves= 45 reward=0.500
+g4 full  lost         moves= 24 reward=0.000
+reward=0.375000

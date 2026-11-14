@@ -1,0 +1,65 @@
+{
+ "reward": 0.0,
+ "seed": 2602530998,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 2,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Slav Defence: d4 d5 c4 c6 Nf3 Nf6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "a3",
+     "reply": "Nh5",
+     "fen": "rnbqkb1r/pp2pppp/2p5/3p3n/2PP4/P4N2/1P2PPPP/RNBQKB1R w KQkq - 1 5"
+    },
+    {
+     "move": "Ra2",
+     "reply": "e5",
+     "fen": "rnbqkb1r/pp3ppp/2p5/3pp2n/2PP4/P4N2/RP2PPPP/1NBQKB1R w Kkq - 0 6"
+    }
+   ],
+   "start_fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 2 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Pirc Defence: e4 d6 d4 Nf6 Nc3 g6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "Queen's Gambit Declined: d4 d5 c4 e6 Nc3 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Philidor Defence: e4 e5 Nf3 d6 d4 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4"
+  }
+ ]
+}

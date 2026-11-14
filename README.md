@@ -1,21 +1,27 @@
 # Chess against a ladder: an RL environment for planning under a real opponent
 
-**The agent plays three full games of chess as White, from the normal starting position,
-against Stockfish at three fixed strengths.** It gets the board, the FEN and every legal
-move at every turn, and plays through three MCP tools. Frontier agents know the rules,
-the openings and the principles, yet they hang their queen, walk into forks and get
-mated by opponents a reference player beats every time. Every move is a decision whose
-consequences arrive several moves later: that is the skill this environment trains.
+**The agent plays four games of chess as White against four opponents, from random moves
+to Stockfish.** Each game starts from a well-known balanced opening, a different one in
+every game and every trial. The agent gets the board, the FEN and every legal move at
+every turn, and plays through three MCP tools. Frontier agents know the rules and the
+openings, and they beat a random mover, but they leave pieces where the opponent can take
+them on the next move and lose to every Stockfish level that punishes this. The skill
+under test is the one a game of chess demands at every move: working out what the
+opponent can do next before committing.
 
-| Game | Opponent | Stockfish node budget per move | Your move limit |
-|---|---|---|---|
-| g1 | Level 1 (weak) | 1 | 80 |
-| g2 | Level 2 (club) | 100 | 80 |
-| g3 | Level 3 (strong) | 3 000 | 80 |
+| Game | Opponent | Your move limit |
+|---|---|---|
+| g1 | Level 0: uniformly random legal moves (seeded) | 80 |
+| g2 | Level 1 (weak): Stockfish, 1 node per move | 80 |
+| g3 | Level 2 (club): Stockfish, 100 nodes per move | 80 |
+| g4 | Level 3 (strong): Stockfish, 3 000 nodes per move | 80 |
 
-Each opponent is a fresh Stockfish process with one thread, a fixed hash and a fixed node
-budget, so the same moves always get the same replies: the environment is deterministic
-and every difference between runs comes from the agent.
+**Per-trial variation.** Each trial draws one seed (recorded in the score). It picks a
+different opening for each game from a book of 39 balanced openings
+(`environment/mcp-server/openings.json`, built by `scripts/build_openings.py`) and drives
+the random mover. Stockfish opponents run one thread, a fixed hash and a fixed node
+budget. So a trial is fully reproducible from its seed (`CHESS_SEED`), but no fixed
+sequence of moves wins across trials: an agent cannot memorise a line and replay it.
 
 A second task, `task/chess-endgame`, uses the same server on six won endgames (mate with
 queen, rook, two bishops, bishop and knight, queen against rook) and is described at the
@@ -25,7 +31,7 @@ end.
 
 An MCP server (`chess`) with three tools:
 
-- `list_games()` — opponent, move limit and status of each game
+- `list_games()` — opening, opponent, move limit and status of each game
 - `get_position(game_id)` — board, FEN, **every legal move**, moves played so far
 - `make_move(game_id, move)` — one White move (UCI or SAN); Black replies at once
 
@@ -35,7 +41,7 @@ move limit and the scoring are all in `instruction.md`.
 ## Scoring
 
 Each game scores 1 for a win, 0.5 for a draw, 0 for a loss; the reward is the mean of the
-three games.
+four games.
 
 - **Win:** checkmate, or a lead of at least three pawns (Stockfish evaluation) when the
   80-move limit is reached.
@@ -48,55 +54,96 @@ The score is computed by the game server in its own container. The verifier only
 
 ## Results
 
-Full-game task, run with Harbor on Modal (`build/chess-full-modal`, identical to
-`task/chess-full` except public networking), OpenCode with `openai/gpt-5.5`, 14 Nov 2026:
+Run with Harbor on Modal (`build/chess-full-modal`, identical to `task/chess-full` except
+public networking), OpenCode with `openai/gpt-5.5`, 14 Nov 2026. Each run has its own seed,
+so its own four openings. Files: `results/v2/`; full Harbor run directories (trajectory,
+logs, verifier output) in `results/harbor_runs/`.
 
-| Run | Reward | g1 vs Level 1 | g2 vs Level 2 | g3 vs Level 3 |
-|---|---|---|---|---|
-| Reference (Stockfish, oracle) | **1.000** | mate in 38 | mate in 13 | mate in 35 |
-| GPT-5.5, run 1 | 0.167 | draw (repetition) | mated | mated |
-| GPT-5.5, run 2 | 0.000 | lost on adjudication at move 80 | mated | mated |
-| GPT-5.5, run 3 | 0.000 | abandoned at move 38 | mated | mated |
-| **GPT-5.5, mean of 3** | **0.056** | | | |
-| Do nothing (nop) | 0.000 | not started | not started | not started |
-| Stop early (2 moves) | 0.000 | unfinished | not started | not started |
+| Run | Reward | g1 vs random | g2 vs Level 1 | g3 vs Level 2 | g4 vs Level 3 |
+|---|---|---|---|---|---|
+| Reference (Stockfish, oracle) | **1.000** | mate, move 13 | mate, move 25 | mate, move 38 | mate, move 24 |
+| GPT-5.5, run 1 | 0.375 | mate, move 15 | mated | draw | mated |
+| GPT-5.5, run 2 | 0.375 | mate, move 25 | mated | draw | mated |
+| GPT-5.5, run 3 | 0.250 | mate, move 32 | mated | mated | mated |
+| **GPT-5.5, mean of 3** | **0.333** | 3 wins | 0 of 3 | 2 draws | 0 of 3 |
+| Do nothing (nop) | 0.000 | not started | not started | not started | not started |
+| Stop early (2 moves) | 0.000 | unfinished | not started | not started | not started |
 
-The reference is deterministic (fixed node budgets, one thread), so its 1.000 reproduces
-exactly; it also scored 1.000 when run locally outside Harbor. The agent's spread across
-three runs is 0.000–0.167. Three runs are a small sample: they show a large, consistent
-gap, not a precise rating. The one GPT-5.5 point came from the weakest opponent giving
-repeated checks while far ahead (a legal threefold repetition), not from good play.
+- **The task is solvable from every opening.** The reference played all 39 book openings
+  against all four levels on Modal (`experiments/verify_reference.py`) and won all
+  156 games. A 40th opening, where it drew once, was removed from the book.
+- **The score has a gradient.** The agent beats the random mover every time and loses to
+  every Stockfish level except two draws at Level 2. Three runs are a small sample: they
+  show a large, consistent gap (0.250–0.375 against 1.000), not a precise rating.
+- **Level 1 beat the agent more often than Level 2.** In all three runs it lost to
+  Level 1 but drew twice with Level 2. One node per move is enough for Stockfish to take
+  a piece left hanging, and that is how the agent lost those games (below).
+- **Earlier version.** The first version had three games from the starting position
+  against Levels 1–3, and GPT-5.5 scored 0.056 over three runs (`results/v1/`). That
+  scale left no room between agents, and a fixed starting position could be memorised.
 
-The agent used 336 tool calls across the three runs and none tried to install a package or
-reach an engine, so the public networking of the Modal copy did not affect these results.
+## Why the agent loses: measured, not guessed
 
-Endgame task (`task/chess-endgame`): reference 1.000, do-nothing 0.000, stop-early 0.000,
-GPT-5.5 0.333 (one run: mated in one K+Q and the K+R game, ran out of moves in the other
-K+Q game, drew the two-bishop, queen-against-rook and bishop-and-knight games), Kimi K3.1
-Pro 0.000 (one run, see the end of this file).
+`scripts/analyze_blunders.py` replays every agent move with Stockfish:
+- It takes the evaluation before and after the move; a **blunder** is a move that loses
+  three pawns or more.
+- A blunder is a **one-move oversight** when the opponent can immediately capture a piece
+  that is undefended or worth more than its attacker (`chessenv/tactics.py`). Looking one
+  reply ahead would catch it.
 
-## What the agent gets wrong
+| | GPT-5.5 (3 runs, 12 games) | GPT-5.5, first version (9 games) | Reference (4 games) |
+|---|---|---|---|
+| Agent moves | 444 | 328 | 100 |
+| Blunders | 37 (8.3% of moves) | 27 (8.2%) | 1 (in a game it mated) |
+| of which one-move oversights | **28 (76%)** | 16 (59%) | 0 |
+| Games with at least one blunder | 12 of 12 | 9 of 9 | 1 of 4 |
+| Median move of the first blunder | 14 | 14 | — |
 
-Counted over the nine GPT-5.5 games (`jobs/*/verifier/games.json`; step through them with
-`scripts/replay.py`):
+The agent never fails on the interface:
+- Every legal move is listed at every turn.
+- 3 of its 447 move submissions were rejected as illegal, at no cost.
+- It finished all 12 games in these runs.
 
-| Mistake | How often | The decision behind it |
+What it gets wrong is the decision: about one move in twelve throws away three pawns or
+more, and three in four of those blunders leave a piece the opponent takes on the very
+next move.
+
+### Ablation: is one-move lookahead the missing skill?
+
+We gave the same model a fourth tool, `check_move(game_id, move)`. It does not play the
+move; it lists which White pieces Black could capture right after it. That is exactly the
+one-reply check behind the oversights above. The run used the seed of run 1, so it had
+the same four openings. The tool is enabled only in this experiment's copy
+(`scripts/make_hint_variant.sh`); the shipped task never offers it, and a unit test
+asserts that.
+
+| | Run 1 (no tool) | Same seed, with `check_move` |
 |---|---|---|
-| Loses the queen | 9 of 9 games, at moves 6–24 (most between 7 and 15) | moves a piece to a square the opponent attacks, or plays into a capture sequence it did not read to the end |
-| Loses its first minor or major piece early | 9 of 9 games, by moves 6–13 | same: does not check what the opponent can capture after its move |
-| Early queen raid (Qh5/Qf3 in the first five moves) | 4 of 9 games, including all three games against Level 1 | plays for a quick mate instead of development; the queen becomes a target |
-| Abandons a game unfinished | 1 of 9 games (run 3, g1, move 38 of 80) | ends the session believing the task is done |
+| Reward | 0.375 | 0.250 (g4 cut off at move 29: API credit ran out) |
+| Results g1 / g2 / g3 | win / lost / draw | win / lost / lost |
+| Blunders per move | 15 / 179 = 8.4% | 7 / 153 = 4.6% |
+| One-move oversights per move | 7 / 179 = 3.9% | 5 / 153 = 3.3% |
+| `check_move` calls | — | 206 for 153 moves |
 
-Everything needed to avoid these is in front of the agent at every move: the board in two
-notations, the full list of legal moves, and the rules and scoring. The opponent's replies
-are deterministic. What the agent lacks is the decision procedure: checking, before each
-move, what the opponent can do next. A stronger player with the same tools (the reference,
-which uses the same MCP tools) wins all three games.
+The tool roughly halved the blunder rate but **did not improve the result**. Of the five
+one-move oversights it still made:
+- three were moves the tool had just flagged as unsafe, which the agent played anyway;
+- two were played without checking.
+
+So the agent is not only blind one move ahead. It also does not weigh what it sees, and
+it keeps losing to mistakes two or more moves deep. A one-reply lookahead tool cannot
+paper over this, which is why the environment measures a real gap.
+
+This is one run cut short by the provider's credit limit: it shows the direction of the
+effect, not its size.
+
+Replays of all runs, the ablation included: `results/v2/replays.html`
+(`scripts/replay.py`).
 
 ## Reward integrity
 
 What we tried, and what happens (`experiments/exploit_tests.py`: 11/11 pass;
-`tests_unit/`: 10/10 pass):
+`tests_unit/`: 37/37 pass; `scripts/check_submission.py` runs all checks):
 
 | Attempt | Result |
 |---|---|
@@ -109,6 +156,7 @@ What we tried, and what happens (`experiments/exploit_tests.py`: 11/11 pass;
 | Calling the reference-engine route without the token | HTTP 403 |
 | Using an engine or chess library | none in the agent's container; `network_mode = "allowlist"` lets it reach only the model API, so nothing can be installed or downloaded |
 | Editing reward files in its container | the verifier rewrites them from the server's record |
+| Memorising a winning line | openings and the random mover change with every trial's seed |
 
 The reference run asks the server's Stockfish for moves through an authenticated route.
 Its token is in `environment/mcp-server/` (the server image) and `solution/`, which
@@ -126,7 +174,8 @@ MODEL=openai/gpt-5.5 ./scripts/run_eval.sh
 ```
 
 This runs the reference (oracle), do-nothing (nop), stop-early and three agent runs on the
-full-game task, then prints a table. Single runs:
+full-game task, then prints a table. Run the agent runs one after another (the script
+does): three parallel GPT-5.5 runs exceeded the provider's tokens-per-minute limit. Single runs:
 
 ```bash
 harbor run --path task/chess-full --agent oracle
@@ -159,7 +208,8 @@ unfinished.
 | `task/chess-full/` | the full-game Harbor task (instruction, task.toml, server, verifier, reference) |
 | `task/chess-endgame/` | the endgame Harbor task |
 | `chessenv/` | game rules, opponent, reward; position generator; baseline players |
-| `experiments/` | offline comparison of baseline players; reward-integrity checks |
+| `experiments/` | baseline players; reward-integrity checks; reference check over the opening book |
+| `results/` | `v2/` current runs, blunder analyses, ablation, replays; `harbor_runs/` full Harbor run directories; `v1/` first version |
 | `tests_unit/` | rule and reward unit tests |
 | `baselines/stop_early.py` | the stop-early Harbor agent |
-| `scripts/` | one-command evaluation, Modal copies, results summary, replays |
+| `scripts/` | one-command evaluation, Modal copies, opening book, blunder analysis, ablation copy, replays, pre-submission checks |
