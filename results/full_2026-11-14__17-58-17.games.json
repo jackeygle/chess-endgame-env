@@ -1,0 +1,38 @@
+{
+ "reward": 0.0,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  }
+ ]
+}

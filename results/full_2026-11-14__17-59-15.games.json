@@ -1,0 +1,49 @@
+{
+ "reward": 0.0,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 2,
+   "opponent": "Level 1 (weak)",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "a3",
+     "reply": "e5",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 2"
+    },
+    {
+     "move": "Ra2",
+     "reply": "d5",
+     "fen": "rnbqkbnr/ppp2ppp/8/3pp3/8/P7/RPPPPPPP/1NBQKBNR w Kkq - 0 3"
+    }
+   ],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+  }
+ ]
+}
