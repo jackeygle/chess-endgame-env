@@ -55,7 +55,8 @@ The score is computed by the game server in its own container. The verifier only
 ## Results
 
 Run with Harbor on Modal (`build/chess-full-modal`, identical to `task/chess-full` except
-public networking), OpenCode with `openai/gpt-5.5`, 14 Nov 2026. Each run has its own seed,
+public networking), OpenCode with `openai/gpt-5.5` and with DeepSeek 4.1 Flash
+(`deepseek-4-1-flash-1017` on Verda's OpenAI-compatible endpoint), 14 Nov 2026. Each run has its own seed,
 so its own four openings. Files: `results/v2/`; full Harbor run directories (trajectory,
 logs, verifier output) in `results/harbor_runs/`.
 
@@ -66,6 +67,10 @@ logs, verifier output) in `results/harbor_runs/`.
 | GPT-5.5, run 2 | 0.375 | mate, move 25 | mated | draw | mated |
 | GPT-5.5, run 3 | 0.250 | mate, move 32 | mated | mated | mated |
 | **GPT-5.5, mean of 3** | **0.333** | 3 wins | 0 of 3 | 2 draws | 0 of 3 |
+| DeepSeek 4.1 Flash, run 1 | 0.000 | unfinished at move 77 | mated | mated | mated |
+| DeepSeek 4.1 Flash, run 2 | 0.250 | mate, move 19 | mated | mated | mated |
+| DeepSeek 4.1 Flash, run 3 | 0.250 | won on adjudication | mated | abandoned | abandoned |
+| **DeepSeek 4.1 Flash, mean of 3** | **0.167** | 2 wins | 0 of 3 | 0 of 3 | 0 of 3 |
 | Do nothing (nop) | 0.000 | not started | not started | not started | not started |
 | Stop early (2 moves) | 0.000 | unfinished | not started | not started | not started |
 
@@ -98,22 +103,26 @@ logs, verifier output) in `results/harbor_runs/`.
   that is undefended or worth more than its attacker (`chessenv/tactics.py`). Looking one
   reply ahead would catch it.
 
-| | GPT-5.5 (3 runs, 12 games) | GPT-5.5, first version (9 games) | Reference (4 games) |
-|---|---|---|---|
-| Agent moves | 444 | 328 | 100 |
-| Blunders | 37 (8.3% of moves) | 27 (8.2%) | 1 (in a game it mated) |
-| of which one-move oversights | **28 (76%)** | 16 (59%) | 0 |
-| Games with at least one blunder | 12 of 12 | 9 of 9 | 1 of 4 |
-| Median move of the first blunder | 14 | 14 | — |
+| | GPT-5.5 (3 runs, 12 games) | DeepSeek 4.1 Flash (3 runs, 12 games) | GPT-5.5, first version (9 games) | Reference (4 games) |
+|---|---|---|---|---|
+| Agent moves | 444 | 394 | 328 | 100 |
+| Blunders | 37 (8.3% of moves) | 61 (15.5%) | 27 (8.2%) | 1 (in a game it mated) |
+| of which one-move oversights | **28 (76%)** | **51 (84%)** | 16 (59%) | 0 |
+| Games with at least one blunder | 12 of 12 | 11 of 12 | 9 of 9 | 1 of 4 |
+| Median move of the first blunder | 14 | 6 | 14 | — |
+
+Two models from different labs fail the same way. In the middle of one game, DeepSeek
+said so itself: "I'm hanging pieces now. I lost the knight to Qxb5." It then gave up the
+two remaining games.
 
 The agent never fails on the interface:
 - Every legal move is listed at every turn.
 - 3 of its 447 move submissions were rejected as illegal, at no cost.
 - It finished all 12 games in these runs.
 
-What it gets wrong is the decision: about one move in twelve throws away three pawns or
-more, and three in four of those blunders leave a piece the opponent takes on the very
-next move.
+What it gets wrong is the decision: about one GPT-5.5 move in twelve (one DeepSeek move in
+seven) throws away three pawns or more. Most of those blunders leave a piece the opponent
+can take on the very next move.
 
 ### Ablation: is one-move lookahead the missing skill?
 
