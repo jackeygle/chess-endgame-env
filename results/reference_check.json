@@ -1,0 +1,1282 @@
+[
+ {
+  "opening": "Ruy Lopez, Morphy Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "Ruy Lopez, Morphy Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Ruy Lopez, Morphy Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Ruy Lopez, Morphy Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 39,
+  "reward": 1.0
+ },
+ {
+  "opening": "Italian Game, Giuoco Piano",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Italian Game, Giuoco Piano",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "Italian Game, Giuoco Piano",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Italian Game, Giuoco Piano",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Two Knights Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "Two Knights Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 31,
+  "reward": 1.0
+ },
+ {
+  "opening": "Two Knights Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "draw",
+  "moves": 31,
+  "reward": 0.5
+ },
+ {
+  "opening": "Two Knights Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 36,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scotch Game",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 7,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scotch Game",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 24,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scotch Game",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scotch Game",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 39,
+  "reward": 1.0
+ },
+ {
+  "opening": "Petrov Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 14,
+  "reward": 1.0
+ },
+ {
+  "opening": "Petrov Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 15,
+  "reward": 1.0
+ },
+ {
+  "opening": "Petrov Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 19,
+  "reward": 1.0
+ },
+ {
+  "opening": "Petrov Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 34,
+  "reward": 1.0
+ },
+ {
+  "opening": "Four Knights Game",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Four Knights Game",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 17,
+  "reward": 1.0
+ },
+ {
+  "opening": "Four Knights Game",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 21,
+  "reward": 1.0
+ },
+ {
+  "opening": "Four Knights Game",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 40,
+  "reward": 1.0
+ },
+ {
+  "opening": "Philidor Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Philidor Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 21,
+  "reward": 1.0
+ },
+ {
+  "opening": "Philidor Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 44,
+  "reward": 1.0
+ },
+ {
+  "opening": "Philidor Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 34,
+  "reward": 1.0
+ },
+ {
+  "opening": "Vienna Game",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Vienna Game",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 26,
+  "reward": 1.0
+ },
+ {
+  "opening": "Vienna Game",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 21,
+  "reward": 1.0
+ },
+ {
+  "opening": "Vienna Game",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 26,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Gambit Accepted",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 8,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Gambit Accepted",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 22,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Gambit Accepted",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 30,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Gambit Accepted",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 19,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Najdorf",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Najdorf",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Najdorf",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 35,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Najdorf",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 19,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Dragon",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Dragon",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 30,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Dragon",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 34,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Dragon",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 27,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Taimanov",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Taimanov",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 14,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Taimanov",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Taimanov",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Alapin",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Alapin",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 22,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Alapin",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 33,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Alapin",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 24,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Closed",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Closed",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 35,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Closed",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Sicilian, Closed",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 43,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Winawer",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Winawer",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Winawer",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 33,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Winawer",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Advance",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Advance",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 32,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Advance",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 33,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Advance",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 50,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Tarrasch",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 7,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Tarrasch",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 23,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Tarrasch",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 28,
+  "reward": 1.0
+ },
+ {
+  "opening": "French, Tarrasch",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 30,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Classical",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 15,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Classical",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 25,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Classical",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Classical",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 24,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Advance",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 15,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Advance",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 22,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Advance",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 38,
+  "reward": 1.0
+ },
+ {
+  "opening": "Caro-Kann, Advance",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 36,
+  "reward": 1.0
+ },
+ {
+  "opening": "Pirc Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Pirc Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Pirc Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Pirc Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 40,
+  "reward": 1.0
+ },
+ {
+  "opening": "Modern Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Modern Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Modern Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 26,
+  "reward": 1.0
+ },
+ {
+  "opening": "Modern Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 40,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scandinavian Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 8,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scandinavian Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scandinavian Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Scandinavian Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 33,
+  "reward": 1.0
+ },
+ {
+  "opening": "Alekhine Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "Alekhine Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "Alekhine Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Alekhine Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 51,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Declined",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Declined",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 31,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Declined",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 30,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Declined",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Accepted",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 11,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Accepted",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 24,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Accepted",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Gambit Accepted",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 32,
+  "reward": 1.0
+ },
+ {
+  "opening": "Slav Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "Slav Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 21,
+  "reward": 1.0
+ },
+ {
+  "opening": "Slav Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Slav Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 53,
+  "reward": 1.0
+ },
+ {
+  "opening": "Semi-Slav Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 6,
+  "reward": 1.0
+ },
+ {
+  "opening": "Semi-Slav Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 35,
+  "reward": 1.0
+ },
+ {
+  "opening": "Semi-Slav Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 40,
+  "reward": 1.0
+ },
+ {
+  "opening": "Semi-Slav Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 56,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Indian Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Indian Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 28,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Indian Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "King's Indian Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 28,
+  "reward": 1.0
+ },
+ {
+  "opening": "Nimzo-Indian Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 14,
+  "reward": 1.0
+ },
+ {
+  "opening": "Nimzo-Indian Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 25,
+  "reward": 1.0
+ },
+ {
+  "opening": "Nimzo-Indian Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 38,
+  "reward": 1.0
+ },
+ {
+  "opening": "Nimzo-Indian Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 41,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Indian Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 13,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Indian Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 36,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Indian Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 24,
+  "reward": 1.0
+ },
+ {
+  "opening": "Queen's Indian Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 44,
+  "reward": 1.0
+ },
+ {
+  "opening": "Grunfeld Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Grunfeld Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Grunfeld Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 18,
+  "reward": 1.0
+ },
+ {
+  "opening": "Grunfeld Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 49,
+  "reward": 1.0
+ },
+ {
+  "opening": "Dutch Defence",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "Dutch Defence",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 20,
+  "reward": 1.0
+ },
+ {
+  "opening": "Dutch Defence",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 19,
+  "reward": 1.0
+ },
+ {
+  "opening": "Dutch Defence",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 39,
+  "reward": 1.0
+ },
+ {
+  "opening": "London System",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 10,
+  "reward": 1.0
+ },
+ {
+  "opening": "London System",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 22,
+  "reward": 1.0
+ },
+ {
+  "opening": "London System",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "London System",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 23,
+  "reward": 1.0
+ },
+ {
+  "opening": "Catalan Opening",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 10,
+  "reward": 1.0
+ },
+ {
+  "opening": "Catalan Opening",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 28,
+  "reward": 1.0
+ },
+ {
+  "opening": "Catalan Opening",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 38,
+  "reward": 1.0
+ },
+ {
+  "opening": "Catalan Opening",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 44,
+  "reward": 1.0
+ },
+ {
+  "opening": "Trompowsky Attack",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 15,
+  "reward": 1.0
+ },
+ {
+  "opening": "Trompowsky Attack",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 35,
+  "reward": 1.0
+ },
+ {
+  "opening": "Trompowsky Attack",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 30,
+  "reward": 1.0
+ },
+ {
+  "opening": "Trompowsky Attack",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 47,
+  "reward": 1.0
+ },
+ {
+  "opening": "Colle System",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 12,
+  "reward": 1.0
+ },
+ {
+  "opening": "Colle System",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 22,
+  "reward": 1.0
+ },
+ {
+  "opening": "Colle System",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 25,
+  "reward": 1.0
+ },
+ {
+  "opening": "Colle System",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 44,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Symmetrical",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 10,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Symmetrical",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Symmetrical",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 26,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Symmetrical",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 47,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Reversed Sicilian",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 16,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Reversed Sicilian",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 27,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Reversed Sicilian",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 32,
+  "reward": 1.0
+ },
+ {
+  "opening": "English, Reversed Sicilian",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 43,
+  "reward": 1.0
+ },
+ {
+  "opening": "Reti Opening",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 10,
+  "reward": 1.0
+ },
+ {
+  "opening": "Reti Opening",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 25,
+  "reward": 1.0
+ },
+ {
+  "opening": "Reti Opening",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 23,
+  "reward": 1.0
+ },
+ {
+  "opening": "Reti Opening",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 55,
+  "reward": 1.0
+ },
+ {
+  "opening": "Bird Opening",
+  "game": "g1",
+  "opponent": "Level 0 (random moves)",
+  "result": "mate",
+  "moves": 9,
+  "reward": 1.0
+ },
+ {
+  "opening": "Bird Opening",
+  "game": "g2",
+  "opponent": "Level 1 (weak)",
+  "result": "mate",
+  "moves": 29,
+  "reward": 1.0
+ },
+ {
+  "opening": "Bird Opening",
+  "game": "g3",
+  "opponent": "Level 2 (club)",
+  "result": "mate",
+  "moves": 32,
+  "reward": 1.0
+ },
+ {
+  "opening": "Bird Opening",
+  "game": "g4",
+  "opponent": "Level 3 (strong)",
+  "result": "mate",
+  "moves": 37,
+  "reward": 1.0
+ }
+]

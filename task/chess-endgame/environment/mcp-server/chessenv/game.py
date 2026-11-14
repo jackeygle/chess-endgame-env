@@ -5,10 +5,13 @@ Two modes:
   full     a whole game from any position; win 1, draw 0.5, loss or unfinished 0. A game
            that reaches the move limit is adjudicated by Stockfish's evaluation.
 
-Determinism: the opponent is a fresh Stockfish process per game with Threads=1, a fixed
-hash size and a fixed node budget per move, so the same moves always get the same replies.
+Opponents: Stockfish with a fixed node budget per move (a fresh process per game, Threads=1,
+fixed hash: the same moves always get the same replies), or a random mover that picks a
+uniformly random legal move from a seeded generator (reproducible given the seed).
 """
 from __future__ import annotations
+
+import random
 
 import chess
 import chess.engine
@@ -43,7 +46,8 @@ def game_reward(won: bool, moves_used: int, mate_len: int, move_limit: int) -> f
 
 class Game:
     def __init__(self, fen: str, mate_len: int | None, move_limit: int, engine=None,
-                 opponent_nodes: int = DEFENDER_NODES, mode: str = "endgame"):
+                 opponent_nodes: int = DEFENDER_NODES, mode: str = "endgame",
+                 opponent: str = "engine", seed: int | str | None = None):
         if mode not in ("endgame", "full"):
             raise ValueError(f"mode must be 'endgame' or 'full', got {mode!r}")
         self.board = chess.Board(fen)
@@ -54,6 +58,10 @@ class Game:
         self.move_limit = move_limit
         self.opponent_nodes = opponent_nodes
         self.mode = mode
+        if opponent not in ("engine", "random"):
+            raise ValueError(f"opponent must be 'engine' or 'random', got {opponent!r}")
+        self.opponent = opponent
+        self._rng = random.Random(seed)
         self._own_engine = engine is None
         self.engine = engine or new_engine()
         self.engine.protocol.send_line("ucinewgame")
@@ -113,6 +121,11 @@ class Game:
             return "draw"
         return None
 
+    def _reply(self) -> chess.Move:
+        if self.opponent == "random":
+            return self._rng.choice(sorted(self.board.legal_moves, key=chess.Move.uci))
+        return self.engine.play(self.board, chess.engine.Limit(nodes=self.opponent_nodes)).move
+
     def play(self, text: str) -> dict:
         if self.done:
             raise IllegalMove("the game is over")
@@ -126,9 +139,9 @@ class Game:
         elif (reason := self._draw_reason()):
             self.result = reason
         else:
-            res = self.engine.play(self.board, chess.engine.Limit(nodes=self.opponent_nodes))
-            reply_san = self.board.san(res.move)
-            self.board.push(res.move)
+            reply = self._reply()
+            reply_san = self.board.san(reply)
+            self.board.push(reply)
             if self.board.is_checkmate():
                 self.result = "lost"
             elif (reason := self._draw_reason()):

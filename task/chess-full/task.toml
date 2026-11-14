@@ -2,7 +2,7 @@ schema_version = "1.3"
 
 [task]
 name = "junction2026/chess-full-game"
-description = "Play three full chess games as White against a ladder of deterministic Stockfish opponents."
+description = "Play four chess games as White, each from a different seeded opening, against a ladder of opponents from random moves to Stockfish."
 authors = []
 keywords = ["chess", "planning", "full-game", "mcp"]
 
@@ -29,7 +29,7 @@ url = "http://mcp-server:8000/mcp"
 args = []
 
 [agent]
-timeout_sec = 10800.0
+timeout_sec = 14400.0
 
 [verifier]
 timeout_sec = 120.0

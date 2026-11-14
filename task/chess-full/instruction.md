@@ -1,13 +1,19 @@
 # Win at chess
 
-You play **White** in three full games of chess, each from the normal starting position.
-Your opponents are Stockfish at three fixed strengths: Level 1 (weak), Level 2 (club) and
-Level 3 (strong). Each opponent is deterministic: the same moves always get the same
-replies.
+You play **White** in four games of chess. Each game starts from a well-known opening
+(a few moves already played, a different opening in each game; `list_games()` names it),
+and you play the rest of the game. Your opponents get stronger from game to game:
+
+| Game | Opponent |
+|---|---|
+| g1 | Level 0: plays random legal moves |
+| g2 | Level 1 (weak): Stockfish at a very small search budget |
+| g3 | Level 2 (club): Stockfish at a small search budget |
+| g4 | Level 3 (strong): Stockfish at a larger search budget |
 
 Use the `chess` MCP server:
 
-- `list_games()` — the three games, their opponent, your move limit and their status.
+- `list_games()` — the four games: opening, opponent, your move limit and status.
 - `get_position(game_id)` — the board (White is uppercase), FEN, every legal move, the moves
   played so far.
 - `make_move(game_id, move)` — play one move as UCI (`e2e4`, `e7e8q`) or SAN (`Nf3`, `O-O`).
@@ -17,7 +23,7 @@ Use the `chess` MCP server:
 ## Scoring
 
 Each game scores 1 for a win, 0.5 for a draw and 0 for a loss; your reward is the average
-over the three games.
+over the four games.
 
 - **Win (1):** checkmate, or a lead of at least three pawns (Stockfish's evaluation) when
   your move limit is reached.
@@ -26,6 +32,6 @@ over the three games.
 - **Loss (0):** being checkmated, trailing by three pawns or more at the move limit, or
   leaving the game unfinished.
 
-Each game allows **80 of your moves**. Play all three games to the end; a game you never
-start or abandon scores 0. You have no chess engine or chess library here and no internet
-access beyond your model.
+Each game allows **80 of your moves** (the opening moves already played do not count). Play
+all four games to the end; a game you never start or abandon scores 0. You have no chess
+engine or chess library here and no internet access beyond your model.

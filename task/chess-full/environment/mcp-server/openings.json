@@ -1,0 +1,236 @@
+[
+ {
+  "name": "Ruy Lopez, Morphy Defence",
+  "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6",
+  "fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 2 5",
+  "eval_cp": 34
+ },
+ {
+  "name": "Italian Game, Giuoco Piano",
+  "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+  "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+  "eval_cp": 18
+ },
+ {
+  "name": "Scotch Game",
+  "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Nf6",
+  "fen": "r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "eval_cp": 15
+ },
+ {
+  "name": "Petrov Defence",
+  "moves": "e4 e5 Nf3 Nf6 Nxe5 d6 Nf3 Nxe4",
+  "fen": "rnbqkb1r/ppp2ppp/3p4/8/4n3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 5",
+  "eval_cp": 45
+ },
+ {
+  "name": "Four Knights Game",
+  "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6",
+  "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 4",
+  "eval_cp": 13
+ },
+ {
+  "name": "Philidor Defence",
+  "moves": "e4 e5 Nf3 d6 d4 Nf6",
+  "fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4",
+  "eval_cp": 71
+ },
+ {
+  "name": "Vienna Game",
+  "moves": "e4 e5 Nc3 Nf6 f4 d5",
+  "fen": "rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": -25
+ },
+ {
+  "name": "King's Gambit Accepted",
+  "moves": "e4 e5 f4 exf4 Nf3 g5",
+  "fen": "rnbqkbnr/pppp1p1p/8/6p1/4Pp2/5N2/PPPP2PP/RNBQKB1R w KQkq - 0 4",
+  "eval_cp": -57
+ },
+ {
+  "name": "Sicilian, Najdorf",
+  "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6",
+  "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+  "eval_cp": 38
+ },
+ {
+  "name": "Sicilian, Dragon",
+  "moves": "e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 g6",
+  "fen": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+  "eval_cp": 62
+ },
+ {
+  "name": "Sicilian, Taimanov",
+  "moves": "e4 c5 Nf3 e6 d4 cxd4 Nxd4 Nc6",
+  "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5",
+  "eval_cp": 39
+ },
+ {
+  "name": "Sicilian, Alapin",
+  "moves": "e4 c5 c3 Nf6 e5 Nd5",
+  "fen": "rnbqkb1r/pp1ppppp/8/2pnP3/8/2P5/PP1P1PPP/RNBQKBNR w KQkq - 1 4",
+  "eval_cp": 12
+ },
+ {
+  "name": "Sicilian, Closed",
+  "moves": "e4 c5 Nc3 Nc6 g3 g6",
+  "fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": -6
+ },
+ {
+  "name": "French, Winawer",
+  "moves": "e4 e6 d4 d5 Nc3 Bb4",
+  "fen": "rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4",
+  "eval_cp": 55
+ },
+ {
+  "name": "French, Advance",
+  "moves": "e4 e6 d4 d5 e5 c5",
+  "fen": "rnbqkbnr/pp3ppp/4p3/2ppP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+  "eval_cp": 27
+ },
+ {
+  "name": "French, Tarrasch",
+  "moves": "e4 e6 d4 d5 Nd2 Nf6",
+  "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq - 2 4",
+  "eval_cp": 58
+ },
+ {
+  "name": "Caro-Kann, Classical",
+  "moves": "e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5",
+  "fen": "rn1qkbnr/pp2pppp/2p5/5b2/3PN3/8/PPP2PPP/R1BQKBNR w KQkq - 1 5",
+  "eval_cp": 34
+ },
+ {
+  "name": "Caro-Kann, Advance",
+  "moves": "e4 c6 d4 d5 e5 Bf5",
+  "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 1 4",
+  "eval_cp": 24
+ },
+ {
+  "name": "Pirc Defence",
+  "moves": "e4 d6 d4 Nf6 Nc3 g6",
+  "fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": 63
+ },
+ {
+  "name": "Modern Defence",
+  "moves": "e4 g6 d4 Bg7 Nc3 d6",
+  "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": 68
+ },
+ {
+  "name": "Scandinavian Defence",
+  "moves": "e4 d5 exd5 Qxd5 Nc3 Qa5",
+  "fen": "rnb1kbnr/ppp1pppp/8/q7/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - 2 4",
+  "eval_cp": 68
+ },
+ {
+  "name": "Alekhine Defence",
+  "moves": "e4 Nf6 e5 Nd5 d4 d6",
+  "fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4",
+  "eval_cp": 67
+ },
+ {
+  "name": "Queen's Gambit Declined",
+  "moves": "d4 d5 c4 e6 Nc3 Nf6",
+  "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+  "eval_cp": 25
+ },
+ {
+  "name": "Queen's Gambit Accepted",
+  "moves": "d4 d5 c4 dxc4 Nf3 Nf6",
+  "fen": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 2 4",
+  "eval_cp": 33
+ },
+ {
+  "name": "Slav Defence",
+  "moves": "d4 d5 c4 c6 Nf3 Nf6",
+  "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 2 4",
+  "eval_cp": 26
+ },
+ {
+  "name": "Semi-Slav Defence",
+  "moves": "d4 d5 c4 c6 Nf3 Nf6 Nc3 e6",
+  "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5",
+  "eval_cp": 36
+ },
+ {
+  "name": "King's Indian Defence",
+  "moves": "d4 Nf6 c4 g6 Nc3 Bg7 e4 d6",
+  "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5",
+  "eval_cp": 58
+ },
+ {
+  "name": "Nimzo-Indian Defence",
+  "moves": "d4 Nf6 c4 e6 Nc3 Bb4",
+  "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+  "eval_cp": 22
+ },
+ {
+  "name": "Queen's Indian Defence",
+  "moves": "d4 Nf6 c4 e6 Nf3 b6",
+  "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4",
+  "eval_cp": 33
+ },
+ {
+  "name": "Grunfeld Defence",
+  "moves": "d4 Nf6 c4 g6 Nc3 d5",
+  "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": 41
+ },
+ {
+  "name": "Dutch Defence",
+  "moves": "d4 f5 c4 Nf6 g3 e6",
+  "fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4",
+  "eval_cp": 56
+ },
+ {
+  "name": "London System",
+  "moves": "d4 d5 Bf4 Nf6 e3 c5",
+  "fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 0 4",
+  "eval_cp": 8
+ },
+ {
+  "name": "Catalan Opening",
+  "moves": "d4 Nf6 c4 e6 g3 d5",
+  "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4",
+  "eval_cp": 37
+ },
+ {
+  "name": "Trompowsky Attack",
+  "moves": "d4 Nf6 Bg5 Ne4 Bf4 c5",
+  "fen": "rnbqkb1r/pp1ppppp/8/2p5/3PnB2/8/PPP1PPPP/RN1QKBNR w KQkq - 0 4",
+  "eval_cp": 53
+ },
+ {
+  "name": "Colle System",
+  "moves": "d4 d5 Nf3 Nf6 e3 e6",
+  "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+  "eval_cp": 9
+ },
+ {
+  "name": "English, Symmetrical",
+  "moves": "c4 c5 Nc3 Nc6 g3 g6",
+  "fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": 15
+ },
+ {
+  "name": "English, Reversed Sicilian",
+  "moves": "c4 e5 Nc3 Nf6 g3 d5",
+  "fen": "rnbqkb1r/ppp2ppp/5n2/3pp3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+  "eval_cp": 23
+ },
+ {
+  "name": "Reti Opening",
+  "moves": "Nf3 d5 g3 Nf6 Bg2 e6",
+  "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/8/5NP1/PPPPPPBP/RNBQK2R w KQkq - 0 4",
+  "eval_cp": 40
+ },
+ {
+  "name": "Bird Opening",
+  "moves": "f4 d5 Nf3 Nf6 e3 g6",
+  "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/5P2/4PN2/PPPP2PP/RNBQKB1R w KQkq - 0 4",
+  "eval_cp": -14
+ }
+]

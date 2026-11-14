@@ -119,3 +119,59 @@ def test_full_mode_adjudication_at_move_limit():
         assert g.result in ("adjudicated_loss", "lost") and g.reward() == 0.0
     finally:
         g.close()
+
+
+# ---- per-trial variation: random opponent and seeded openings -------------------------- #
+def _random_game(seed, n=6):
+    g = Game(START, None, 80, mode="full", opponent="random", seed=seed)
+    try:
+        for _ in range(n):
+            if g.done:
+                break
+            g.play(sorted(m.uci() for m in g.board.legal_moves)[0])
+        return [h["reply"] for h in g.history]
+    finally:
+        g.close()
+
+
+def test_random_opponent_is_reproducible_from_its_seed_only():
+    assert _random_game("7:g1") == _random_game("7:g1")
+    assert _random_game("7:g1") != _random_game("8:g1")
+
+
+def test_unknown_opponent_kind_is_rejected():
+    import pytest
+    with pytest.raises(ValueError):
+        Game(START, None, 80, mode="full", opponent="human")
+
+
+def _server_positions(seed):
+    import importlib.util
+    import os
+    import sys
+    from pathlib import Path
+    srv = Path(__file__).resolve().parent.parent / "task/chess-full/environment/mcp-server"
+    os.environ["CHESS_SEED"] = str(seed)
+    sys.path.insert(0, str(srv))
+    try:
+        spec = importlib.util.spec_from_file_location(f"srv{seed}", srv / "server.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod.POSITIONS
+    finally:
+        sys.path.remove(str(srv))
+        del os.environ["CHESS_SEED"]
+
+
+def test_openings_are_seeded_distinct_and_balanced():
+    a, b, c = _server_positions(1), _server_positions(1), _server_positions(2)
+    assert [p["fen"] for p in a] == [p["fen"] for p in b]               # same seed, same games
+    assert [p["fen"] for p in a] != [p["fen"] for p in c]               # new seed, new openings
+    assert len({p["fen"] for p in a}) == len(a)                         # a different one per game
+    for p in a:
+        board = chess.Board(p["fen"])
+        assert board.turn == chess.WHITE and board.fullmove_number > 1
+        replay = chess.Board()
+        for san in p["opening_moves"].split():
+            replay.push_san(san)
+        assert replay.fen() == p["fen"]
