@@ -1,0 +1,209 @@
+[
+ {
+  "model": "model_000.pkl",
+  "sims": 128,
+  "defender_nodes": 100000,
+  "held_out": {
+   "mate1": {
+    "n": 10,
+    "mates": 10
+   },
+   "mate2": {
+    "n": 10,
+    "mates": 3
+   },
+   "KQK": {
+    "n": 10,
+    "mates": 0
+   },
+   "KRK": {
+    "n": 10,
+    "mates": 0
+   }
+  },
+  "held_out_mate_rate": 0.325,
+  "task_reward": 0.0,
+  "task_games": [
+   {
+    "id": "g1",
+    "class": "KQK",
+    "result": "draw",
+    "moves": 2,
+    "reward": 0.0
+   },
+   {
+    "id": "g2",
+    "class": "KQK",
+    "result": "draw",
+    "moves": 3,
+    "reward": 0.0
+   },
+   {
+    "id": "g3",
+    "class": "KRK",
+    "result": "draw",
+    "moves": 2,
+    "reward": 0.0
+   },
+   {
+    "id": "g4",
+    "class": "KBBK",
+    "result": "draw",
+    "moves": 1,
+    "reward": 0.0
+   },
+   {
+    "id": "g5",
+    "class": "KQKR",
+    "result": "lost",
+    "moves": 8,
+    "reward": 0.0
+   },
+   {
+    "id": "g6",
+    "class": "KBNK",
+    "result": "draw",
+    "moves": 9,
+    "reward": 0.0
+   }
+  ]
+ },
+ {
+  "model": "model_020.pkl",
+  "sims": 128,
+  "defender_nodes": 100000,
+  "held_out": {
+   "mate1": {
+    "n": 10,
+    "mates": 5
+   },
+   "mate2": {
+    "n": 10,
+    "mates": 2
+   },
+   "KQK": {
+    "n": 10,
+    "mates": 4
+   },
+   "KRK": {
+    "n": 10,
+    "mates": 0
+   }
+  },
+  "held_out_mate_rate": 0.275,
+  "task_reward": 0.0,
+  "task_games": [
+   {
+    "id": "g1",
+    "class": "KQK",
+    "result": "move_limit",
+    "moves": 26,
+    "reward": 0.0
+   },
+   {
+    "id": "g2",
+    "class": "KQK",
+    "result": "draw",
+    "moves": 3,
+    "reward": 0.0
+   },
+   {
+    "id": "g3",
+    "class": "KRK",
+    "result": "draw",
+    "moves": 5,
+    "reward": 0.0
+   },
+   {
+    "id": "g4",
+    "class": "KBBK",
+    "result": "draw",
+    "moves": 1,
+    "reward": 0.0
+   },
+   {
+    "id": "g5",
+    "class": "KQKR",
+    "result": "lost",
+    "moves": 22,
+    "reward": 0.0
+   },
+   {
+    "id": "g6",
+    "class": "KBNK",
+    "result": "draw",
+    "moves": 3,
+    "reward": 0.0
+   }
+  ]
+ },
+ {
+  "model": "model_037.pkl",
+  "sims": 128,
+  "defender_nodes": 100000,
+  "held_out": {
+   "mate1": {
+    "n": 10,
+    "mates": 5
+   },
+   "mate2": {
+    "n": 10,
+    "mates": 3
+   },
+   "KQK": {
+    "n": 10,
+    "mates": 9
+   },
+   "KRK": {
+    "n": 10,
+    "mates": 1
+   }
+  },
+  "held_out_mate_rate": 0.45,
+  "task_reward": 0.0,
+  "task_games": [
+   {
+    "id": "g1",
+    "class": "KQK",
+    "result": "move_limit",
+    "moves": 26,
+    "reward": 0.0
+   },
+   {
+    "id": "g2",
+    "class": "KQK",
+    "result": "move_limit",
+    "moves": 30,
+    "reward": 0.0
+   },
+   {
+    "id": "g3",
+    "class": "KRK",
+    "result": "move_limit",
+    "moves": 38,
+    "reward": 0.0
+   },
+   {
+    "id": "g4",
+    "class": "KBBK",
+    "result": "draw",
+    "moves": 1,
+    "reward": 0.0
+   },
+   {
+    "id": "g5",
+    "class": "KQKR",
+    "result": "lost",
+    "moves": 14,
+    "reward": 0.0
+   },
+   {
+    "id": "g6",
+    "class": "KBNK",
+    "result": "draw",
+    "moves": 8,
+    "reward": 0.0
+   }
+  ]
+ }
+]

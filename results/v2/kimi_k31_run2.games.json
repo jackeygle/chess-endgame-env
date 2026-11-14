@@ -1,0 +1,128 @@
+{
+ "reward": 0.0,
+ "seed": 3254310287,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 5,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Sicilian, Najdorf: e4 c5 Nf3 d6 d4 cxd4 Nxd4 Nf6 Nc3 a6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Be3",
+     "reply": "Nxe4",
+     "fen": "rnbqkb1r/1p2pppp/p2p4/8/3Nn3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7"
+    },
+    {
+     "move": "Bd3",
+     "reply": "f5",
+     "fen": "rnbqkb1r/1p2p1pp/p2p4/5p2/3Nn3/2NBB3/PPP2PPP/R2QK2R w KQkq - 0 8"
+    },
+    {
+     "move": "O-O",
+     "reply": "Qc7",
+     "fen": "rnb1kb1r/1pq1p1pp/p2p4/5p2/3Nn3/2NBB3/PPP2PPP/R2Q1RK1 w kq - 2 9"
+    },
+    {
+     "move": "Bxe4",
+     "reply": "Kd8",
+     "fen": "rnbk1b1r/1pq1p1pp/p2p4/5p2/3NB3/2N1B3/PPP2PPP/R2Q1RK1 w - - 1 10"
+    },
+    {
+     "move": "Bxf5",
+     "reply": "Qc5",
+     "fen": "rnbk1b1r/1p2p1pp/p2p4/2q2B2/3N4/2N1B3/PPP2PPP/R2Q1RK1 w - - 1 11"
+    }
+   ],
+   "start_fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 3,
+   "opponent": "Level 1 (weak)",
+   "opening": "Ruy Lopez, Morphy Defence: e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "O-O",
+     "reply": "Nxe4",
+     "fen": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6"
+    },
+    {
+     "move": "d4",
+     "reply": "exd4",
+     "fen": "r1bqkb1r/1ppp1ppp/p1n5/8/B2pn3/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 7"
+    },
+    {
+     "move": "Re1",
+     "reply": "d5",
+     "fen": "r1bqkb1r/1pp2ppp/p1n5/3p4/B2pn3/5N2/PPP2PPP/RNBQR1K1 w kq - 0 8"
+    }
+   ],
+   "start_fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 2 5"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 3,
+   "opponent": "Level 2 (club)",
+   "opening": "French, Tarrasch: e4 e6 d4 d5 Nd2 Nf6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "e5",
+     "reply": "Nfd7",
+     "fen": "rnbqkb1r/pppn1ppp/4p3/3pP3/3P4/8/PPPN1PPP/R1BQKBNR w KQkq - 1 5"
+    },
+    {
+     "move": "f4",
+     "reply": "c5",
+     "fen": "rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/8/PPPN2PP/R1BQKBNR w KQkq - 0 6"
+    },
+    {
+     "move": "c3",
+     "reply": "cxd4",
+     "fen": "rnbqkb1r/pp1n1ppp/4p3/3pP3/3p1P2/2P5/PP1N2PP/R1BQKBNR w KQkq - 0 7"
+    }
+   ],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 3,
+   "opponent": "Level 3 (strong)",
+   "opening": "Italian Game, Giuoco Piano: e4 e5 Nf3 Nc6 Bc4 Bc5",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "c3",
+     "reply": "Qe7",
+     "fen": "r1b1k1nr/ppppqppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5"
+    },
+    {
+     "move": "O-O",
+     "reply": "d6",
+     "fen": "r1b1k1nr/ppp1qppp/2np4/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 6"
+    },
+    {
+     "move": "d4",
+     "reply": "Bb6",
+     "fen": "r1b1k1nr/ppp1qppp/1bnp4/4p3/2BPP3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 1 7"
+    }
+   ],
+   "start_fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+  }
+ ]
+}
