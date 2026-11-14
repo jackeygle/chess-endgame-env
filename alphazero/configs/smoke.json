@@ -1,0 +1,3 @@
+{"out": "runs/az_smoke", "iters": 2, "device": "cpu", "test_set": "",
+ "search": {"sims": 32}, "selfplay": {"games_per_iter": 16, "max_plies": 60},
+ "train": {"steps_per_iter": 20, "min_buffer": 64}}

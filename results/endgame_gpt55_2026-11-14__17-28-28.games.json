@@ -1,0 +1,497 @@
+{
+ "reward": 0.3333333333333333,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "KQK",
+   "shortest_mate_in": 8,
+   "move_limit": 26,
+   "status": "move_limit",
+   "moves_used": 26,
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Qf6+",
+     "reply": "Kb5",
+     "fen": "8/8/5Q2/1k6/8/8/7K/8 w - - 2 2"
+    },
+    {
+     "move": "Qf5+",
+     "reply": "Kc4",
+     "fen": "8/8/8/5Q2/2k5/8/7K/8 w - - 4 3"
+    },
+    {
+     "move": "Qe4+",
+     "reply": "Kb5",
+     "fen": "8/8/8/1k6/4Q3/8/7K/8 w - - 6 4"
+    },
+    {
+     "move": "Qd4",
+     "reply": "Kc6",
+     "fen": "8/8/2k5/8/3Q4/8/7K/8 w - - 8 5"
+    },
+    {
+     "move": "Qe5",
+     "reply": "Kd7",
+     "fen": "8/3k4/8/4Q3/8/8/7K/8 w - - 10 6"
+    },
+    {
+     "move": "Kg3",
+     "reply": "Kc6",
+     "fen": "8/8/2k5/4Q3/8/6K1/8/8 w - - 12 7"
+    },
+    {
+     "move": "Kf4",
+     "reply": "Kd7",
+     "fen": "8/3k4/8/4Q3/5K2/8/8/8 w - - 14 8"
+    },
+    {
+     "move": "Kf5",
+     "reply": "Kc6",
+     "fen": "8/8/2k5/4QK2/8/8/8/8 w - - 16 9"
+    },
+    {
+     "move": "Qe6+",
+     "reply": "Kb5",
+     "fen": "8/8/4Q3/1k3K2/8/8/8/8 w - - 18 10"
+    },
+    {
+     "move": "Qd5+",
+     "reply": "Kb4",
+     "fen": "8/8/8/3Q1K2/1k6/8/8/8 w - - 20 11"
+    },
+    {
+     "move": "Qd4+",
+     "reply": "Kb5",
+     "fen": "8/8/8/1k3K2/3Q4/8/8/8 w - - 22 12"
+    },
+    {
+     "move": "Kf6",
+     "reply": "Kc6",
+     "fen": "8/8/2k2K2/8/3Q4/8/8/8 w - - 24 13"
+    },
+    {
+     "move": "Qc4+",
+     "reply": "Kb7",
+     "fen": "8/1k6/5K2/8/2Q5/8/8/8 w - - 26 14"
+    },
+    {
+     "move": "Ke7",
+     "reply": "Kb6",
+     "fen": "8/4K3/1k6/8/2Q5/8/8/8 w - - 28 15"
+    },
+    {
+     "move": "Qb4+",
+     "reply": "Kc6",
+     "fen": "8/4K3/2k5/8/1Q6/8/8/8 w - - 30 16"
+    },
+    {
+     "move": "Qd6+",
+     "reply": "Kb5",
+     "fen": "8/4K3/3Q4/1k6/8/8/8/8 w - - 32 17"
+    },
+    {
+     "move": "Kd7",
+     "reply": "Kc4",
+     "fen": "8/3K4/3Q4/8/2k5/8/8/8 w - - 34 18"
+    },
+    {
+     "move": "Qc6+",
+     "reply": "Kd4",
+     "fen": "8/3K4/2Q5/8/3k4/8/8/8 w - - 36 19"
+    },
+    {
+     "move": "Qd6+",
+     "reply": "Ke4",
+     "fen": "8/3K4/3Q4/8/4k3/8/8/8 w - - 38 20"
+    },
+    {
+     "move": "Qe6+",
+     "reply": "Kf3",
+     "fen": "8/3K4/4Q3/8/8/5k2/8/8 w - - 40 21"
+    },
+    {
+     "move": "Qf5+",
+     "reply": "Kg2",
+     "fen": "8/3K4/8/5Q2/8/8/6k1/8 w - - 42 22"
+    },
+    {
+     "move": "Qg5+",
+     "reply": "Kf2",
+     "fen": "8/3K4/8/6Q1/8/8/5k2/8 w - - 44 23"
+    },
+    {
+     "move": "Qf5+",
+     "reply": "Ke2",
+     "fen": "8/3K4/8/5Q2/8/8/4k3/8 w - - 46 24"
+    },
+    {
+     "move": "Qg4+",
+     "reply": "Kd2",
+     "fen": "8/3K4/8/8/6Q1/8/3k4/8 w - - 48 25"
+    },
+    {
+     "move": "Qg2+",
+     "reply": "Kd3",
+     "fen": "8/3K4/8/8/8/3k4/6Q1/8 w - - 50 26"
+    },
+    {
+     "move": "Qg6+",
+     "reply": "Ke3",
+     "fen": "8/3K4/6Q1/8/8/4k3/8/8 w - - 52 27"
+    }
+   ],
+   "start_fen": "8/8/k7/8/8/8/5Q1K/8 w - - 0 1"
+  },
+  {
+   "game_id": "g2",
+   "material": "KQK",
+   "shortest_mate_in": 10,
+   "move_limit": 30,
+   "status": "mate",
+   "moves_used": 10,
+   "reward": 1.0,
+   "moves": [
+    {
+     "move": "Qd4+",
+     "reply": "Kg3",
+     "fen": "K7/8/8/8/3Q4/6k1/8/8 w - - 2 2"
+    },
+    {
+     "move": "Qe3+",
+     "reply": "Kg4",
+     "fen": "K7/8/8/8/6k1/4Q3/8/8 w - - 4 3"
+    },
+    {
+     "move": "Qf2",
+     "reply": "Kg5",
+     "fen": "K7/8/8/6k1/8/8/5Q2/8 w - - 6 4"
+    },
+    {
+     "move": "Kb7",
+     "reply": "Kh6",
+     "fen": "8/1K6/7k/8/8/8/5Q2/8 w - - 8 5"
+    },
+    {
+     "move": "Qg3",
+     "reply": "Kh7",
+     "fen": "8/1K5k/8/8/8/6Q1/8/8 w - - 10 6"
+    },
+    {
+     "move": "Kc6",
+     "reply": "Kh8",
+     "fen": "7k/8/2K5/8/8/6Q1/8/8 w - - 12 7"
+    },
+    {
+     "move": "Kd5",
+     "reply": "Kh7",
+     "fen": "8/7k/8/3K4/8/6Q1/8/8 w - - 14 8"
+    },
+    {
+     "move": "Ke5",
+     "reply": "Kh8",
+     "fen": "7k/8/8/4K3/8/6Q1/8/8 w - - 16 9"
+    },
+    {
+     "move": "Kf6",
+     "reply": "Kh7",
+     "fen": "8/7k/5K2/8/8/6Q1/8/8 w - - 18 10"
+    },
+    {
+     "move": "Qg7#",
+     "reply": null,
+     "fen": "8/6Qk/5K2/8/8/8/8/8 b - - 19 10"
+    }
+   ],
+   "start_fen": "K7/8/8/8/6k1/8/8/Q7 w - - 0 1"
+  },
+  {
+   "game_id": "g3",
+   "material": "KRK",
+   "shortest_mate_in": 14,
+   "move_limit": 38,
+   "status": "mate",
+   "moves_used": 14,
+   "reward": 1.0,
+   "moves": [
+    {
+     "move": "Ra4+",
+     "reply": "Kb5",
+     "fen": "6K1/8/8/1k6/R7/8/8/8 w - - 2 2"
+    },
+    {
+     "move": "Rf4",
+     "reply": "Kc5",
+     "fen": "6K1/8/8/2k5/5R2/8/8/8 w - - 4 3"
+    },
+    {
+     "move": "Kf7",
+     "reply": "Kd5",
+     "fen": "8/5K2/8/3k4/5R2/8/8/8 w - - 6 4"
+    },
+    {
+     "move": "Kf6",
+     "reply": "Kd6",
+     "fen": "8/8/3k1K2/8/5R2/8/8/8 w - - 8 5"
+    },
+    {
+     "move": "Rf5",
+     "reply": "Kd7",
+     "fen": "8/3k4/5K2/5R2/8/8/8/8 w - - 10 6"
+    },
+    {
+     "move": "Rd5+",
+     "reply": "Kc6",
+     "fen": "8/8/2k2K2/3R4/8/8/8/8 w - - 12 7"
+    },
+    {
+     "move": "Ke6",
+     "reply": "Kc7",
+     "fen": "8/2k5/4K3/3R4/8/8/8/8 w - - 14 8"
+    },
+    {
+     "move": "Rc5+",
+     "reply": "Kb6",
+     "fen": "8/8/1k2K3/2R5/8/8/8/8 w - - 16 9"
+    },
+    {
+     "move": "Kd6",
+     "reply": "Kb7",
+     "fen": "8/1k6/3K4/2R5/8/8/8/8 w - - 18 10"
+    },
+    {
+     "move": "Rb5+",
+     "reply": "Ka6",
+     "fen": "8/8/k2K4/1R6/8/8/8/8 w - - 20 11"
+    },
+    {
+     "move": "Kc6",
+     "reply": "Ka7",
+     "fen": "8/k7/2K5/1R6/8/8/8/8 w - - 22 12"
+    },
+    {
+     "move": "Ra5+",
+     "reply": "Kb8",
+     "fen": "1k6/8/2K5/R7/8/8/8/8 w - - 24 13"
+    },
+    {
+     "move": "Ra6",
+     "reply": "Kc8",
+     "fen": "2k5/8/R1K5/8/8/8/8/8 w - - 26 14"
+    },
+    {
+     "move": "Ra8#",
+     "reply": null,
+     "fen": "R1k5/8/2K5/8/8/8/8/8 b - - 27 14"
+    }
+   ],
+   "start_fen": "6K1/8/k7/8/2R5/8/8/8 w - - 0 1"
+  },
+  {
+   "game_id": "g4",
+   "material": "KBBK",
+   "shortest_mate_in": 16,
+   "move_limit": 42,
+   "status": "draw",
+   "moves_used": 1,
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Ke2",
+     "reply": "Kxg6",
+     "fen": "3B4/8/6k1/8/8/8/4K3/8 w - - 0 2"
+    }
+   ],
+   "start_fen": "3B4/8/6Bk/8/8/8/8/3K4 w - - 0 1"
+  },
+  {
+   "game_id": "g5",
+   "material": "KQKR",
+   "shortest_mate_in": 19,
+   "move_limit": 48,
+   "status": "draw",
+   "moves_used": 27,
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Qc1+",
+     "reply": "Kd7",
+     "fen": "5r2/3k4/6K1/8/8/8/8/2Q5 w - - 2 2"
+    },
+    {
+     "move": "Qh6",
+     "reply": "Rb8",
+     "fen": "1r6/3k4/6KQ/8/8/8/8/8 w - - 4 3"
+    },
+    {
+     "move": "Qh3+",
+     "reply": "Kc7",
+     "fen": "1r6/2k5/6K1/8/8/7Q/8/8 w - - 6 4"
+    },
+    {
+     "move": "Qh7+",
+     "reply": "Kc6",
+     "fen": "1r6/7Q/2k3K1/8/8/8/8/8 w - - 8 5"
+    },
+    {
+     "move": "Qh1+",
+     "reply": "Kc5",
+     "fen": "1r6/8/6K1/2k5/8/8/8/7Q w - - 10 6"
+    },
+    {
+     "move": "Qh5+",
+     "reply": "Kb4",
+     "fen": "1r6/8/6K1/7Q/1k6/8/8/8 w - - 12 7"
+    },
+    {
+     "move": "Qh4+",
+     "reply": "Ka3",
+     "fen": "1r6/8/6K1/8/7Q/k7/8/8 w - - 14 8"
+    },
+    {
+     "move": "Qg3+",
+     "reply": "Rb3",
+     "fen": "8/8/6K1/8/8/kr4Q1/8/8 w - - 16 9"
+    },
+    {
+     "move": "Qd6+",
+     "reply": "Ka4",
+     "fen": "8/8/3Q2K1/8/k7/1r6/8/8 w - - 18 10"
+    },
+    {
+     "move": "Qd4+",
+     "reply": "Rb4",
+     "fen": "8/8/6K1/8/kr1Q4/8/8/8 w - - 20 11"
+    },
+    {
+     "move": "Qd1+",
+     "reply": "Ka3",
+     "fen": "8/8/6K1/8/1r6/k7/8/3Q4 w - - 22 12"
+    },
+    {
+     "move": "Kf5",
+     "reply": "Kb2",
+     "fen": "8/8/8/5K2/1r6/8/1k6/3Q4 w - - 24 13"
+    },
+    {
+     "move": "Qd2+",
+     "reply": "Kb3",
+     "fen": "8/8/8/5K2/1r6/1k6/3Q4/8 w - - 26 14"
+    },
+    {
+     "move": "Qd5+",
+     "reply": "Rc4",
+     "fen": "8/8/8/3Q1K2/2r5/1k6/8/8 w - - 28 15"
+    },
+    {
+     "move": "Qd3+",
+     "reply": "Kb4",
+     "fen": "8/8/8/5K2/1kr5/3Q4/8/8 w - - 30 16"
+    },
+    {
+     "move": "Qd6+",
+     "reply": "Kc3",
+     "fen": "8/8/3Q4/5K2/2r5/2k5/8/8 w - - 32 17"
+    },
+    {
+     "move": "Qe5+",
+     "reply": "Kd3",
+     "fen": "8/8/8/4QK2/2r5/3k4/8/8 w - - 34 18"
+    },
+    {
+     "move": "Qg3+",
+     "reply": "Kd4",
+     "fen": "8/8/8/5K2/2rk4/6Q1/8/8 w - - 36 19"
+    },
+    {
+     "move": "Kf4",
+     "reply": "Kd5+",
+     "fen": "8/8/8/3k4/2r2K2/6Q1/8/8 w - - 38 20"
+    },
+    {
+     "move": "Kf5",
+     "reply": "Kd4",
+     "fen": "8/8/8/5K2/2rk4/6Q1/8/8 w - - 40 21"
+    },
+    {
+     "move": "Qg7+",
+     "reply": "Kd3",
+     "fen": "8/6Q1/8/5K2/2r5/3k4/8/8 w - - 42 22"
+    },
+    {
+     "move": "Ke5",
+     "reply": "Rc5+",
+     "fen": "8/6Q1/8/2r1K3/8/3k4/8/8 w - - 44 23"
+    },
+    {
+     "move": "Kf4",
+     "reply": "Rd5",
+     "fen": "8/6Q1/8/3r4/5K2/3k4/8/8 w - - 46 24"
+    },
+    {
+     "move": "Qg3+",
+     "reply": "Kc4",
+     "fen": "8/8/8/3r4/2k2K2/6Q1/8/8 w - - 48 25"
+    },
+    {
+     "move": "Qg4",
+     "reply": "Rd4+",
+     "fen": "8/8/8/8/2kr1KQ1/8/8/8 w - - 50 26"
+    },
+    {
+     "move": "Kf5",
+     "reply": "Rxg4",
+     "fen": "8/8/8/5K2/2k3r1/8/8/8 w - - 0 27"
+    },
+    {
+     "move": "Kxg4",
+     "reply": null,
+     "fen": "8/8/8/8/2k3K1/8/8/8 b - - 0 27"
+    }
+   ],
+   "start_fen": "5r2/2k5/6K1/8/8/8/8/1Q6 w - - 0 1"
+  },
+  {
+   "game_id": "g6",
+   "material": "KBNK",
+   "shortest_mate_in": 24,
+   "move_limit": 50,
+   "status": "draw",
+   "moves_used": 6,
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Bf8",
+     "reply": "Kg6",
+     "fen": "5B2/8/2N3k1/8/8/K7/8/8 w - - 2 2"
+    },
+    {
+     "move": "Ne5+",
+     "reply": "Kf5",
+     "fen": "5B2/8/8/4Nk2/8/K7/8/8 w - - 4 3"
+    },
+    {
+     "move": "Nf7",
+     "reply": "Ke6",
+     "fen": "5B2/5N2/4k3/8/8/K7/8/8 w - - 6 4"
+    },
+    {
+     "move": "Ng5+",
+     "reply": "Kf5",
+     "fen": "5B2/8/8/5kN1/8/K7/8/8 w - - 8 5"
+    },
+    {
+     "move": "Nh7",
+     "reply": "Kg6",
+     "fen": "5B2/7N/6k1/8/8/K7/8/8 w - - 10 6"
+    },
+    {
+     "move": "Nf6",
+     "reply": "Kxf6",
+     "fen": "5B2/8/5k2/8/8/K7/8/8 w - - 0 7"
+    }
+   ],
+   "start_fen": "8/7k/2N5/2B5/8/K7/8/8 w - - 0 1"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{"out": "runs/az_endgame", "iters": 60, "device": "auto", "seed": 0,
+ "net": {"blocks": 6, "channels": 64},
+ "search": {"sims": 64, "c_puct": 1.5},
+ "selfplay": {"games_per_iter": 64, "temp_moves": 6, "max_plies": 100},
+ "curriculum": {"mate1": 0.15, "mate2": 0.25, "KQK": 0.35, "KRK": 0.25, "start": 0.0},
+ "train": {"buffer": 100000, "batch": 256, "steps_per_iter": 100, "lr": 0.001, "min_buffer": 1000}}

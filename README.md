@@ -71,7 +71,9 @@ The agent used 336 tool calls across the three runs and none tried to install a 
 reach an engine, so the public networking of the Modal copy did not affect these results.
 
 Endgame task (`task/chess-endgame`): reference 1.000, do-nothing 0.000, stop-early 0.000,
-Kimi K3.1 Pro 0.000 (one run, see the end of this file).
+GPT-5.5 0.333 (one run: mated in one K+Q and the K+R game, ran out of moves in the other
+K+Q game, drew the two-bishop, queen-against-rook and bishop-and-knight games), Kimi K3.1
+Pro 0.000 (one run, see the end of this file).
 
 ## What the agent gets wrong
 
