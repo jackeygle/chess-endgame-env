@@ -1,0 +1,175 @@
+{
+ "reward": 0.0,
+ "seed": 3417418985,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 24,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Dutch Defence: d4 f5 c4 Nf6 g3 e6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Nf3",
+     "reply": "c5",
+     "fen": "rnbqkb1r/pp1p2pp/4pn2/2p2p2/2PP4/5NP1/PP2PP1P/RNBQKB1R w KQkq - 0 5"
+    },
+    {
+     "move": "dxc5",
+     "reply": "Ng4",
+     "fen": "rnbqkb1r/pp1p2pp/4p3/2P2p2/2P3n1/5NP1/PP2PP1P/RNBQKB1R w KQkq - 1 6"
+    },
+    {
+     "move": "e4",
+     "reply": "a5",
+     "fen": "rnbqkb1r/1p1p2pp/4p3/p1P2p2/2P1P1n1/5NP1/PP3P1P/RNBQKB1R w KQkq - 0 7"
+    },
+    {
+     "move": "h3",
+     "reply": "h5",
+     "fen": "rnbqkb1r/1p1p2p1/4p3/p1P2p1p/2P1P1n1/5NPP/PP3P2/RNBQKB1R w KQkq - 0 8"
+    },
+    {
+     "move": "hxg4",
+     "reply": "Ke7",
+     "fen": "rnbq1b1r/1p1pk1p1/4p3/p1P2p1p/2P1P1P1/5NP1/PP3P2/RNBQKB1R w KQ - 1 9"
+    },
+    {
+     "move": "gxf5",
+     "reply": "a4",
+     "fen": "rnbq1b1r/1p1pk1p1/4p3/2P2P1p/p1P1P3/5NP1/PP3P2/RNBQKB1R w KQ - 0 10"
+    },
+    {
+     "move": "fxe6",
+     "reply": "Kxe6",
+     "fen": "rnbq1b1r/1p1p2p1/4k3/2P4p/p1P1P3/5NP1/PP3P2/RNBQKB1R w KQ - 0 11"
+    },
+    {
+     "move": "Bd3",
+     "reply": "Be7",
+     "fen": "rnbq3r/1p1pb1p1/4k3/2P4p/p1P1P3/3B1NP1/PP3P2/RNBQK2R w KQ - 2 12"
+    },
+    {
+     "move": "Bg5",
+     "reply": "h4",
+     "fen": "rnbq3r/1p1pb1p1/4k3/2P3B1/p1P1P2p/3B1NP1/PP3P2/RN1QK2R w KQ - 0 13"
+    },
+    {
+     "move": "Bxe7",
+     "reply": "Na6",
+     "fen": "r1bq3r/1p1pB1p1/n3k3/2P5/p1P1P2p/3B1NP1/PP3P2/RN1QK2R w KQ - 1 14"
+    },
+    {
+     "move": "Bf8",
+     "reply": "Rh7",
+     "fen": "r1bq1B2/1p1p2pr/n3k3/2P5/p1P1P2p/3B1NP1/PP3P2/RN1QK2R w KQ - 3 15"
+    },
+    {
+     "move": "Qe2",
+     "reply": "Rh8",
+     "fen": "r1bq1B1r/1p1p2p1/n3k3/2P5/p1P1P2p/3B1NP1/PP2QP2/RN2K2R w KQ - 5 16"
+    },
+    {
+     "move": "O-O",
+     "reply": "Kf6",
+     "fen": "r1bq1B1r/1p1p2p1/n4k2/2P5/p1P1P2p/3B1NP1/PP2QP2/RN3RK1 w - - 7 17"
+    },
+    {
+     "move": "Bxg7+",
+     "reply": "Ke6",
+     "fen": "r1bq3r/1p1p2B1/n3k3/2P5/p1P1P2p/3B1NP1/PP2QP2/RN3RK1 w - - 1 18"
+    },
+    {
+     "move": "Bxh8",
+     "reply": "d5",
+     "fen": "r1bq3B/1p6/n3k3/2Pp4/p1P1P2p/3B1NP1/PP2QP2/RN3RK1 w - d6 0 19"
+    },
+    {
+     "move": "Ng5+",
+     "reply": "Kd7",
+     "fen": "r1bq3B/1p1k4/n7/2Pp2N1/p1P1P2p/3B2P1/PP2QP2/RN3RK1 w - - 2 20"
+    },
+    {
+     "move": "Nf7",
+     "reply": "Nc7",
+     "fen": "r1bq3B/1pnk1N2/8/2Pp4/p1P1P2p/3B2P1/PP2QP2/RN3RK1 w - - 4 21"
+    },
+    {
+     "move": "Ne5+",
+     "reply": "Ke7",
+     "fen": "r1bq3B/1pn1k3/8/2PpN3/p1P1P2p/3B2P1/PP2QP2/RN3RK1 w - - 6 22"
+    },
+    {
+     "move": "Nc6+",
+     "reply": "Kd7",
+     "fen": "r1bq3B/1pnk4/2N5/2Pp4/p1P1P2p/3B2P1/PP2QP2/RN3RK1 w - - 8 23"
+    },
+    {
+     "move": "Nxd8",
+     "reply": "dxe4",
+     "fen": "r1bN3B/1pnk4/8/2P5/p1P1p2p/3B2P1/PP2QP2/RN3RK1 w - - 0 24"
+    },
+    {
+     "move": "Bxe4",
+     "reply": "Ke8",
+     "fen": "r1bNk2B/1pn5/8/2P5/p1P1B2p/6P1/PP2QP2/RN3RK1 w - - 1 25"
+    },
+    {
+     "move": "Bc6+",
+     "reply": "Kxd8",
+     "fen": "r1bk3B/1pn5/2B5/2P5/p1P4p/6P1/PP2QP2/RN3RK1 w - - 0 26"
+    },
+    {
+     "move": "Qe8+",
+     "reply": "Nxe8",
+     "fen": "r1bkn2B/1p6/2B5/2P5/p1P4p/6P1/PP3P2/RN3RK1 w - - 0 27"
+    },
+    {
+     "move": "Bxe8",
+     "reply": "b6",
+     "fen": "r1bkB2B/8/1p6/2P5/p1P4p/6P1/PP3P2/RN3RK1 w - - 0 28"
+    }
+   ],
+   "start_fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Sicilian, Alapin: e4 c5 c3 Nf6 e5 Nd5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/pp1ppppp/8/2pnP3/8/2P5/PP1P1PPP/RNBQKBNR w KQkq - 1 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "English, Reversed Sicilian: c4 e5 Nc3 Nf6 g3 d5",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/5n2/3pp3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Bird Opening: f4 d5 Nf3 Nf6 e3 g6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/5P2/4PN2/PPPP2PP/RNBQKB1R w KQkq - 0 4"
+  }
+ ]
+}

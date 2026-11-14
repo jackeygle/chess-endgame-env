@@ -1,0 +1,115 @@
+{
+ "reward": 0.0,
+ "seed": 1049821561,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 12,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Queen's Gambit Declined: d4 d5 c4 e6 Nc3 Nf6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Bg5",
+     "reply": "Kd7",
+     "fen": "rnbq1b1r/pppk1ppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQ - 4 5"
+    },
+    {
+     "move": "e4",
+     "reply": "e5",
+     "fen": "rnbq1b1r/pppk1ppp/5n2/3pp1B1/2PPP3/2N5/PP3PPP/R2QKBNR w KQ - 0 6"
+    },
+    {
+     "move": "Nf3",
+     "reply": "exd4",
+     "fen": "rnbq1b1r/pppk1ppp/5n2/3p2B1/2PpP3/2N2N2/PP3PPP/R2QKB1R w KQ - 0 7"
+    },
+    {
+     "move": "Nxd4",
+     "reply": "h5",
+     "fen": "rnbq1b1r/pppk1pp1/5n2/3p2Bp/2PNP3/2N5/PP3PPP/R2QKB1R w KQ - 0 8"
+    },
+    {
+     "move": "Bxf6",
+     "reply": "Rh7",
+     "fen": "rnbq1b2/pppk1ppr/5B2/3p3p/2PNP3/2N5/PP3PPP/R2QKB1R w KQ - 1 9"
+    },
+    {
+     "move": "Bxd8",
+     "reply": "c5",
+     "fen": "rnbB1b2/pp1k1ppr/8/2pp3p/2PNP3/2N5/PP3PPP/R2QKB1R w KQ - 0 10"
+    },
+    {
+     "move": "Qxh5",
+     "reply": "Be7",
+     "fen": "rnbB4/pp1kbppr/8/2pp3Q/2PNP3/2N5/PP3PPP/R3KB1R w KQ - 1 11"
+    },
+    {
+     "move": "Qxf7",
+     "reply": "dxc4",
+     "fen": "rnbB4/pp1kbQpr/8/2p5/2pNP3/2N5/PP3PPP/R3KB1R w KQ - 0 12"
+    },
+    {
+     "move": "Qe6+",
+     "reply": "Kxd8",
+     "fen": "rnbk4/pp2b1pr/4Q3/2p5/2pNP3/2N5/PP3PPP/R3KB1R w KQ - 0 13"
+    },
+    {
+     "move": "Qd7+",
+     "reply": "Kxd7",
+     "fen": "rnb5/pp1kb1pr/8/2p5/2pNP3/2N5/PP3PPP/R3KB1R w KQ - 0 14"
+    },
+    {
+     "move": "Bxc4",
+     "reply": "g6",
+     "fen": "rnb5/pp1kb2r/6p1/2p5/2BNP3/2N5/PP3PPP/R3K2R w KQ - 0 15"
+    },
+    {
+     "move": "O-O",
+     "reply": "Kc7",
+     "fen": "rnb5/ppk1b2r/6p1/2p5/2BNP3/2N5/PP3PPP/R4RK1 w - - 2 16"
+    }
+   ],
+   "start_fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Alekhine Defence: e4 Nf6 e5 Nd5 d4 d6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "King's Indian Defence: d4 Nf6 c4 g6 Nc3 Bg7 e4 d6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Philidor Defence: e4 e5 Nf3 d6 d4 Nf6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4"
+  }
+ ]
+}
