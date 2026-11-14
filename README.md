@@ -115,7 +115,7 @@ Two models from different labs fail the same way. In the middle of one game, Dee
 said so itself: "I'm hanging pieces now. I lost the knight to Qxb5." It then gave up the
 two remaining games.
 
-The agent never fails on the interface:
+GPT-5.5 never fails on the interface:
 - Every legal move is listed at every turn.
 - 3 of its 447 move submissions were rejected as illegal, at no cost.
 - It finished all 12 games in these runs.
