@@ -78,6 +78,13 @@ logs, verifier output) in `results/harbor_runs/`.
 - **Level 1 beat the agent more often than Level 2.** In all three runs it lost to
   Level 1 but drew twice with Level 2. One node per move is enough for Stockfish to take
   a piece left hanging, and that is how the agent lost those games (below).
+- **Kimi K3.1 Pro (Verda, same task and harness): 0.000 in three runs.** Every time,
+  after 3–8 moves per game, it ended its turn with a progress message ("I'm correcting
+  course in g4 by eliminating the bishop...") and no tool call. OpenCode treats that as
+  the end of the task, so all four games were left unfinished. A run with `check_move`
+  enabled (same seed as its run 1) ended the same way after 7 moves of g1. This measures
+  a failure to carry a long task through, not chess skill, so the analysis below uses
+  the GPT-5.5 games. Files: `results/v2/kimi_k31_*`.
 - **Earlier version.** The first version had three games from the starting position
   against Levels 1–3, and GPT-5.5 scored 0.056 over three runs (`results/v1/`). That
   scale left no room between agents, and a fixed starting position could be memorised.

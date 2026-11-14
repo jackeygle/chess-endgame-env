@@ -1,0 +1,90 @@
+{
+ "reward": 0.0,
+ "seed": 1454008762,
+ "games": [
+  {
+   "game_id": "g1",
+   "material": "full",
+   "move_limit": 80,
+   "status": "in_progress",
+   "moves_used": 7,
+   "opponent": "Level 0 (random moves)",
+   "opening": "Philidor Defence: e4 e5 Nf3 d6 d4 Nf6",
+   "reward": 0.0,
+   "moves": [
+    {
+     "move": "Nc3",
+     "reply": "h6",
+     "fen": "rnbqkb1r/ppp2pp1/3p1n1p/4p3/3PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 0 5"
+    },
+    {
+     "move": "Bc4",
+     "reply": "Qe7",
+     "fen": "rnb1kb1r/ppp1qpp1/3p1n1p/4p3/2BPP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 2 6"
+    },
+    {
+     "move": "O-O",
+     "reply": "Nh5",
+     "fen": "rnb1kb1r/ppp1qpp1/3p3p/4p2n/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w kq - 4 7"
+    },
+    {
+     "move": "dxe5",
+     "reply": "f6",
+     "fen": "rnb1kb1r/ppp1q1p1/3p1p1p/4P2n/2B1P3/2N2N2/PPP2PPP/R1BQ1RK1 w kq - 0 8"
+    },
+    {
+     "move": "exd6",
+     "reply": "Kd8",
+     "fen": "rnbk1b1r/ppp1q1p1/3P1p1p/7n/2B1P3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 1 9"
+    },
+    {
+     "move": "dxe7+",
+     "reply": "Ke8",
+     "fen": "rnb1kb1r/ppp1P1p1/5p1p/7n/2B1P3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 1 10"
+    },
+    {
+     "move": "exf8=Q+",
+     "reply": "Kxf8",
+     "fen": "rnb2k1r/ppp3p1/5p1p/7n/2B1P3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 11"
+    }
+   ],
+   "start_fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 1 4"
+  },
+  {
+   "game_id": "g2",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 1 (weak)",
+   "opening": "Modern Defence: e4 g6 d4 Bg7 Nc3 d6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 0 4"
+  },
+  {
+   "game_id": "g3",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 2 (club)",
+   "opening": "Nimzo-Indian Defence: d4 Nf6 c4 e6 Nc3 Bb4",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4"
+  },
+  {
+   "game_id": "g4",
+   "material": "full",
+   "move_limit": 80,
+   "status": "not_started",
+   "moves_used": 0,
+   "opponent": "Level 3 (strong)",
+   "opening": "Sicilian, Closed: e4 c5 Nc3 Nc6 g3 g6",
+   "reward": 0.0,
+   "moves": [],
+   "start_fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR w KQkq - 0 4"
+  }
+ ]
+}
